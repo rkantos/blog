@@ -60,6 +60,7 @@ Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen
 ![Asus QM-1 tyhjää täynnä oleva boot-valikko](/img/emptybootmanager.jpg)
 
 ![Asus QM-1 UEFI-valikko](/img/bootx64.efi.jpg)
+
 Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä "Boot from file".. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media 
 
 Koska olin jo samasta microsd-kortista tehnyt boottaavan, ei seuraava vaihe vaatinut kuin ISO-tiedoston tiedostojen purkamisen ja siirtämisen sille. Huomiona tosin se, että E2B formatoi muistitikun oletuksena NTFS -formaattiin ja Asuksen UEFI-bios lukee FAT32 -tiedostojärjestelmiä.
