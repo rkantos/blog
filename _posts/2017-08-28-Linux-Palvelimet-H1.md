@@ -5,10 +5,11 @@ tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
 
 # Publish H1 22.8.2017 'Livetikku'
 ========================
+
 **Sivu on julkaistu ensimmäisen kerran 28.8.2017 ja** 
 **päivitetty 30.8.2017**
 
-[Section 1](#section-1)
+[USB-tikun luonti | Easy2Boot](#USB-tikun luonti | Easy2Boot-1)
 
 ### Tehtävänanto
 
@@ -39,8 +40,8 @@ Laitteen pitäisi käynnistyä UEFI-valikkoon ESC-näppäimellä, missään ei k
  Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa. Kaikki valinnat vievät lopulta samaan Asuksen UEFI-valikkoon, 
 
 
-## Section 1 ##
-#### USB-tikun luonti | Easy2Boot  
+
+#### USB-tikun luonti | Easy2Boot  ####
 Yleensä boottaavien USB-tikkujen asentamiseen olen tottunut käyttämään YUMI:a https://www.pendrivelinux.com/yumi-multiboot-usb-creator/ Aikaisempien huonojen kokemuksien johdosta etsin Googlella seuraavia vaihtoehtoja. Jotkut väittivät kaiken toimineen ilman ongelmia 'tavallisin' keinoin. Ainakin yksi [2] oli maininnut Easy2Boot:n käytön. Olen joskus aikasemminkin käyttänyt samaa ohjelmaa kokeillessa erilaisia Windowsilla USB-tikkujen luontiin soveltuvia ohjelmia. Koko sovelluksen kätevin ominaisuus onkin varmaan se että siinä on eräänlainen oma bootloader, joka mahdollistaa pelkkien iso-tiedostojen lataamisen muistikortille. Etenkin hitailla muistikorteilla tämä säästää aikaa, kun kaikkia pieniä tiedostoja ei tarvitse purkaa erikseen.
 
 Asensin E2B:n ensin USB-tikulle... Sitten USB-hubin kanssa säätäessä muistin juuri sen toisen USB-paikan puuttumisen laitteestani. USB-hubin läpi en luonnollisesti saanut USB-tikkua boottaamaan. Suoraan USB-tikun liittäminen laitteeseen ei myöskään paljon edistä asiaa, sillä sitten laitteeseen ei voi enää liittää näppäimistöä.
