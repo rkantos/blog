@@ -9,7 +9,7 @@ tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
 **Sivu on julkaistu ensimmäisen kerran 28.8.2017 ja** 
 **päivitetty 30.8.2017**
 
-[USB-tikun luonti | Easy2Boot](#USB-tikun luonti | Easy2Boot-1)
+[USB-tikun luonti | Easy2Boot](#USB-tikun-luonti-Easy2Boot-1)
 
 ### Tehtävänanto
 
