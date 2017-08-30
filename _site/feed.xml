@@ -1,39 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-08-30T15:25:53+03:00</updated><id>http://localhost:4000/blog/</id><title type="html">Rkantos’s projects and endeavors in mostly educational times</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</subtitle><entry><title type="html">Linux palvelimet ICT4TN021 2017 H1</title><link href="http://localhost:4000/blog/2017/08/28/Linux-Palvelimet-H1.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H1" /><published>2017-08-28T00:00:00+03:00</published><updated>2017-08-28T00:00:00+03:00</updated><id>http://localhost:4000/blog/2017/08/28/Linux-Palvelimet-H1</id><content type="html" xml:base="http://localhost:4000/blog/2017/08/28/Linux-Palvelimet-H1.html">&lt;h1 id=&quot;publish-h1-2282017-livetikku&quot;&gt;Publish H1 22.8.2017 ‘Livetikku’&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2017-08-30T18:00:40+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">rkantos’s projects and endeavors in mostly educational times</title><subtitle>rkantos's projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</subtitle><entry><title type="html">Linux palvelimet ICT4TN021 2017 H1</title><link href="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H1" /><published>2017-08-28T00:00:00+00:00</published><updated>2017-08-28T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1</id><content type="html" xml:base="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html">&lt;h1 id=&quot;publish-h1-2282017-livetikku&quot;&gt;Publish H1 22.8.2017 ‘Livetikku’&lt;/h1&gt;
 &lt;p&gt;========================&lt;/p&gt;
 
+&lt;p&gt;&lt;strong&gt;Sivu on julkaistu ensimmäisen kerran 28.8.2017 ja&lt;/strong&gt; 
+&lt;strong&gt;päivitetty 30.8.2017&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#tehtävänanto&quot;&gt;Tehtävänanto&lt;/a&gt;
+&lt;a href=&quot;#usb-tikun-luonti--easy2boot-1&quot;&gt;USB-tikun luonti | Easy2Boot&lt;/a&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;tehtävänanto&quot;&gt;Tehtävänanto&lt;/h3&gt;
-&lt;p&gt;a) Tee oma Linux-livetikku. Kokeile sitä jossain muussa kuin koulun koneessa. Tämä kohta ei edellytä asentamista – jos kuitenkin asennat, ota ensin varmuuskopiot.&lt;/p&gt;
 
-&lt;p&gt;b) Listaa testaamasi koneen rauta (‘sudo lshw -short -sanitize’).&lt;/p&gt;
+&lt;p&gt;Tehtävänanto on osa Tero Karvisen Haaga-Heliassa suoritettavaa Linux-kurssia. http://terokarvinen.com/2017/aikataulu-linux-palvelimet-ict4tn021-4-ti-ja-5-to-alkusyksy-2017-5-op&lt;/p&gt;
 
-&lt;p&gt;c) Asenna kolme itsellesi uutta ohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;a) Tee oma Linux-livetikku. Kokeile sitä jossain muussa kuin koulun koneessa. Tämä kohta ei edellytä asentamista – jos kuitenkin asennat, ota ensin varmuuskopiot.&lt;/p&gt;
 
-&lt;p&gt;d) Mitä lisenssiä kukin näistä ohjelmista käyttää? Selitä lyhyesti, mitä oikeuksia ja velvolisuuksia tuosta lisenssistä seuraa.&lt;/p&gt;
+  &lt;p&gt;b) Listaa testaamasi koneen rauta (‘sudo lshw -short -sanitize’).&lt;/p&gt;
 
-&lt;p&gt;d-&amp;gt;e) Listaa käyttämäsi ohjelmat (esim. MS Word), kunkin ohjelman käyttötarkoitus (esim. Tekstinkäsittely) ja vastaava vapaa Linux-ohjelma (esim. LibreOffice Writer). Jos johonkin tarkoitukseen ei löydy vapaata Linux-ohjelmaa, listaa sekin.&lt;/p&gt;
+  &lt;p&gt;c) Asenna kolme itsellesi uutta ohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa.&lt;/p&gt;
 
-&lt;p&gt;f) Vapaaehtoinen lisätehtävä: varmuuskopioi tiedostosi (voit käyttää esimerkiksi ulkoista USB-levyä)&lt;/p&gt;
+  &lt;p&gt;d) Mitä lisenssiä kukin näistä ohjelmista käyttää? Selitä lyhyesti, mitä oikeuksia ja velvolisuuksia tuosta lisenssistä seuraa.&lt;/p&gt;
+
+  &lt;p&gt;d-&amp;gt;e) Listaa käyttämäsi ohjelmat (esim. MS Word), kunkin ohjelman käyttötarkoitus (esim. Tekstinkäsittely) ja vastaava vapaa Linux-ohjelma (esim. LibreOffice Writer). Jos johonkin tarkoitukseen ei löydy vapaata Linux-ohjelmaa, listaa sekin.&lt;/p&gt;
+
+  &lt;p&gt;f) Vapaaehtoinen lisätehtävä: varmuuskopioi tiedostosi (voit käyttää esimerkiksi ulkoista USB-levyä)&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h1 id=&quot;a-boottaavan-linux-usb-tikun-luominen&quot;&gt;A) Boottaavan Linux USB-tikun luominen&lt;/h1&gt;
 
 &lt;h4 id=&quot;kohde--asus-qm1--x5-z8300-soc&quot;&gt;Kohde | Asus QM1 &amp;amp; x5-Z8300 SoC&lt;/h4&gt;
 &lt;p&gt;Päätin ottaa tässä kohtaa luonnollisesti yhden haastavimmista kohteista Linuxin pyörittämiseen. Käytössä on siis viimeisin (2017) versio QM1 tikusta x5-z8300 SoC:lla. Olen aikaisemminkin yrittänyt saada Asuksen QM1 - ‘PC-Tikkuun’ Linuxin asennettua.  En kuitenkaan tähän asti ole siinä onnistunut. Laitteessa on ilmeisesti samankaltainen UEFI BIOS muiden vastaavien Asuksen Atom ja Windows -pohjaisten halpojen kannattavien, tablettien ja jopa puhelimien kanssa. Kaikissa näissä laitteissa tulee mukana oletusarvoisesti Windows 8 tai Windows 10. Kyseinen PC-tikku pohjautuu ja muistuttaa hyvin vahvasti Intelin vastaavaa laitetta, mutta hieman ominaisuuksista riisuttuna. Näistä merkitsevimpinä toisen USB -liitännän (USB3) puuttuminen. &lt;a href=&quot;https://www.asus.com/fi/Stick-PCs/QM1/specifications/&quot;&gt;1&lt;/a&gt;&lt;/p&gt;
 
+&lt;h4 id=&quot;asus-qm1--laitteen-käynnistys-live-cdltä-&quot;&gt;Asus QM1 -laitteen käynnistys live cd:ltä |&lt;/h4&gt;
+&lt;p&gt;Laitteen pitäisi käynnistyä UEFI-valikkoon ESC-näppäimellä, missään ei kuitenkaan varsinaisesti kerrottu missä tai miten tätä nappia pitäisi painaa, joten yleensä helpoin tapa päästä laitteen UEFI-valikkoon on käynnistää Windows uudestaan painamalla shift näppäintä valitessa “käynnistä uudelleen” tai “restart” vaihtoehtoa. Näin päästään tämän näköiseen valikkoon:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/w8uefirecovery.jpg&quot; alt=&quot;Windows 10 Recovery -valikko&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa. Kaikki valinnat vievät lopulta samaan Asuksen UEFI-valikkoon,&lt;/p&gt;
+
 &lt;h4 id=&quot;usb-tikun-luonti--easy2boot&quot;&gt;USB-tikun luonti | Easy2Boot&lt;/h4&gt;
+
 &lt;p&gt;Yleensä boottaavien USB-tikkujen asentamiseen olen tottunut käyttämään YUMI:a https://www.pendrivelinux.com/yumi-multiboot-usb-creator/ Aikaisempien huonojen kokemuksien johdosta etsin Googlella seuraavia vaihtoehtoja. Jotkut väittivät kaiken toimineen ilman ongelmia ‘tavallisin’ keinoin. Ainakin yksi &lt;a href=&quot;https://www.linuxquestions.org/questions/linux-hardware-18/asus-stick-pc-qm1-4175574279/#post5656074&quot;&gt;2&lt;/a&gt; oli maininnut Easy2Boot:n käytön. Olen joskus aikasemminkin käyttänyt samaa ohjelmaa kokeillessa erilaisia Windowsilla USB-tikkujen luontiin soveltuvia ohjelmia. Koko sovelluksen kätevin ominaisuus onkin varmaan se että siinä on eräänlainen oma bootloader, joka mahdollistaa pelkkien iso-tiedostojen lataamisen muistikortille. Etenkin hitailla muistikorteilla tämä säästää aikaa, kun kaikkia pieniä tiedostoja ei tarvitse purkaa erikseen.&lt;/p&gt;
 
 &lt;p&gt;Asensin E2B:n ensin USB-tikulle… Sitten USB-hubin kanssa säätäessä muistin juuri sen toisen USB-paikan puuttumisen laitteestani. USB-hubin läpi en luonnollisesti saanut USB-tikkua boottaamaan. Suoraan USB-tikun liittäminen laitteeseen ei myöskään paljon edistä asiaa, sillä sitten laitteeseen ei voi enää liittää näppäimistöä.&lt;/p&gt;
 
-&lt;p&gt;Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. – Ei löytynyt sen paremmin mitään boottivalikosta.&lt;/p&gt;
+&lt;p&gt;Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. – Ei löytynyt sen paremmin mitään boottivalikosta. 
+&lt;img src=&quot;/img/emptybootmanager.jpg&quot; alt=&quot;Asus QM-1 tyhjä boot-valikko&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä “Boot from file”.. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/qm1bootmenu.jpg&quot; alt=&quot;Asus QM-1 UEFI-valikko&quot; /&gt;
+Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä “Boot from file”.. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media&lt;/p&gt;
 
 &lt;p&gt;Koska olin jo samasta microsd-kortista tehnyt boottaavan, ei seuraava vaihe vaatinut kuin ISO-tiedoston tiedostojen purkamisen ja siirtämisen sille. Huomiona tosin se, että E2B formatoi muistitikun oletuksena NTFS -formaattiin ja Asuksen UEFI-bios lukee FAT32 -tiedostojärjestelmiä.&lt;/p&gt;
 
-&lt;p&gt;Kuten kuitenkin aikaisemminkin, ei laite suostu boottaamaan tälläkään vaihtoehdolla vaan saan virheet \EFI\BOOT\BOOTx64.EFI bt failed. tai \EFI\BOOT\grubx64.efi boot failed. , riippuen kumpaa tiedostoa \BOOT -kansiossa yritän käyttää.&lt;/p&gt;
+&lt;p&gt;Kuten kuitenkin aikaisemminkin, ei laite suostu boottaamaan tälläkään vaihtoehdolla vaan saan virheet \EFI\BOOT\BOOTx64.EFI boot failed. tai \EFI\BOOT\grubx64.efi boot failed. , riippuen kumpaa tiedostoa \BOOT -kansiossa yritän käyttää.&lt;/p&gt;
 
-&lt;p&gt;En osaa varsinaisesti sanoa miksi en aikaisemmin ollut törmännyt “ainoaan viimeiseen vaihtoehtoon”, eli Linuxiumin isorespin.sh:n https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html Isorespinin ohjeissa tiivistetään QM1 -kaltaisten laitteiden ongelmat, joka on siis 64-bittisten käyttöjärjestelmien boottaus ja asennus käyttäen 32-bittistä bootloaderia.. Mutta eipä onnistanut isorespinillä käyttäen Ubuntu Maten 16.04.3 -versiota. Tällä kertaa kuitenkin aikaisemmista kerroista eroavasti, tuli UEFI:n boottivalikkoon “Windows Boot Managerin” rinnalle uusi vaihtoehto “EFI SD/MMC Card”. Myös microSD-kortille puretun Ubuntu-asennuksen GRUB-valikkoon päästiin tälläkertaa. Nyt saatiin myös selvät virheilmoitukset!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/bootx64.efi-boot-failed.jpg&quot; alt=&quot;Tyhjää täys&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;usb-tikun-luonti--linuxium-15&quot;&gt;USB-tikun luonti | Linuxium &lt;a href=&quot;https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html&quot;&gt;15&lt;/a&gt;&lt;/h4&gt;
+
+&lt;p&gt;En osaa varsinaisesti sanoa miksi en aikaisemmin ollut törmännyt “ainoaan viimeiseen vaihtoehtoon”, eli Linuxiumin isorespin.sh:n https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html Isorespinin ohjeissa tiivistetään QM1 -kaltaisten laitteen ongelmat, joka on siis 64-bittisten käyttöjärjestelmien boottaus ja asennus käyttäen 32-bittistä bootloaderia.. Mutta eipä onnistanut isorespinillä käyttäen Ubuntu Maten 16.04.3 -versiota. Tällä kertaa kuitenkin aikaisemmista kerroista eroavasti, tuli UEFI:n boottivalikkoon “Windows Boot Managerin” rinnalle uusi vaihtoehto “EFI SD/MMC Card”. Myös microSD-kortille puretun Ubuntu-asennuksen GRUB-valikkoon päästiin tälläkertaa. Nyt saatiin myös selvät virheilmoitukset!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/initramfs-pci-error.jpg&quot; alt=&quot;Kernelin virheilmoitukset&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Edit: Tässä päästiin siis lataamaan Ubuntua muistiin, sillä kyseessähän ovat Kernelin virheilmoitukset.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;intel_ish_ipc 0000:00:0a.0: [ishtp-ish]: Timed out waiting for FW&lt;/em&gt;&lt;/p&gt;
 
@@ -43,11 +71,10 @@
 
 &lt;p&gt;Tämän jälkeen Busyboxin perus ash shelli käynnistyy ja tulee vielä virhe: &lt;em&gt;(initramfs) Unable to find a medium containing a live file system.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Käytännössä GUI:n valinnoilla tehty komento, jolla ISO-tiedosto saatiin ohjelmalla tehtyä on samanlainen kuin esimerkissä: 
-&lt;strong&gt;isorespin.sh -i ubuntu-17.04-desktop-amd64.iso -u -l rtl8723bs_4.12.0_amd64.deb -f linuxium-install-UCM-files.sh -f wrapper-linuxium-install-UCM-files.sh-c wrapper-linuxium-install-UCM-files.sh&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;asus-qm1--laitteen-käynnistys-live-cdltä-&quot;&gt;Asus QM1 -laitteen käynnistys live cd:ltä |&lt;/h4&gt;
-&lt;p&gt;Laitteen pitäisi käynnistyä UEFI-valikkoon ESC-näppäimellä, missään ei kuitenkaan varsinaisesti kerrottu missä tai miten tätä nappia pitäisi painaa, joten yleensä helpoin tapa päästä laitteen UEFI-valikkoon on käynnistää Windows uudestaan painamalla shift näppäintä valitessa “käynnistä uudelleen” tai “restart” vaihtoehtoa. Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa.&lt;/p&gt;
+&lt;p&gt;Käytännössä Isorespinin GUI:n valinnoilla tehty komento, jolla ISO-tiedosto saatiin ohjelmalla tehtyä on samanlainen kuin esimerkissä:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;isorespin.sh -i ubuntu-17.04-desktop-amd64.iso -u -l rtl8723bs_4.12.0_amd64.deb -f linuxium-install-UCM-files.sh -f wrapper-linuxium-install-UCM-files.sh-c wrapper-linuxium-install-UCM-files.sh&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h1 id=&quot;b-koneen-rauta-sudo-lshw--short--sanitize&quot;&gt;B) Koneen rauta sudo lshw -short -sanitize&lt;/h1&gt;
 &lt;p&gt;Koska en keksinyt Asuksen laitteen jälkeen mielenkiintoisempaakaan laitetta, niin kaivoin kaapin pohjalta yhden taannoin parhaiten Linux-tuetuista tietokoneista. Vuoden 2005 Thinkpad T43:n.
@@ -68,7 +95,7 @@ sudo apt install neofetch&lt;/p&gt;
 &lt;p&gt;Peek on erittäin helppokäyttöinen ja tehokas ohjelma pienien ruutukaappausvideoiden tekoon. Videot voi tehdä GIF, WebM tai mp4 -muotoon. Ensimmäinen on yhteensopiva melkein minkä tahansa selaimen kanssa (paitsi lynx tai links jne) ja WebM sekä mp4-videot toistuvat uusimmilla HTML5:sta tukevilla selaimilla ilman ongelmia.
 Peekin voi asentaa Ubuntuun lisäämällä PPA:n:
 Peekillä tälläisen luominen onnistui alle kahdessa minuutissa sovelluksen asentaminen mukaanlukien:
-&lt;img src=&quot;https://rkantos.github.io/blog/peek-testi.gif&quot; alt=&quot;Peek:n nopea testaus&quot; title=&quot;apt-get&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/img/peek-testi.gif&quot; alt=&quot;Peek:n nopea testaus&quot; title=&quot;apt-get&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;sudo add-apt-repository ppa:peek-developers/stable
 sudo apt update
@@ -139,7 +166,7 @@ Ongelmaksi jää myös Windows-lisensointi, johon periaatteessa jokaiselle virtu
 
 &lt;p&gt;[14: https://www.gnu.org/licenses/license-list.html#Expat&lt;/p&gt;
 
-&lt;p&gt;[15: https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="haaga-helia" /><category term="koulu" /><category term="infra" /><category term="such" /><category term="wow" /><category term="test" /><category term="tags" /><summary type="html">Publish H1 22.8.2017 ‘Livetikku’ ========================</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/blog/jekyll/update/2017/08/22/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-08-22T16:47:47+03:00</published><updated>2017-08-22T16:47:47+03:00</updated><id>http://localhost:4000/blog/jekyll/update/2017/08/22/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/update/2017/08/22/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;[15: https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="haaga-helia" /><category term="koulu" /><category term="infra" /><category term="such" /><category term="wow" /><category term="test" /><category term="tags" /><summary type="html">Publish H1 22.8.2017 ‘Livetikku’ ========================</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://0.0.0.0:8080/jekyll/update/2017/08/22/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-08-22T13:47:47+00:00</published><updated>2017-08-22T13:47:47+00:00</updated><id>http://0.0.0.0:8080/jekyll/update/2017/08/22/welcome-to-jekyll</id><content type="html" xml:base="http://0.0.0.0:8080/jekyll/update/2017/08/22/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 

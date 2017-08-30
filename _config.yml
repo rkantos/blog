@@ -28,8 +28,8 @@ github_username:  rkantos
 # Build settings
 markdown: kramdown
 kramdown:
-	input: GFM
-	auto_ids: false
+input: GFM
+auto_ids: true
 theme: minima
 plugins:
   - jekyll-feed

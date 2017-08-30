@@ -9,9 +9,9 @@
   <title>Linux palvelimet ICT4TN021 2017 H1</title>
   <meta name="description" content="Publish H1 22.8.2017 ‘Livetikku’ ========================">
 
-  <link rel="stylesheet" href="/blog/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/blog/2017/08/28/Linux-Palvelimet-H1.html">
-  <link rel="alternate" type="application/rss+xml" title="Rkantos&#39;s projects and endeavors in mostly educational times" href="/blog/feed.xml">
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html">
+  <link rel="alternate" type="application/rss+xml" title="rkantos&#39;s projects and endeavors in mostly educational times" href="/feed.xml">
   
   
 </head>
@@ -24,7 +24,7 @@
   <div class="wrapper">
     
     
-    <a class="site-title" href="/blog/">Rkantos&#39;s projects and endeavors in mostly educational times</a>
+    <a class="site-title" href="/">rkantos&#39;s projects and endeavors in mostly educational times</a>
   
     
       <nav class="site-nav">
@@ -46,7 +46,7 @@
           
             
             
-            <a class="page-link" href="/blog/about/">About</a>
+            <a class="page-link" href="/about/">About</a>
             
           
             
@@ -72,7 +72,7 @@
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">Linux palvelimet ICT4TN021 2017 H1</h1>
     <p class="post-meta">
-      <time datetime="2017-08-28T00:00:00+03:00" itemprop="datePublished">
+      <time datetime="2017-08-28T00:00:00+00:00" itemprop="datePublished">
         
         Aug 28, 2017
       </time>
@@ -83,38 +83,67 @@
     <h1 id="publish-h1-2282017-livetikku">Publish H1 22.8.2017 ‘Livetikku’</h1>
 <p>========================</p>
 
+<p><strong>Sivu on julkaistu ensimmäisen kerran 28.8.2017 ja</strong> 
+<strong>päivitetty 30.8.2017</strong></p>
+
+<p><a href="#tehtävänanto">Tehtävänanto</a>
+<a href="#usb-tikun-luonti--easy2boot-1">USB-tikun luonti | Easy2Boot</a></p>
+
 <h3 id="tehtävänanto">Tehtävänanto</h3>
-<p>a) Tee oma Linux-livetikku. Kokeile sitä jossain muussa kuin koulun koneessa. Tämä kohta ei edellytä asentamista – jos kuitenkin asennat, ota ensin varmuuskopiot.</p>
 
-<p>b) Listaa testaamasi koneen rauta (‘sudo lshw -short -sanitize’).</p>
+<p>Tehtävänanto on osa Tero Karvisen Haaga-Heliassa suoritettavaa Linux-kurssia. http://terokarvinen.com/2017/aikataulu-linux-palvelimet-ict4tn021-4-ti-ja-5-to-alkusyksy-2017-5-op</p>
 
-<p>c) Asenna kolme itsellesi uutta ohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa.</p>
+<blockquote>
+  <p>a) Tee oma Linux-livetikku. Kokeile sitä jossain muussa kuin koulun koneessa. Tämä kohta ei edellytä asentamista – jos kuitenkin asennat, ota ensin varmuuskopiot.</p>
 
-<p>d) Mitä lisenssiä kukin näistä ohjelmista käyttää? Selitä lyhyesti, mitä oikeuksia ja velvolisuuksia tuosta lisenssistä seuraa.</p>
+  <p>b) Listaa testaamasi koneen rauta (‘sudo lshw -short -sanitize’).</p>
 
-<p>d-&gt;e) Listaa käyttämäsi ohjelmat (esim. MS Word), kunkin ohjelman käyttötarkoitus (esim. Tekstinkäsittely) ja vastaava vapaa Linux-ohjelma (esim. LibreOffice Writer). Jos johonkin tarkoitukseen ei löydy vapaata Linux-ohjelmaa, listaa sekin.</p>
+  <p>c) Asenna kolme itsellesi uutta ohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa.</p>
 
-<p>f) Vapaaehtoinen lisätehtävä: varmuuskopioi tiedostosi (voit käyttää esimerkiksi ulkoista USB-levyä)</p>
+  <p>d) Mitä lisenssiä kukin näistä ohjelmista käyttää? Selitä lyhyesti, mitä oikeuksia ja velvolisuuksia tuosta lisenssistä seuraa.</p>
+
+  <p>d-&gt;e) Listaa käyttämäsi ohjelmat (esim. MS Word), kunkin ohjelman käyttötarkoitus (esim. Tekstinkäsittely) ja vastaava vapaa Linux-ohjelma (esim. LibreOffice Writer). Jos johonkin tarkoitukseen ei löydy vapaata Linux-ohjelmaa, listaa sekin.</p>
+
+  <p>f) Vapaaehtoinen lisätehtävä: varmuuskopioi tiedostosi (voit käyttää esimerkiksi ulkoista USB-levyä)</p>
+</blockquote>
 
 <h1 id="a-boottaavan-linux-usb-tikun-luominen">A) Boottaavan Linux USB-tikun luominen</h1>
 
 <h4 id="kohde--asus-qm1--x5-z8300-soc">Kohde | Asus QM1 &amp; x5-Z8300 SoC</h4>
 <p>Päätin ottaa tässä kohtaa luonnollisesti yhden haastavimmista kohteista Linuxin pyörittämiseen. Käytössä on siis viimeisin (2017) versio QM1 tikusta x5-z8300 SoC:lla. Olen aikaisemminkin yrittänyt saada Asuksen QM1 - ‘PC-Tikkuun’ Linuxin asennettua.  En kuitenkaan tähän asti ole siinä onnistunut. Laitteessa on ilmeisesti samankaltainen UEFI BIOS muiden vastaavien Asuksen Atom ja Windows -pohjaisten halpojen kannattavien, tablettien ja jopa puhelimien kanssa. Kaikissa näissä laitteissa tulee mukana oletusarvoisesti Windows 8 tai Windows 10. Kyseinen PC-tikku pohjautuu ja muistuttaa hyvin vahvasti Intelin vastaavaa laitetta, mutta hieman ominaisuuksista riisuttuna. Näistä merkitsevimpinä toisen USB -liitännän (USB3) puuttuminen. <a href="https://www.asus.com/fi/Stick-PCs/QM1/specifications/">1</a></p>
 
+<h4 id="asus-qm1--laitteen-käynnistys-live-cdltä-">Asus QM1 -laitteen käynnistys live cd:ltä |</h4>
+<p>Laitteen pitäisi käynnistyä UEFI-valikkoon ESC-näppäimellä, missään ei kuitenkaan varsinaisesti kerrottu missä tai miten tätä nappia pitäisi painaa, joten yleensä helpoin tapa päästä laitteen UEFI-valikkoon on käynnistää Windows uudestaan painamalla shift näppäintä valitessa “käynnistä uudelleen” tai “restart” vaihtoehtoa. Näin päästään tämän näköiseen valikkoon:</p>
+
+<p><img src="/img/w8uefirecovery.jpg" alt="Windows 10 Recovery -valikko" /></p>
+
+<p>Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa. Kaikki valinnat vievät lopulta samaan Asuksen UEFI-valikkoon,</p>
+
 <h4 id="usb-tikun-luonti--easy2boot">USB-tikun luonti | Easy2Boot</h4>
+
 <p>Yleensä boottaavien USB-tikkujen asentamiseen olen tottunut käyttämään YUMI:a https://www.pendrivelinux.com/yumi-multiboot-usb-creator/ Aikaisempien huonojen kokemuksien johdosta etsin Googlella seuraavia vaihtoehtoja. Jotkut väittivät kaiken toimineen ilman ongelmia ‘tavallisin’ keinoin. Ainakin yksi <a href="https://www.linuxquestions.org/questions/linux-hardware-18/asus-stick-pc-qm1-4175574279/#post5656074">2</a> oli maininnut Easy2Boot:n käytön. Olen joskus aikasemminkin käyttänyt samaa ohjelmaa kokeillessa erilaisia Windowsilla USB-tikkujen luontiin soveltuvia ohjelmia. Koko sovelluksen kätevin ominaisuus onkin varmaan se että siinä on eräänlainen oma bootloader, joka mahdollistaa pelkkien iso-tiedostojen lataamisen muistikortille. Etenkin hitailla muistikorteilla tämä säästää aikaa, kun kaikkia pieniä tiedostoja ei tarvitse purkaa erikseen.</p>
 
 <p>Asensin E2B:n ensin USB-tikulle… Sitten USB-hubin kanssa säätäessä muistin juuri sen toisen USB-paikan puuttumisen laitteestani. USB-hubin läpi en luonnollisesti saanut USB-tikkua boottaamaan. Suoraan USB-tikun liittäminen laitteeseen ei myöskään paljon edistä asiaa, sillä sitten laitteeseen ei voi enää liittää näppäimistöä.</p>
 
-<p>Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. – Ei löytynyt sen paremmin mitään boottivalikosta.</p>
+<p>Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. – Ei löytynyt sen paremmin mitään boottivalikosta. 
+<img src="/img/emptybootmanager.jpg" alt="Asus QM-1 tyhjä boot-valikko" /></p>
 
-<p>Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä “Boot from file”.. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media</p>
+<p><img src="/img/qm1bootmenu.jpg" alt="Asus QM-1 UEFI-valikko" />
+Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä “Boot from file”.. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media</p>
 
 <p>Koska olin jo samasta microsd-kortista tehnyt boottaavan, ei seuraava vaihe vaatinut kuin ISO-tiedoston tiedostojen purkamisen ja siirtämisen sille. Huomiona tosin se, että E2B formatoi muistitikun oletuksena NTFS -formaattiin ja Asuksen UEFI-bios lukee FAT32 -tiedostojärjestelmiä.</p>
 
-<p>Kuten kuitenkin aikaisemminkin, ei laite suostu boottaamaan tälläkään vaihtoehdolla vaan saan virheet \EFI\BOOT\BOOTx64.EFI bt failed. tai \EFI\BOOT\grubx64.efi boot failed. , riippuen kumpaa tiedostoa \BOOT -kansiossa yritän käyttää.</p>
+<p>Kuten kuitenkin aikaisemminkin, ei laite suostu boottaamaan tälläkään vaihtoehdolla vaan saan virheet \EFI\BOOT\BOOTx64.EFI boot failed. tai \EFI\BOOT\grubx64.efi boot failed. , riippuen kumpaa tiedostoa \BOOT -kansiossa yritän käyttää.</p>
 
-<p>En osaa varsinaisesti sanoa miksi en aikaisemmin ollut törmännyt “ainoaan viimeiseen vaihtoehtoon”, eli Linuxiumin isorespin.sh:n https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html Isorespinin ohjeissa tiivistetään QM1 -kaltaisten laitteiden ongelmat, joka on siis 64-bittisten käyttöjärjestelmien boottaus ja asennus käyttäen 32-bittistä bootloaderia.. Mutta eipä onnistanut isorespinillä käyttäen Ubuntu Maten 16.04.3 -versiota. Tällä kertaa kuitenkin aikaisemmista kerroista eroavasti, tuli UEFI:n boottivalikkoon “Windows Boot Managerin” rinnalle uusi vaihtoehto “EFI SD/MMC Card”. Myös microSD-kortille puretun Ubuntu-asennuksen GRUB-valikkoon päästiin tälläkertaa. Nyt saatiin myös selvät virheilmoitukset!</p>
+<p><img src="/img/bootx64.efi-boot-failed.jpg" alt="Tyhjää täys" /></p>
+
+<h4 id="usb-tikun-luonti--linuxium-15">USB-tikun luonti | Linuxium <a href="https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html">15</a></h4>
+
+<p>En osaa varsinaisesti sanoa miksi en aikaisemmin ollut törmännyt “ainoaan viimeiseen vaihtoehtoon”, eli Linuxiumin isorespin.sh:n https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html Isorespinin ohjeissa tiivistetään QM1 -kaltaisten laitteen ongelmat, joka on siis 64-bittisten käyttöjärjestelmien boottaus ja asennus käyttäen 32-bittistä bootloaderia.. Mutta eipä onnistanut isorespinillä käyttäen Ubuntu Maten 16.04.3 -versiota. Tällä kertaa kuitenkin aikaisemmista kerroista eroavasti, tuli UEFI:n boottivalikkoon “Windows Boot Managerin” rinnalle uusi vaihtoehto “EFI SD/MMC Card”. Myös microSD-kortille puretun Ubuntu-asennuksen GRUB-valikkoon päästiin tälläkertaa. Nyt saatiin myös selvät virheilmoitukset!</p>
+
+<p><img src="/img/initramfs-pci-error.jpg" alt="Kernelin virheilmoitukset" /></p>
+
+<p>Edit: Tässä päästiin siis lataamaan Ubuntua muistiin, sillä kyseessähän ovat Kernelin virheilmoitukset.</p>
 
 <p><em>intel_ish_ipc 0000:00:0a.0: [ishtp-ish]: Timed out waiting for FW</em></p>
 
@@ -124,11 +153,10 @@
 
 <p>Tämän jälkeen Busyboxin perus ash shelli käynnistyy ja tulee vielä virhe: <em>(initramfs) Unable to find a medium containing a live file system.</em></p>
 
-<p>Käytännössä GUI:n valinnoilla tehty komento, jolla ISO-tiedosto saatiin ohjelmalla tehtyä on samanlainen kuin esimerkissä: 
-<strong>isorespin.sh -i ubuntu-17.04-desktop-amd64.iso -u -l rtl8723bs_4.12.0_amd64.deb -f linuxium-install-UCM-files.sh -f wrapper-linuxium-install-UCM-files.sh-c wrapper-linuxium-install-UCM-files.sh</strong></p>
-
-<h4 id="asus-qm1--laitteen-käynnistys-live-cdltä-">Asus QM1 -laitteen käynnistys live cd:ltä |</h4>
-<p>Laitteen pitäisi käynnistyä UEFI-valikkoon ESC-näppäimellä, missään ei kuitenkaan varsinaisesti kerrottu missä tai miten tätä nappia pitäisi painaa, joten yleensä helpoin tapa päästä laitteen UEFI-valikkoon on käynnistää Windows uudestaan painamalla shift näppäintä valitessa “käynnistä uudelleen” tai “restart” vaihtoehtoa. Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa.</p>
+<p>Käytännössä Isorespinin GUI:n valinnoilla tehty komento, jolla ISO-tiedosto saatiin ohjelmalla tehtyä on samanlainen kuin esimerkissä:</p>
+<blockquote>
+  <p><strong>isorespin.sh -i ubuntu-17.04-desktop-amd64.iso -u -l rtl8723bs_4.12.0_amd64.deb -f linuxium-install-UCM-files.sh -f wrapper-linuxium-install-UCM-files.sh-c wrapper-linuxium-install-UCM-files.sh</strong></p>
+</blockquote>
 
 <h1 id="b-koneen-rauta-sudo-lshw--short--sanitize">B) Koneen rauta sudo lshw -short -sanitize</h1>
 <p>Koska en keksinyt Asuksen laitteen jälkeen mielenkiintoisempaakaan laitetta, niin kaivoin kaapin pohjalta yhden taannoin parhaiten Linux-tuetuista tietokoneista. Vuoden 2005 Thinkpad T43:n.
@@ -149,7 +177,7 @@ sudo apt install neofetch</p>
 <p>Peek on erittäin helppokäyttöinen ja tehokas ohjelma pienien ruutukaappausvideoiden tekoon. Videot voi tehdä GIF, WebM tai mp4 -muotoon. Ensimmäinen on yhteensopiva melkein minkä tahansa selaimen kanssa (paitsi lynx tai links jne) ja WebM sekä mp4-videot toistuvat uusimmilla HTML5:sta tukevilla selaimilla ilman ongelmia.
 Peekin voi asentaa Ubuntuun lisäämällä PPA:n:
 Peekillä tälläisen luominen onnistui alle kahdessa minuutissa sovelluksen asentaminen mukaanlukien:
-<img src="https://rkantos.github.io/blog/peek-testi.gif" alt="Peek:n nopea testaus" title="apt-get" /></p>
+<img src="/img/peek-testi.gif" alt="Peek:n nopea testaus" title="apt-get" /></p>
 
 <p>sudo add-apt-repository ppa:peek-developers/stable
 sudo apt update
@@ -234,14 +262,14 @@ Ongelmaksi jää myös Windows-lisensointi, johon periaatteessa jokaiselle virtu
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Rkantos&#39;s projects and endeavors in mostly educational times</h2>
+    <h2 class="footer-heading">rkantos&#39;s projects and endeavors in mostly educational times</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li>
             
-              Rkantos&#39;s projects and endeavors in mostly educational times
+              rkantos&#39;s projects and endeavors in mostly educational times
             
             </li>
             
@@ -271,8 +299,7 @@ Ongelmaksi jää myös Windows-lisensointi, johon periaatteessa jokaiselle virtu
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</p>
+        <p>rkantos&#39;s projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</p>
       </div>
     </div>
 
