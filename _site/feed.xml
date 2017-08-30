@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2017-08-30T15:25:53+03:00</updated><id>http://localhost:4000/blog/</id><title type="html">Rkantos’s projects and endeavors in mostly educational times</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><entry><title type="html">Linux palvelimet ICT4TN021 2017 H1</title><link href="http://localhost:4000/blog/2017/08/28/Linux-Palvelimet-H1.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H1" /><published>2017-08-28T00:00:00+03:00</published><updated>2017-08-28T00:00:00+03:00</updated><id>http://localhost:4000/blog/2017/08/28/Linux-Palvelimet-H1</id><content type="html" xml:base="http://localhost:4000/blog/2017/08/28/Linux-Palvelimet-H1.html">&lt;h1 id=&quot;publish-h1-2282017-livetikku&quot;&gt;Publish H1 22.8.2017 ‘Livetikku’&lt;/h1&gt;
+&lt;p&gt;========================&lt;/p&gt;
+
+&lt;h3 id=&quot;tehtävänanto&quot;&gt;Tehtävänanto&lt;/h3&gt;
+&lt;p&gt;a) Tee oma Linux-livetikku. Kokeile sitä jossain muussa kuin koulun koneessa. Tämä kohta ei edellytä asentamista – jos kuitenkin asennat, ota ensin varmuuskopiot.&lt;/p&gt;
+
+&lt;p&gt;b) Listaa testaamasi koneen rauta (‘sudo lshw -short -sanitize’).&lt;/p&gt;
+
+&lt;p&gt;c) Asenna kolme itsellesi uutta ohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa.&lt;/p&gt;
+
+&lt;p&gt;d) Mitä lisenssiä kukin näistä ohjelmista käyttää? Selitä lyhyesti, mitä oikeuksia ja velvolisuuksia tuosta lisenssistä seuraa.&lt;/p&gt;
+
+&lt;p&gt;d-&amp;gt;e) Listaa käyttämäsi ohjelmat (esim. MS Word), kunkin ohjelman käyttötarkoitus (esim. Tekstinkäsittely) ja vastaava vapaa Linux-ohjelma (esim. LibreOffice Writer). Jos johonkin tarkoitukseen ei löydy vapaata Linux-ohjelmaa, listaa sekin.&lt;/p&gt;
+
+&lt;p&gt;f) Vapaaehtoinen lisätehtävä: varmuuskopioi tiedostosi (voit käyttää esimerkiksi ulkoista USB-levyä)&lt;/p&gt;
+
+&lt;h1 id=&quot;a-boottaavan-linux-usb-tikun-luominen&quot;&gt;A) Boottaavan Linux USB-tikun luominen&lt;/h1&gt;
+
+&lt;h4 id=&quot;kohde--asus-qm1--x5-z8300-soc&quot;&gt;Kohde | Asus QM1 &amp;amp; x5-Z8300 SoC&lt;/h4&gt;
+&lt;p&gt;Päätin ottaa tässä kohtaa luonnollisesti yhden haastavimmista kohteista Linuxin pyörittämiseen. Käytössä on siis viimeisin (2017) versio QM1 tikusta x5-z8300 SoC:lla. Olen aikaisemminkin yrittänyt saada Asuksen QM1 - ‘PC-Tikkuun’ Linuxin asennettua.  En kuitenkaan tähän asti ole siinä onnistunut. Laitteessa on ilmeisesti samankaltainen UEFI BIOS muiden vastaavien Asuksen Atom ja Windows -pohjaisten halpojen kannattavien, tablettien ja jopa puhelimien kanssa. Kaikissa näissä laitteissa tulee mukana oletusarvoisesti Windows 8 tai Windows 10. Kyseinen PC-tikku pohjautuu ja muistuttaa hyvin vahvasti Intelin vastaavaa laitetta, mutta hieman ominaisuuksista riisuttuna. Näistä merkitsevimpinä toisen USB -liitännän (USB3) puuttuminen. &lt;a href=&quot;https://www.asus.com/fi/Stick-PCs/QM1/specifications/&quot;&gt;1&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;usb-tikun-luonti--easy2boot&quot;&gt;USB-tikun luonti | Easy2Boot&lt;/h4&gt;
+&lt;p&gt;Yleensä boottaavien USB-tikkujen asentamiseen olen tottunut käyttämään YUMI:a https://www.pendrivelinux.com/yumi-multiboot-usb-creator/ Aikaisempien huonojen kokemuksien johdosta etsin Googlella seuraavia vaihtoehtoja. Jotkut väittivät kaiken toimineen ilman ongelmia ‘tavallisin’ keinoin. Ainakin yksi &lt;a href=&quot;https://www.linuxquestions.org/questions/linux-hardware-18/asus-stick-pc-qm1-4175574279/#post5656074&quot;&gt;2&lt;/a&gt; oli maininnut Easy2Boot:n käytön. Olen joskus aikasemminkin käyttänyt samaa ohjelmaa kokeillessa erilaisia Windowsilla USB-tikkujen luontiin soveltuvia ohjelmia. Koko sovelluksen kätevin ominaisuus onkin varmaan se että siinä on eräänlainen oma bootloader, joka mahdollistaa pelkkien iso-tiedostojen lataamisen muistikortille. Etenkin hitailla muistikorteilla tämä säästää aikaa, kun kaikkia pieniä tiedostoja ei tarvitse purkaa erikseen.&lt;/p&gt;
+
+&lt;p&gt;Asensin E2B:n ensin USB-tikulle… Sitten USB-hubin kanssa säätäessä muistin juuri sen toisen USB-paikan puuttumisen laitteestani. USB-hubin läpi en luonnollisesti saanut USB-tikkua boottaamaan. Suoraan USB-tikun liittäminen laitteeseen ei myöskään paljon edistä asiaa, sillä sitten laitteeseen ei voi enää liittää näppäimistöä.&lt;/p&gt;
+
+&lt;p&gt;Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. – Ei löytynyt sen paremmin mitään boottivalikosta.&lt;/p&gt;
+
+&lt;p&gt;Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä “Boot from file”.. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media&lt;/p&gt;
+
+&lt;p&gt;Koska olin jo samasta microsd-kortista tehnyt boottaavan, ei seuraava vaihe vaatinut kuin ISO-tiedoston tiedostojen purkamisen ja siirtämisen sille. Huomiona tosin se, että E2B formatoi muistitikun oletuksena NTFS -formaattiin ja Asuksen UEFI-bios lukee FAT32 -tiedostojärjestelmiä.&lt;/p&gt;
+
+&lt;p&gt;Kuten kuitenkin aikaisemminkin, ei laite suostu boottaamaan tälläkään vaihtoehdolla vaan saan virheet \EFI\BOOT\BOOTx64.EFI bt failed. tai \EFI\BOOT\grubx64.efi boot failed. , riippuen kumpaa tiedostoa \BOOT -kansiossa yritän käyttää.&lt;/p&gt;
+
+&lt;p&gt;En osaa varsinaisesti sanoa miksi en aikaisemmin ollut törmännyt “ainoaan viimeiseen vaihtoehtoon”, eli Linuxiumin isorespin.sh:n https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html Isorespinin ohjeissa tiivistetään QM1 -kaltaisten laitteiden ongelmat, joka on siis 64-bittisten käyttöjärjestelmien boottaus ja asennus käyttäen 32-bittistä bootloaderia.. Mutta eipä onnistanut isorespinillä käyttäen Ubuntu Maten 16.04.3 -versiota. Tällä kertaa kuitenkin aikaisemmista kerroista eroavasti, tuli UEFI:n boottivalikkoon “Windows Boot Managerin” rinnalle uusi vaihtoehto “EFI SD/MMC Card”. Myös microSD-kortille puretun Ubuntu-asennuksen GRUB-valikkoon päästiin tälläkertaa. Nyt saatiin myös selvät virheilmoitukset!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;intel_ish_ipc 0000:00:0a.0: [ishtp-ish]: Timed out waiting for FW&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;intel_ish_ipc 0000:00:0a.0: [ishtp-ish]: ISH: hw start failed.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;intel_ish_ipc 0000:00:0a.0: [ishtp-ish]: ISH: PCI driver initialization failed&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Tämän jälkeen Busyboxin perus ash shelli käynnistyy ja tulee vielä virhe: &lt;em&gt;(initramfs) Unable to find a medium containing a live file system.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Käytännössä GUI:n valinnoilla tehty komento, jolla ISO-tiedosto saatiin ohjelmalla tehtyä on samanlainen kuin esimerkissä: 
+&lt;strong&gt;isorespin.sh -i ubuntu-17.04-desktop-amd64.iso -u -l rtl8723bs_4.12.0_amd64.deb -f linuxium-install-UCM-files.sh -f wrapper-linuxium-install-UCM-files.sh-c wrapper-linuxium-install-UCM-files.sh&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;asus-qm1--laitteen-käynnistys-live-cdltä-&quot;&gt;Asus QM1 -laitteen käynnistys live cd:ltä |&lt;/h4&gt;
+&lt;p&gt;Laitteen pitäisi käynnistyä UEFI-valikkoon ESC-näppäimellä, missään ei kuitenkaan varsinaisesti kerrottu missä tai miten tätä nappia pitäisi painaa, joten yleensä helpoin tapa päästä laitteen UEFI-valikkoon on käynnistää Windows uudestaan painamalla shift näppäintä valitessa “käynnistä uudelleen” tai “restart” vaihtoehtoa. Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa.&lt;/p&gt;
+
+&lt;h1 id=&quot;b-koneen-rauta-sudo-lshw--short--sanitize&quot;&gt;B) Koneen rauta sudo lshw -short -sanitize&lt;/h1&gt;
+&lt;p&gt;Koska en keksinyt Asuksen laitteen jälkeen mielenkiintoisempaakaan laitetta, niin kaivoin kaapin pohjalta yhden taannoin parhaiten Linux-tuetuista tietokoneista. Vuoden 2005 Thinkpad T43:n.
+Komentoa &lt;strong&gt;sudo lshw -short -sanitize&lt;/strong&gt; -käyttäen saatiin seuraavat tiedot: … ja eipäs saatukkaan, sillä T43 ei käynnistynytkään enää uusimmalla Ubuntun versiolla vaan stoppasi ilmeisesti ennen GRUB:n avautumista kohtaan &lt;em&gt;Cannot find grldr&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Eli raudan paikalla on nyt siis X220, eli koulukoneeni tiedot: https://github.com/rkantos/rkantos.github.io/blob/master/Linux%20Palvelimet%202017-3/X220%20lshw&lt;/p&gt;
+
+&lt;h1 id=&quot;c-uusien-ohjelmien-testaus&quot;&gt;C) Uusien ohjelmien testaus&lt;/h1&gt;
+
+&lt;h4 id=&quot;neofetch-9--yksinkertainen-järjestelmä-ja-käyttöjärjestelmätietojen-näyttö&quot;&gt;NeoFetch &lt;a href=&quot;https://github.com/dylanaraps/neofetch&quot;&gt;9&lt;/a&gt; | Yksinkertainen järjestelmä ja käyttöjärjestelmätietojen näyttö&lt;/h4&gt;
+&lt;p&gt;Tuleekin todennäköisesti tarpeeseen usein.. Useamman virtuaalipalvelimen kanssa ilman lxc:tä, Dockereita tai Kubernetejä tai mitään muuta monen palvelimen hallintaan tarkoitettua sovellusta unohtaa aina välillä mikä tarkka versio Ubuntusta tai Debianista olikaan käytössä. &lt;strong&gt;Uname -a&lt;/strong&gt; &amp;amp; &lt;strong&gt;lsb_release -a&lt;/strong&gt; komennoilla selviää Kernel ja distron versio. &lt;strong&gt;lscpu&lt;/strong&gt; komennolla selvittää prosessorin mallin ja tiedot, &lt;strong&gt;top:lla&lt;/strong&gt; ja &lt;strong&gt;htop:lla&lt;/strong&gt; selviää muistinkäyttö. NeoFetchillä selviää kuitenkin nämä kaikki ja vähän lisää.
+NeoFetchin voi asentaa lisäämällä PPA:n:
+sudo add-apt-repository ppa:dawidd0811/neofetch
+sudo apt update
+sudo apt install neofetch&lt;/p&gt;
+
+&lt;h4 id=&quot;peek-10--tehokas-ohjelma-gif-animoitujen-ruutukappausvideoiden-tekoon&quot;&gt;Peek &lt;a href=&quot;https://github.com/phw/peek&quot;&gt;10&lt;/a&gt; | Tehokas ohjelma GIF-animoitujen ruutukappausvideoiden tekoon&lt;/h4&gt;
+&lt;p&gt;Peek on erittäin helppokäyttöinen ja tehokas ohjelma pienien ruutukaappausvideoiden tekoon. Videot voi tehdä GIF, WebM tai mp4 -muotoon. Ensimmäinen on yhteensopiva melkein minkä tahansa selaimen kanssa (paitsi lynx tai links jne) ja WebM sekä mp4-videot toistuvat uusimmilla HTML5:sta tukevilla selaimilla ilman ongelmia.
+Peekin voi asentaa Ubuntuun lisäämällä PPA:n:
+Peekillä tälläisen luominen onnistui alle kahdessa minuutissa sovelluksen asentaminen mukaanlukien:
+&lt;img src=&quot;https://rkantos.github.io/blog/peek-testi.gif&quot; alt=&quot;Peek:n nopea testaus&quot; title=&quot;apt-get&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;sudo add-apt-repository ppa:peek-developers/stable
+sudo apt update
+sudo apt install peek&lt;/p&gt;
+
+&lt;h4 id=&quot;undistract-me-11--ilmoitus-pitkien-komentojen-loppumisesta&quot;&gt;undistract-me &lt;a href=&quot;https://github.com/jml/undistract-me&quot;&gt;11&lt;/a&gt; | Ilmoitus pitkien komentojen loppumisesta&lt;/h4&gt;
+&lt;p&gt;undistract-me:n tarkoitus on toimia komentokehoitteessa niin, että se havaitsee pitkään juoksevat komennot. Oletuksena undistract-me menee päälle kun jokin komento on pyörinyt kymmenen sekunnin ajan. Sovelluksen tarkoituksena on tehostaa työaikaa, sillä se ilmoittaa komennon suorituksen loppuneen. Näin voi käyttää muun ajan tehokkaasti vaikka seuraavan komennon etsimiseen ja jatkaa komentojen antamista heti edellisen loppumisen jälkeen, hukkaamatta aikaa komentokehoitteen tuijottamiseen.&lt;/p&gt;
+
+&lt;p&gt;undistract-me löytyy suoraan Ubuntun ohjelmavarastosta ja sen voi asentaa suoraan komennolla:
+sudo apt install undistract-me&lt;/p&gt;
+
+&lt;h1 id=&quot;d-ohjelmistojen-lisenssit&quot;&gt;D) Ohjelmistojen lisenssit&lt;/h1&gt;
+&lt;p&gt;NeoFetch käyttää MIT -lisenssiä, joka sallii sen muokkaamisen ja käyttämisen muualla, kunhan lisenssi on muokatussa lähdekoodissa mukana. MIT-lisenssiä voidaan käyttää myös suljetun lähdekoodin ohjelmistoissa. &lt;a href=&quot;https://www.sofokus.com/blogi/avoin-lahdekoodi/&quot;&gt;12&lt;/a&gt;
+Peek on lisensoitu GPL:llä. GPL-lisenssi on Free Software Foundationin ylläpitämä lisenssi ja on täten täysin avoimien ohjelmistojen määritelmien mukainen. &lt;a href=&quot;https://www.gnu.org/philosophy/free-sw.html&quot;&gt;13&lt;/a&gt;
+undistract-me käyttää Expat/MIT-lisenssiä, joka on yhteensopiva GPL:n kanssa. &lt;a href=&quot;https://www.gnu.org/licenses/license-list.html#Expat&quot;&gt;14&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;e-linuxilla-käyttämäni-ohjelmat&quot;&gt;E) Linuxilla käyttämäni ohjelmat&lt;/h1&gt;
+
+&lt;h4 id=&quot;nettiselain-&quot;&gt;Nettiselain |&lt;/h4&gt;
+&lt;p&gt;Windowsilla käytän luonnollisesti Chromea, kuten kuka tahansa Googlen palveluita käyttävä. Google vain tuntuu johtaneen kehitystä selaimissa jo lähes vuosikymmenen! Ubuntulle ja muille Distroille on toki saatavissa Chrome, mutta Chromium ainakin “yrittää” olla avoimeen lähdekoodiin perustuva. Suurin osa Chromiumin lähdekoodista on BSD- ja MIT-lisensseihin perustuvaa. Chromium on siinä mielessä hyvä että se sopii ainakin jonkinlaiseen “foliohattuiluun”, sillä oletuksena monet Googlen palveluihin nojaavat toiminnot eivät (2013 jälkeen &lt;a href=&quot;https://www.chromium.org/developers/how-tos/api-keys&quot;&gt;3&lt;/a&gt; ) ilman kikkailua enää toimi &lt;a href=&quot;https://askubuntu.com/questions/225930/how-do-i-get-the-latest-beta-and-development-version-of-chromium&quot;&gt;4&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;tekstinkäsittely--toimistosovellukset-&quot;&gt;Tekstinkäsittely &amp;amp; toimistosovellukset |&lt;/h4&gt;
+&lt;p&gt;Omalla dualboot Ubuntu-kannettavalla käytän hyvin harvoin MS Wordiin verrattavissa olevia tekstinkäsittelyohjelmia. Pääosin käytänkin Nextcloudin kanssa hyvin yhteen pelaavaa &lt;strong&gt;QOwnNotesia, Google Docsia Chromiumilla, Katea&lt;/strong&gt; (KDE:n ylläpitämä Notepad++ tyyppinen tekstieditori) ja tietenkin komentokehotteessa &lt;strong&gt;Nanoa&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Kuvakaappauksien ottamiseen en ole Linuxille löytänyt vielä yhtä sulavasti ja hyvin toimivaa kuvakaappaus-ohjelmaa kuin &lt;strong&gt;Greenshot&lt;/strong&gt;. Greenshotilla voi nopeasti ottaa kuvan haluamastaan näytön kohdasta ja tallentaa sen haluammillaan ennalta määritellyillä asetuksilla. Greenshotissa on myös suoraan hyvin toimiva Imgur-latausvaihtoehto. Linuxilla käytän &lt;strong&gt;imgur-screenshot&lt;/strong&gt; -skriptiä &lt;a href=&quot;https://www.spotify.com/fi/download/linux/&quot;&gt;6&lt;/a&gt;, joka hoitaa ainakin Imgur-latauksen sulavasti, mutta pyörii muuten vain taustalla.&lt;/p&gt;
+
+&lt;h4 id=&quot;media-musiikki-videot-&quot;&gt;Media, musiikki, videot |&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Spotify&lt;/strong&gt; on yleensä päällä ja pyörii suoraan Spotifyn omasta asiakasohjelmasta. &lt;a href=&quot;https://github.com/jomo/imgur-screenshot&quot;&gt;5&lt;/a&gt; Muut mediatiedostot toistan VLC:llä, oli ne sitten paikallisia tai verkosta striimattavia. Myös Windowsilla kaikki hoituu samoilla ohjelmilla, joskin Spotifysta on vielä käytössä se “ainoa oikea” versio eli 0.9.7 &lt;a href=&quot;https://www.spotify.com/fi/download/linux/&quot;&gt;6&lt;/a&gt;. Ks. myös muutaman muun täydellisesti kuvaamat tunteeni Spotifyn huonoimmasta uudistuksesta: https://www.reddit.com/r/spotify/comments/2y6a68/spotify_update_1011060gc75ebdfd_mega_discussion/cp9ozqf/ Ubuntulla Spotifyn ohjelmavaraston lisänneenä voi lähimmäksi pääsee Spotify:n versiolla 0.9.17. Version voi asentaa komennolla &lt;strong&gt;sudo apt-get install spotify-client-0.9.17&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;pelaaminen-&quot;&gt;Pelaaminen |&lt;/h4&gt;
+&lt;p&gt;Pääasiassa pelaamani pelit eivät toimi Linuxeilla edes Winellä. Uusimmat pelit toimivat käytännössä vain DirectX 10 tai 11 turvin. Winen tukema viimeisin DirectX versio on tänään (Elokuu 2017) DirectX 9.0c &lt;a href=&quot;https://archive.is/20161008213028/https://wiki.winehq.org/FAQ%23Does_Wine_support_.NET.3F_Should_I_install_native_.NET_in_Wine.3F&quot;&gt;7&lt;/a&gt;. Olen toki unelmoinut pitkään että koko työpöytäympäristön voisi siirtää virtualisoituun ympäristöön ja täten vain pelejä voisi ajaa omissa Windows-virtuaalikoneissa. Tämäkin on ainakin vielä 2017 loputon suo (ajallisesti ja taloudellisesti), sillä pelaamani pelit kuten Battlefield 3,4 tai 1 vaativat käytännössä kaikki käytettävissä olevat resurssit. IOMMU / PCIe passthrough:n pohjautuvat ratkaisut ovat kyllä mahdollistaneet tälläiset ratkaisut jo useamman vuoden, mutta sekä ratkaisujen testaamattomuuden ja tuen puutteen takia en ole niihin vielä ehtinyt. Ks. Toimiviksi väitetyt GPU passthroughta käyttävät ratkaisut: https://www.reddit.com/r/pcmasterrace/comments/2z0evz/gpu_passthrough_or_how_to_play_any_game_at_near/ ja https://www.reddit.com/r/linux_gaming/comments/5yhxqf/quick_gpu_passthrough_guide/ Täällä myös hieman suorituskykytestejä: https://forum.level1techs.com/t/how-fast-is-kvm-host-vs-virtual-machine-performance/110192 
+Ongelmaksi jää myös Windows-lisensointi, johon periaatteessa jokaiselle virtualisoidulle Windowsille täytyisi hommata retail -lisenssi.&lt;/p&gt;
+
+&lt;p&gt;Joitakin harvemmin pelaamiani pelejä löytyy Linuxillekkin natiivina, kuten lapsuusvuosien suossikkini Transport Tycoon Deluxe. Pelistä on tehty käytännössä avoimen lähdekoodin (GPL) kopio, OpenTTD, joka vastaa vanhaa alunperin DOS:lla pyörinyttä Transport Tycoonin ‘Deluxe’ -versiota. Avoimen lähdekoodin versioon on lisätty paljon ominaisuuksia, modeja ja tietenkin suorituskykyparannuksia. Peli toimii natiivisti myös Windowsilla. Myös monet Half Life 2:n pelimoottoria käyttävät pelit, Half Life 1, HL2, Left 4 Dead, Team Fortress 2 ja Portal ovat toimineet Linuxilla vuodesta 2013.&lt;/p&gt;
+
+&lt;h4 id=&quot;työpöydän-etäohjaus-järjestelmäriippumaton-&quot;&gt;Työpöydän etäohjaus (järjestelmäriippumaton) |&lt;/h4&gt;
+&lt;p&gt;Windowsilla ja Linuxilla käytän Teamvieweriä, joka on ehdottomasti tämän hetken paras työkalu sekä Windows ja Linux työpöytien etäkäyttöön tai ohjaukseen. Ei-kaupallisessa käytössä Teamviewer on ilmainen. Teamvieweristä on saatavilla omat versiot käytännössä kaikille Linux-distroille. Kaikella hyvällä on kuitenkin huonot puolensa… Teamviewerin lähdekoodi on luonnollisesti täysin suljettua.&lt;/p&gt;
+
+&lt;p&gt;Silloin tällöin käytän myös eri VNC-ohjelmia ja palvelimia, kuten TightVNC:tä ja TigerVNC:tä. Viimeaikoina olen kokeillut myös RDP:tä Linuxilla xRDP:llä. Teamviewer on kuitenkin edelleen kätevin ja tuskattomin, johtuen Teamviewerin palomuurien läpäisykyvystä. Samanlaista avoimen lähdekoodin versiota RDP:stä tai vaikka VNC:stä odotellessa…&lt;/p&gt;
+
+&lt;h3 id=&quot;lähteet-&quot;&gt;Lähteet |&lt;/h3&gt;
+
+&lt;p&gt;[1: https://www.asus.com/fi/Stick-PCs/QM1/specifications/&lt;/p&gt;
+
+&lt;p&gt;[2: https://www.linuxquestions.org/questions/linux-hardware-18/asus-stick-pc-qm1-4175574279/#post5656074&lt;/p&gt;
+
+&lt;p&gt;[3: https://www.chromium.org/developers/how-tos/api-keys&lt;/p&gt;
+
+&lt;p&gt;[4: https://askubuntu.com/questions/225930/how-do-i-get-the-latest-beta-and-development-version-of-chromium&lt;/p&gt;
+
+&lt;p&gt;[5: https://github.com/jomo/imgur-screenshot&lt;/p&gt;
+
+&lt;p&gt;[6: https://www.spotify.com/fi/download/linux/&lt;/p&gt;
+
+&lt;p&gt;[7: https://archive.is/20161008213028/https://wiki.winehq.org/FAQ%23Does_Wine_support_.NET.3F_Should_I_install_native_.NET_in_Wine.3F&lt;/p&gt;
+
+&lt;p&gt;[8: http://www.javiersantos.me/post/82199053318/download-for-win-os-x-turn-back-to-the-previous-spotify&lt;/p&gt;
+
+&lt;p&gt;[9: https://github.com/dylanaraps/neofetch&lt;/p&gt;
+
+&lt;p&gt;[10: https://github.com/phw/peek&lt;/p&gt;
+
+&lt;p&gt;[11: https://github.com/jml/undistract-me&lt;/p&gt;
+
+&lt;p&gt;[12: https://www.sofokus.com/blogi/avoin-lahdekoodi/&lt;/p&gt;
+
+&lt;p&gt;[13: https://www.gnu.org/philosophy/free-sw.html&lt;/p&gt;
+
+&lt;p&gt;[14: https://www.gnu.org/licenses/license-list.html#Expat&lt;/p&gt;
+
+&lt;p&gt;[15: https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="haaga-helia" /><category term="koulu" /><category term="infra" /><category term="such" /><category term="wow" /><category term="test" /><category term="tags" /><summary type="html">Publish H1 22.8.2017 ‘Livetikku’ ========================</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/blog/jekyll/update/2017/08/22/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-08-22T16:47:47+03:00</published><updated>2017-08-22T16:47:47+03:00</updated><id>http://localhost:4000/blog/jekyll/update/2017/08/22/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/update/2017/08/22/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>

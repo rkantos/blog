@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Linux palvelimet ICT4TN021 2017 H1</title>
+  <meta name="description" content="Publish H1 22.8.2017 ‘Livetikku’ ========================">
+
+  <link rel="stylesheet" href="/blog/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/blog/2017/08/28/Linux-Palvelimet-H1.html">
+  <link rel="alternate" type="application/rss+xml" title="Rkantos&#39;s projects and endeavors in mostly educational times" href="/blog/feed.xml">
+  
+  
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/blog/">Rkantos&#39;s projects and endeavors in mostly educational times</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/blog/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Linux palvelimet ICT4TN021 2017 H1</h1>
+    <p class="post-meta">
+      <time datetime="2017-08-28T00:00:00+03:00" itemprop="datePublished">
+        
+        Aug 28, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="publish-h1-2282017-livetikku">Publish H1 22.8.2017 ‘Livetikku’</h1>
+<p>========================</p>
+
+<h3 id="tehtävänanto">Tehtävänanto</h3>
+<p>a) Tee oma Linux-livetikku. Kokeile sitä jossain muussa kuin koulun koneessa. Tämä kohta ei edellytä asentamista – jos kuitenkin asennat, ota ensin varmuuskopiot.</p>
+
+<p>b) Listaa testaamasi koneen rauta (‘sudo lshw -short -sanitize’).</p>
+
+<p>c) Asenna kolme itsellesi uutta ohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa.</p>
+
+<p>d) Mitä lisenssiä kukin näistä ohjelmista käyttää? Selitä lyhyesti, mitä oikeuksia ja velvolisuuksia tuosta lisenssistä seuraa.</p>
+
+<p>d-&gt;e) Listaa käyttämäsi ohjelmat (esim. MS Word), kunkin ohjelman käyttötarkoitus (esim. Tekstinkäsittely) ja vastaava vapaa Linux-ohjelma (esim. LibreOffice Writer). Jos johonkin tarkoitukseen ei löydy vapaata Linux-ohjelmaa, listaa sekin.</p>
+
+<p>f) Vapaaehtoinen lisätehtävä: varmuuskopioi tiedostosi (voit käyttää esimerkiksi ulkoista USB-levyä)</p>
+
+<h1 id="a-boottaavan-linux-usb-tikun-luominen">A) Boottaavan Linux USB-tikun luominen</h1>
+
+<h4 id="kohde--asus-qm1--x5-z8300-soc">Kohde | Asus QM1 &amp; x5-Z8300 SoC</h4>
+<p>Päätin ottaa tässä kohtaa luonnollisesti yhden haastavimmista kohteista Linuxin pyörittämiseen. Käytössä on siis viimeisin (2017) versio QM1 tikusta x5-z8300 SoC:lla. Olen aikaisemminkin yrittänyt saada Asuksen QM1 - ‘PC-Tikkuun’ Linuxin asennettua.  En kuitenkaan tähän asti ole siinä onnistunut. Laitteessa on ilmeisesti samankaltainen UEFI BIOS muiden vastaavien Asuksen Atom ja Windows -pohjaisten halpojen kannattavien, tablettien ja jopa puhelimien kanssa. Kaikissa näissä laitteissa tulee mukana oletusarvoisesti Windows 8 tai Windows 10. Kyseinen PC-tikku pohjautuu ja muistuttaa hyvin vahvasti Intelin vastaavaa laitetta, mutta hieman ominaisuuksista riisuttuna. Näistä merkitsevimpinä toisen USB -liitännän (USB3) puuttuminen. <a href="https://www.asus.com/fi/Stick-PCs/QM1/specifications/">1</a></p>
+
+<h4 id="usb-tikun-luonti--easy2boot">USB-tikun luonti | Easy2Boot</h4>
+<p>Yleensä boottaavien USB-tikkujen asentamiseen olen tottunut käyttämään YUMI:a https://www.pendrivelinux.com/yumi-multiboot-usb-creator/ Aikaisempien huonojen kokemuksien johdosta etsin Googlella seuraavia vaihtoehtoja. Jotkut väittivät kaiken toimineen ilman ongelmia ‘tavallisin’ keinoin. Ainakin yksi <a href="https://www.linuxquestions.org/questions/linux-hardware-18/asus-stick-pc-qm1-4175574279/#post5656074">2</a> oli maininnut Easy2Boot:n käytön. Olen joskus aikasemminkin käyttänyt samaa ohjelmaa kokeillessa erilaisia Windowsilla USB-tikkujen luontiin soveltuvia ohjelmia. Koko sovelluksen kätevin ominaisuus onkin varmaan se että siinä on eräänlainen oma bootloader, joka mahdollistaa pelkkien iso-tiedostojen lataamisen muistikortille. Etenkin hitailla muistikorteilla tämä säästää aikaa, kun kaikkia pieniä tiedostoja ei tarvitse purkaa erikseen.</p>
+
+<p>Asensin E2B:n ensin USB-tikulle… Sitten USB-hubin kanssa säätäessä muistin juuri sen toisen USB-paikan puuttumisen laitteestani. USB-hubin läpi en luonnollisesti saanut USB-tikkua boottaamaan. Suoraan USB-tikun liittäminen laitteeseen ei myöskään paljon edistä asiaa, sillä sitten laitteeseen ei voi enää liittää näppäimistöä.</p>
+
+<p>Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. – Ei löytynyt sen paremmin mitään boottivalikosta.</p>
+
+<p>Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä “Boot from file”.. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media</p>
+
+<p>Koska olin jo samasta microsd-kortista tehnyt boottaavan, ei seuraava vaihe vaatinut kuin ISO-tiedoston tiedostojen purkamisen ja siirtämisen sille. Huomiona tosin se, että E2B formatoi muistitikun oletuksena NTFS -formaattiin ja Asuksen UEFI-bios lukee FAT32 -tiedostojärjestelmiä.</p>
+
+<p>Kuten kuitenkin aikaisemminkin, ei laite suostu boottaamaan tälläkään vaihtoehdolla vaan saan virheet \EFI\BOOT\BOOTx64.EFI bt failed. tai \EFI\BOOT\grubx64.efi boot failed. , riippuen kumpaa tiedostoa \BOOT -kansiossa yritän käyttää.</p>
+
+<p>En osaa varsinaisesti sanoa miksi en aikaisemmin ollut törmännyt “ainoaan viimeiseen vaihtoehtoon”, eli Linuxiumin isorespin.sh:n https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html Isorespinin ohjeissa tiivistetään QM1 -kaltaisten laitteiden ongelmat, joka on siis 64-bittisten käyttöjärjestelmien boottaus ja asennus käyttäen 32-bittistä bootloaderia.. Mutta eipä onnistanut isorespinillä käyttäen Ubuntu Maten 16.04.3 -versiota. Tällä kertaa kuitenkin aikaisemmista kerroista eroavasti, tuli UEFI:n boottivalikkoon “Windows Boot Managerin” rinnalle uusi vaihtoehto “EFI SD/MMC Card”. Myös microSD-kortille puretun Ubuntu-asennuksen GRUB-valikkoon päästiin tälläkertaa. Nyt saatiin myös selvät virheilmoitukset!</p>
+
+<p><em>intel_ish_ipc 0000:00:0a.0: [ishtp-ish]: Timed out waiting for FW</em></p>
+
+<p><em>intel_ish_ipc 0000:00:0a.0: [ishtp-ish]: ISH: hw start failed.</em></p>
+
+<p><em>intel_ish_ipc 0000:00:0a.0: [ishtp-ish]: ISH: PCI driver initialization failed</em></p>
+
+<p>Tämän jälkeen Busyboxin perus ash shelli käynnistyy ja tulee vielä virhe: <em>(initramfs) Unable to find a medium containing a live file system.</em></p>
+
+<p>Käytännössä GUI:n valinnoilla tehty komento, jolla ISO-tiedosto saatiin ohjelmalla tehtyä on samanlainen kuin esimerkissä: 
+<strong>isorespin.sh -i ubuntu-17.04-desktop-amd64.iso -u -l rtl8723bs_4.12.0_amd64.deb -f linuxium-install-UCM-files.sh -f wrapper-linuxium-install-UCM-files.sh-c wrapper-linuxium-install-UCM-files.sh</strong></p>
+
+<h4 id="asus-qm1--laitteen-käynnistys-live-cdltä-">Asus QM1 -laitteen käynnistys live cd:ltä |</h4>
+<p>Laitteen pitäisi käynnistyä UEFI-valikkoon ESC-näppäimellä, missään ei kuitenkaan varsinaisesti kerrottu missä tai miten tätä nappia pitäisi painaa, joten yleensä helpoin tapa päästä laitteen UEFI-valikkoon on käynnistää Windows uudestaan painamalla shift näppäintä valitessa “käynnistä uudelleen” tai “restart” vaihtoehtoa. Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa.</p>
+
+<h1 id="b-koneen-rauta-sudo-lshw--short--sanitize">B) Koneen rauta sudo lshw -short -sanitize</h1>
+<p>Koska en keksinyt Asuksen laitteen jälkeen mielenkiintoisempaakaan laitetta, niin kaivoin kaapin pohjalta yhden taannoin parhaiten Linux-tuetuista tietokoneista. Vuoden 2005 Thinkpad T43:n.
+Komentoa <strong>sudo lshw -short -sanitize</strong> -käyttäen saatiin seuraavat tiedot: … ja eipäs saatukkaan, sillä T43 ei käynnistynytkään enää uusimmalla Ubuntun versiolla vaan stoppasi ilmeisesti ennen GRUB:n avautumista kohtaan <em>Cannot find grldr</em></p>
+
+<p>Eli raudan paikalla on nyt siis X220, eli koulukoneeni tiedot: https://github.com/rkantos/rkantos.github.io/blob/master/Linux%20Palvelimet%202017-3/X220%20lshw</p>
+
+<h1 id="c-uusien-ohjelmien-testaus">C) Uusien ohjelmien testaus</h1>
+
+<h4 id="neofetch-9--yksinkertainen-järjestelmä-ja-käyttöjärjestelmätietojen-näyttö">NeoFetch <a href="https://github.com/dylanaraps/neofetch">9</a> | Yksinkertainen järjestelmä ja käyttöjärjestelmätietojen näyttö</h4>
+<p>Tuleekin todennäköisesti tarpeeseen usein.. Useamman virtuaalipalvelimen kanssa ilman lxc:tä, Dockereita tai Kubernetejä tai mitään muuta monen palvelimen hallintaan tarkoitettua sovellusta unohtaa aina välillä mikä tarkka versio Ubuntusta tai Debianista olikaan käytössä. <strong>Uname -a</strong> &amp; <strong>lsb_release -a</strong> komennoilla selviää Kernel ja distron versio. <strong>lscpu</strong> komennolla selvittää prosessorin mallin ja tiedot, <strong>top:lla</strong> ja <strong>htop:lla</strong> selviää muistinkäyttö. NeoFetchillä selviää kuitenkin nämä kaikki ja vähän lisää.
+NeoFetchin voi asentaa lisäämällä PPA:n:
+sudo add-apt-repository ppa:dawidd0811/neofetch
+sudo apt update
+sudo apt install neofetch</p>
+
+<h4 id="peek-10--tehokas-ohjelma-gif-animoitujen-ruutukappausvideoiden-tekoon">Peek <a href="https://github.com/phw/peek">10</a> | Tehokas ohjelma GIF-animoitujen ruutukappausvideoiden tekoon</h4>
+<p>Peek on erittäin helppokäyttöinen ja tehokas ohjelma pienien ruutukaappausvideoiden tekoon. Videot voi tehdä GIF, WebM tai mp4 -muotoon. Ensimmäinen on yhteensopiva melkein minkä tahansa selaimen kanssa (paitsi lynx tai links jne) ja WebM sekä mp4-videot toistuvat uusimmilla HTML5:sta tukevilla selaimilla ilman ongelmia.
+Peekin voi asentaa Ubuntuun lisäämällä PPA:n:
+Peekillä tälläisen luominen onnistui alle kahdessa minuutissa sovelluksen asentaminen mukaanlukien:
+<img src="https://rkantos.github.io/blog/peek-testi.gif" alt="Peek:n nopea testaus" title="apt-get" /></p>
+
+<p>sudo add-apt-repository ppa:peek-developers/stable
+sudo apt update
+sudo apt install peek</p>
+
+<h4 id="undistract-me-11--ilmoitus-pitkien-komentojen-loppumisesta">undistract-me <a href="https://github.com/jml/undistract-me">11</a> | Ilmoitus pitkien komentojen loppumisesta</h4>
+<p>undistract-me:n tarkoitus on toimia komentokehoitteessa niin, että se havaitsee pitkään juoksevat komennot. Oletuksena undistract-me menee päälle kun jokin komento on pyörinyt kymmenen sekunnin ajan. Sovelluksen tarkoituksena on tehostaa työaikaa, sillä se ilmoittaa komennon suorituksen loppuneen. Näin voi käyttää muun ajan tehokkaasti vaikka seuraavan komennon etsimiseen ja jatkaa komentojen antamista heti edellisen loppumisen jälkeen, hukkaamatta aikaa komentokehoitteen tuijottamiseen.</p>
+
+<p>undistract-me löytyy suoraan Ubuntun ohjelmavarastosta ja sen voi asentaa suoraan komennolla:
+sudo apt install undistract-me</p>
+
+<h1 id="d-ohjelmistojen-lisenssit">D) Ohjelmistojen lisenssit</h1>
+<p>NeoFetch käyttää MIT -lisenssiä, joka sallii sen muokkaamisen ja käyttämisen muualla, kunhan lisenssi on muokatussa lähdekoodissa mukana. MIT-lisenssiä voidaan käyttää myös suljetun lähdekoodin ohjelmistoissa. <a href="https://www.sofokus.com/blogi/avoin-lahdekoodi/">12</a>
+Peek on lisensoitu GPL:llä. GPL-lisenssi on Free Software Foundationin ylläpitämä lisenssi ja on täten täysin avoimien ohjelmistojen määritelmien mukainen. <a href="https://www.gnu.org/philosophy/free-sw.html">13</a>
+undistract-me käyttää Expat/MIT-lisenssiä, joka on yhteensopiva GPL:n kanssa. <a href="https://www.gnu.org/licenses/license-list.html#Expat">14</a></p>
+
+<h1 id="e-linuxilla-käyttämäni-ohjelmat">E) Linuxilla käyttämäni ohjelmat</h1>
+
+<h4 id="nettiselain-">Nettiselain |</h4>
+<p>Windowsilla käytän luonnollisesti Chromea, kuten kuka tahansa Googlen palveluita käyttävä. Google vain tuntuu johtaneen kehitystä selaimissa jo lähes vuosikymmenen! Ubuntulle ja muille Distroille on toki saatavissa Chrome, mutta Chromium ainakin “yrittää” olla avoimeen lähdekoodiin perustuva. Suurin osa Chromiumin lähdekoodista on BSD- ja MIT-lisensseihin perustuvaa. Chromium on siinä mielessä hyvä että se sopii ainakin jonkinlaiseen “foliohattuiluun”, sillä oletuksena monet Googlen palveluihin nojaavat toiminnot eivät (2013 jälkeen <a href="https://www.chromium.org/developers/how-tos/api-keys">3</a> ) ilman kikkailua enää toimi <a href="https://askubuntu.com/questions/225930/how-do-i-get-the-latest-beta-and-development-version-of-chromium">4</a></p>
+
+<h4 id="tekstinkäsittely--toimistosovellukset-">Tekstinkäsittely &amp; toimistosovellukset |</h4>
+<p>Omalla dualboot Ubuntu-kannettavalla käytän hyvin harvoin MS Wordiin verrattavissa olevia tekstinkäsittelyohjelmia. Pääosin käytänkin Nextcloudin kanssa hyvin yhteen pelaavaa <strong>QOwnNotesia, Google Docsia Chromiumilla, Katea</strong> (KDE:n ylläpitämä Notepad++ tyyppinen tekstieditori) ja tietenkin komentokehotteessa <strong>Nanoa</strong>.</p>
+
+<p>Kuvakaappauksien ottamiseen en ole Linuxille löytänyt vielä yhtä sulavasti ja hyvin toimivaa kuvakaappaus-ohjelmaa kuin <strong>Greenshot</strong>. Greenshotilla voi nopeasti ottaa kuvan haluamastaan näytön kohdasta ja tallentaa sen haluammillaan ennalta määritellyillä asetuksilla. Greenshotissa on myös suoraan hyvin toimiva Imgur-latausvaihtoehto. Linuxilla käytän <strong>imgur-screenshot</strong> -skriptiä <a href="https://www.spotify.com/fi/download/linux/">6</a>, joka hoitaa ainakin Imgur-latauksen sulavasti, mutta pyörii muuten vain taustalla.</p>
+
+<h4 id="media-musiikki-videot-">Media, musiikki, videot |</h4>
+<p><strong>Spotify</strong> on yleensä päällä ja pyörii suoraan Spotifyn omasta asiakasohjelmasta. <a href="https://github.com/jomo/imgur-screenshot">5</a> Muut mediatiedostot toistan VLC:llä, oli ne sitten paikallisia tai verkosta striimattavia. Myös Windowsilla kaikki hoituu samoilla ohjelmilla, joskin Spotifysta on vielä käytössä se “ainoa oikea” versio eli 0.9.7 <a href="https://www.spotify.com/fi/download/linux/">6</a>. Ks. myös muutaman muun täydellisesti kuvaamat tunteeni Spotifyn huonoimmasta uudistuksesta: https://www.reddit.com/r/spotify/comments/2y6a68/spotify_update_1011060gc75ebdfd_mega_discussion/cp9ozqf/ Ubuntulla Spotifyn ohjelmavaraston lisänneenä voi lähimmäksi pääsee Spotify:n versiolla 0.9.17. Version voi asentaa komennolla <strong>sudo apt-get install spotify-client-0.9.17</strong></p>
+
+<h4 id="pelaaminen-">Pelaaminen |</h4>
+<p>Pääasiassa pelaamani pelit eivät toimi Linuxeilla edes Winellä. Uusimmat pelit toimivat käytännössä vain DirectX 10 tai 11 turvin. Winen tukema viimeisin DirectX versio on tänään (Elokuu 2017) DirectX 9.0c <a href="https://archive.is/20161008213028/https://wiki.winehq.org/FAQ%23Does_Wine_support_.NET.3F_Should_I_install_native_.NET_in_Wine.3F">7</a>. Olen toki unelmoinut pitkään että koko työpöytäympäristön voisi siirtää virtualisoituun ympäristöön ja täten vain pelejä voisi ajaa omissa Windows-virtuaalikoneissa. Tämäkin on ainakin vielä 2017 loputon suo (ajallisesti ja taloudellisesti), sillä pelaamani pelit kuten Battlefield 3,4 tai 1 vaativat käytännössä kaikki käytettävissä olevat resurssit. IOMMU / PCIe passthrough:n pohjautuvat ratkaisut ovat kyllä mahdollistaneet tälläiset ratkaisut jo useamman vuoden, mutta sekä ratkaisujen testaamattomuuden ja tuen puutteen takia en ole niihin vielä ehtinyt. Ks. Toimiviksi väitetyt GPU passthroughta käyttävät ratkaisut: https://www.reddit.com/r/pcmasterrace/comments/2z0evz/gpu_passthrough_or_how_to_play_any_game_at_near/ ja https://www.reddit.com/r/linux_gaming/comments/5yhxqf/quick_gpu_passthrough_guide/ Täällä myös hieman suorituskykytestejä: https://forum.level1techs.com/t/how-fast-is-kvm-host-vs-virtual-machine-performance/110192 
+Ongelmaksi jää myös Windows-lisensointi, johon periaatteessa jokaiselle virtualisoidulle Windowsille täytyisi hommata retail -lisenssi.</p>
+
+<p>Joitakin harvemmin pelaamiani pelejä löytyy Linuxillekkin natiivina, kuten lapsuusvuosien suossikkini Transport Tycoon Deluxe. Pelistä on tehty käytännössä avoimen lähdekoodin (GPL) kopio, OpenTTD, joka vastaa vanhaa alunperin DOS:lla pyörinyttä Transport Tycoonin ‘Deluxe’ -versiota. Avoimen lähdekoodin versioon on lisätty paljon ominaisuuksia, modeja ja tietenkin suorituskykyparannuksia. Peli toimii natiivisti myös Windowsilla. Myös monet Half Life 2:n pelimoottoria käyttävät pelit, Half Life 1, HL2, Left 4 Dead, Team Fortress 2 ja Portal ovat toimineet Linuxilla vuodesta 2013.</p>
+
+<h4 id="työpöydän-etäohjaus-järjestelmäriippumaton-">Työpöydän etäohjaus (järjestelmäriippumaton) |</h4>
+<p>Windowsilla ja Linuxilla käytän Teamvieweriä, joka on ehdottomasti tämän hetken paras työkalu sekä Windows ja Linux työpöytien etäkäyttöön tai ohjaukseen. Ei-kaupallisessa käytössä Teamviewer on ilmainen. Teamvieweristä on saatavilla omat versiot käytännössä kaikille Linux-distroille. Kaikella hyvällä on kuitenkin huonot puolensa… Teamviewerin lähdekoodi on luonnollisesti täysin suljettua.</p>
+
+<p>Silloin tällöin käytän myös eri VNC-ohjelmia ja palvelimia, kuten TightVNC:tä ja TigerVNC:tä. Viimeaikoina olen kokeillut myös RDP:tä Linuxilla xRDP:llä. Teamviewer on kuitenkin edelleen kätevin ja tuskattomin, johtuen Teamviewerin palomuurien läpäisykyvystä. Samanlaista avoimen lähdekoodin versiota RDP:stä tai vaikka VNC:stä odotellessa…</p>
+
+<h3 id="lähteet-">Lähteet |</h3>
+
+<p>[1: https://www.asus.com/fi/Stick-PCs/QM1/specifications/</p>
+
+<p>[2: https://www.linuxquestions.org/questions/linux-hardware-18/asus-stick-pc-qm1-4175574279/#post5656074</p>
+
+<p>[3: https://www.chromium.org/developers/how-tos/api-keys</p>
+
+<p>[4: https://askubuntu.com/questions/225930/how-do-i-get-the-latest-beta-and-development-version-of-chromium</p>
+
+<p>[5: https://github.com/jomo/imgur-screenshot</p>
+
+<p>[6: https://www.spotify.com/fi/download/linux/</p>
+
+<p>[7: https://archive.is/20161008213028/https://wiki.winehq.org/FAQ%23Does_Wine_support_.NET.3F_Should_I_install_native_.NET_in_Wine.3F</p>
+
+<p>[8: http://www.javiersantos.me/post/82199053318/download-for-win-os-x-turn-back-to-the-previous-spotify</p>
+
+<p>[9: https://github.com/dylanaraps/neofetch</p>
+
+<p>[10: https://github.com/phw/peek</p>
+
+<p>[11: https://github.com/jml/undistract-me</p>
+
+<p>[12: https://www.sofokus.com/blogi/avoin-lahdekoodi/</p>
+
+<p>[13: https://www.gnu.org/philosophy/free-sw.html</p>
+
+<p>[14: https://www.gnu.org/licenses/license-list.html#Expat</p>
+
+<p>[15: https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Rkantos&#39;s projects and endeavors in mostly educational times</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Rkantos&#39;s projects and endeavors in mostly educational times
+            
+            </li>
+            
+            <li><a href="mailto:robin@4e.fi">robin@4e.fi</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/rkantos"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">rkantos</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/rkantos"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">rkantos</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
