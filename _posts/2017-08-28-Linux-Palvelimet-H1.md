@@ -76,7 +76,7 @@ sudo apt install neofetch
 Peek on erittäin helppokäyttöinen ja tehokas ohjelma pienien ruutukaappausvideoiden tekoon. Videot voi tehdä GIF, WebM tai mp4 -muotoon. Ensimmäinen on yhteensopiva melkein minkä tahansa selaimen kanssa (paitsi lynx tai links jne) ja WebM sekä mp4-videot toistuvat uusimmilla HTML5:sta tukevilla selaimilla ilman ongelmia.
 Peekin voi asentaa Ubuntuun lisäämällä PPA:n:
 Peekillä tälläisen luominen onnistui alle kahdessa minuutissa sovelluksen asentaminen mukaanlukien:
-![Peek:n nopea testaus](/img/peek-testi.gif "apt-get")
+![Peek:n nopea testaus](img/peek-testi.gif "apt-get")
 
 sudo add-apt-repository ppa:peek-developers/stable
 sudo apt update
