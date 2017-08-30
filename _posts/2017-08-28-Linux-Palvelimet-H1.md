@@ -5,6 +5,10 @@ tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
 
 # Publish H1 22.8.2017 'Livetikku'
 ========================
+**Sivu on julkaistu ensimmäisen kerran 28.8.2017 ja** 
+**päivitetty 30.8.2017**
+
+[Section 1](#section-1)
 
 ### Tehtävänanto
 
@@ -27,7 +31,16 @@ Tehtävänanto on osa Tero Karvisen Haaga-Heliassa suoritettavaa Linux-kurssia. 
 #### Kohde | Asus QM1 & x5-Z8300 SoC
 Päätin ottaa tässä kohtaa luonnollisesti yhden haastavimmista kohteista Linuxin pyörittämiseen. Käytössä on siis viimeisin (2017) versio QM1 tikusta x5-z8300 SoC:lla. Olen aikaisemminkin yrittänyt saada Asuksen QM1 - 'PC-Tikkuun' Linuxin asennettua.  En kuitenkaan tähän asti ole siinä onnistunut. Laitteessa on ilmeisesti samankaltainen UEFI BIOS muiden vastaavien Asuksen Atom ja Windows -pohjaisten halpojen kannattavien, tablettien ja jopa puhelimien kanssa. Kaikissa näissä laitteissa tulee mukana oletusarvoisesti Windows 8 tai Windows 10. Kyseinen PC-tikku pohjautuu ja muistuttaa hyvin vahvasti Intelin vastaavaa laitetta, mutta hieman ominaisuuksista riisuttuna. Näistä merkitsevimpinä toisen USB -liitännän (USB3) puuttuminen. [1]
 
-#### USB-tikun luonti | Easy2Boot
+#### Asus QM1 -laitteen käynnistys live cd:ltä |
+Laitteen pitäisi käynnistyä UEFI-valikkoon ESC-näppäimellä, missään ei kuitenkaan varsinaisesti kerrottu missä tai miten tätä nappia pitäisi painaa, joten yleensä helpoin tapa päästä laitteen UEFI-valikkoon on käynnistää Windows uudestaan painamalla shift näppäintä valitessa "käynnistä uudelleen" tai "restart" vaihtoehtoa. Näin päästään tämän näköiseen valikkoon:
+
+![Tyhjää täys](img/w8uefirecovery.jpg)
+
+ Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa. Kaikki valinnat vievät lopulta samaan Asuksen UEFI-valikkoon, 
+
+
+
+#### USB-tikun luonti | Easy2Boot  ## Section 1 ##
 Yleensä boottaavien USB-tikkujen asentamiseen olen tottunut käyttämään YUMI:a https://www.pendrivelinux.com/yumi-multiboot-usb-creator/ Aikaisempien huonojen kokemuksien johdosta etsin Googlella seuraavia vaihtoehtoja. Jotkut väittivät kaiken toimineen ilman ongelmia 'tavallisin' keinoin. Ainakin yksi [2] oli maininnut Easy2Boot:n käytön. Olen joskus aikasemminkin käyttänyt samaa ohjelmaa kokeillessa erilaisia Windowsilla USB-tikkujen luontiin soveltuvia ohjelmia. Koko sovelluksen kätevin ominaisuus onkin varmaan se että siinä on eräänlainen oma bootloader, joka mahdollistaa pelkkien iso-tiedostojen lataamisen muistikortille. Etenkin hitailla muistikorteilla tämä säästää aikaa, kun kaikkia pieniä tiedostoja ei tarvitse purkaa erikseen.
 
 Asensin E2B:n ensin USB-tikulle... Sitten USB-hubin kanssa säätäessä muistin juuri sen toisen USB-paikan puuttumisen laitteestani. USB-hubin läpi en luonnollisesti saanut USB-tikkua boottaamaan. Suoraan USB-tikun liittäminen laitteeseen ei myöskään paljon edistä asiaa, sillä sitten laitteeseen ei voi enää liittää näppäimistöä.
@@ -44,7 +57,9 @@ Kuten kuitenkin aikaisemminkin, ei laite suostu boottaamaan tälläkään vaihto
 
 ![Tyhjää täys](img/bootx64.efi-boot-failed.jpg)
 
-En osaa varsinaisesti sanoa miksi en aikaisemmin ollut törmännyt "ainoaan viimeiseen vaihtoehtoon", eli Linuxiumin isorespin.sh:n https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html Isorespinin ohjeissa tiivistetään QM1 -kaltaisten laitteiden ongelmat, joka on siis 64-bittisten käyttöjärjestelmien boottaus ja asennus käyttäen 32-bittistä bootloaderia.. Mutta eipä onnistanut isorespinillä käyttäen Ubuntu Maten 16.04.3 -versiota. Tällä kertaa kuitenkin aikaisemmista kerroista eroavasti, tuli UEFI:n boottivalikkoon "Windows Boot Managerin" rinnalle uusi vaihtoehto "EFI SD/MMC Card". Myös microSD-kortille puretun Ubuntu-asennuksen GRUB-valikkoon päästiin tälläkertaa. Nyt saatiin myös selvät virheilmoitukset! 
+#### USB-tikun luonti | Linuxium [15]
+
+En osaa varsinaisesti sanoa miksi en aikaisemmin ollut törmännyt "ainoaan viimeiseen vaihtoehtoon", eli Linuxiumin isorespin.sh:n https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html Isorespinin ohjeissa tiivistetään QM1 -kaltaisten laitteen ongelmat, joka on siis 64-bittisten käyttöjärjestelmien boottaus ja asennus käyttäen 32-bittistä bootloaderia.. Mutta eipä onnistanut isorespinillä käyttäen Ubuntu Maten 16.04.3 -versiota. Tällä kertaa kuitenkin aikaisemmista kerroista eroavasti, tuli UEFI:n boottivalikkoon "Windows Boot Managerin" rinnalle uusi vaihtoehto "EFI SD/MMC Card". Myös microSD-kortille puretun Ubuntu-asennuksen GRUB-valikkoon päästiin tälläkertaa. Nyt saatiin myös selvät virheilmoitukset! 
 
 ![Tyhjää täys](img/initramfs-pci-error.jpg)
 
@@ -59,13 +74,8 @@ Edit: Tässä päästiin siis lataamaan Ubuntua muistiin, sillä kyseessähän o
 Tämän jälkeen Busyboxin perus ash shelli käynnistyy ja tulee vielä virhe: *(initramfs) Unable to find a medium containing a live file system.*
 
 
-Käytännössä GUI:n valinnoilla tehty komento, jolla ISO-tiedosto saatiin ohjelmalla tehtyä on samanlainen kuin esimerkissä: 
-**isorespin.sh -i ubuntu-17.04-desktop-amd64.iso -u -l rtl8723bs_4.12.0_amd64.deb -f linuxium-install-UCM-files.sh -f wrapper-linuxium-install-UCM-files.sh-c wrapper-linuxium-install-UCM-files.sh**
-
-
-
-#### Asus QM1 -laitteen käynnistys live cd:ltä |
-Laitteen pitäisi käynnistyä UEFI-valikkoon ESC-näppäimellä, missään ei kuitenkaan varsinaisesti kerrottu missä tai miten tätä nappia pitäisi painaa, joten yleensä helpoin tapa päästä laitteen UEFI-valikkoon on käynnistää Windows uudestaan painamalla shift näppäintä valitessa "käynnistä uudelleen" tai "restart" vaihtoehtoa. Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa.
+Käytännössä Isorespinin GUI:n valinnoilla tehty komento, jolla ISO-tiedosto saatiin ohjelmalla tehtyä on samanlainen kuin esimerkissä: 
+> **isorespin.sh -i ubuntu-17.04-desktop-amd64.iso -u -l rtl8723bs_4.12.0_amd64.deb -f linuxium-install-UCM-files.sh -f wrapper-linuxium-install-UCM-files.sh-c wrapper-linuxium-install-UCM-files.sh**
 
 
 # B) Koneen rauta sudo lshw -short -sanitize
@@ -89,10 +99,7 @@ Peek on erittäin helppokäyttöinen ja tehokas ohjelma pienien ruutukaappausvid
 Peekin voi asentaa Ubuntuun lisäämällä PPA:n:
 Peekillä tälläisen luominen onnistui alle kahdessa minuutissa sovelluksen asentaminen mukaanlukien:
 ![Peek:n nopea testaus](img/peek-testi.gif "apt-get")
-<<<<<<< HEAD
 
-=======
->>>>>>> cfa8e0acfea79a572c5e511efe6461c379b2d259
 
 sudo add-apt-repository ppa:peek-developers/stable
 sudo apt update
