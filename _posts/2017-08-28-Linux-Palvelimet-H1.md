@@ -2,21 +2,25 @@
 title: Linux palvelimet ICT4TN021 2017 H1
 tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
 ---
+
 # Publish H1 22.8.2017 'Livetikku'
 ========================
 
 ### Tehtävänanto
-a) Tee oma Linux-livetikku. Kokeile sitä jossain muussa kuin koulun koneessa. Tämä kohta ei edellytä asentamista – jos kuitenkin asennat, ota ensin varmuuskopiot.
 
-b) Listaa testaamasi koneen rauta (‘sudo lshw -short -sanitize’).
+Tehtävänanto on osa Tero Karvisen Haaga-Heliassa suoritettavaa Linux-kurssia. http://terokarvinen.com/2017/aikataulu-linux-palvelimet-ict4tn021-4-ti-ja-5-to-alkusyksy-2017-5-op
 
-c) Asenna kolme itsellesi uutta ohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa.
-
-d) Mitä lisenssiä kukin näistä ohjelmista käyttää? Selitä lyhyesti, mitä oikeuksia ja velvolisuuksia tuosta lisenssistä seuraa.
-
-d->e) Listaa käyttämäsi ohjelmat (esim. MS Word), kunkin ohjelman käyttötarkoitus (esim. Tekstinkäsittely) ja vastaava vapaa Linux-ohjelma (esim. LibreOffice Writer). Jos johonkin tarkoitukseen ei löydy vapaata Linux-ohjelmaa, listaa sekin.
-
-f) Vapaaehtoinen lisätehtävä: varmuuskopioi tiedostosi (voit käyttää esimerkiksi ulkoista USB-levyä)
+> a) Tee oma Linux-livetikku. Kokeile sitä jossain muussa kuin koulun koneessa. Tämä kohta ei edellytä asentamista – jos kuitenkin asennat, ota ensin varmuuskopiot.
+> 
+> b) Listaa testaamasi koneen rauta (‘sudo lshw -short -sanitize’).
+> 
+> c) Asenna kolme itsellesi uutta ohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa.
+> 
+> d) Mitä lisenssiä kukin näistä ohjelmista käyttää? Selitä lyhyesti, mitä oikeuksia ja velvolisuuksia tuosta lisenssistä seuraa.
+> 
+> d->e) Listaa käyttämäsi ohjelmat (esim. MS Word), kunkin ohjelman käyttötarkoitus (esim. Tekstinkäsittely) ja vastaava vapaa Linux-ohjelma (esim. LibreOffice Writer). Jos johonkin tarkoitukseen ei löydy vapaata Linux-ohjelmaa, listaa sekin.
+> 
+> f) Vapaaehtoinen lisätehtävä: varmuuskopioi tiedostosi (voit käyttää esimerkiksi ulkoista USB-levyä)
 
 # A) Boottaavan Linux USB-tikun luominen
 
@@ -29,14 +33,22 @@ Yleensä boottaavien USB-tikkujen asentamiseen olen tottunut käyttämään YUMI
 Asensin E2B:n ensin USB-tikulle... Sitten USB-hubin kanssa säätäessä muistin juuri sen toisen USB-paikan puuttumisen laitteestani. USB-hubin läpi en luonnollisesti saanut USB-tikkua boottaamaan. Suoraan USB-tikun liittäminen laitteeseen ei myöskään paljon edistä asiaa, sillä sitten laitteeseen ei voi enää liittää näppäimistöä.
 
 Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. -- Ei löytynyt sen paremmin mitään boottivalikosta. 
+![Tyhjää täys](img/emptybootmanager.jpg)
 
+![Tyhjää täys](img/qm1bootmenu.jpg)
 Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä "Boot from file".. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media 
 
 Koska olin jo samasta microsd-kortista tehnyt boottaavan, ei seuraava vaihe vaatinut kuin ISO-tiedoston tiedostojen purkamisen ja siirtämisen sille. Huomiona tosin se, että E2B formatoi muistitikun oletuksena NTFS -formaattiin ja Asuksen UEFI-bios lukee FAT32 -tiedostojärjestelmiä.
 
-Kuten kuitenkin aikaisemminkin, ei laite suostu boottaamaan tälläkään vaihtoehdolla vaan saan virheet \EFI\BOOT\BOOTx64.EFI bt failed. tai \EFI\BOOT\grubx64.efi boot failed. , riippuen kumpaa tiedostoa \BOOT -kansiossa yritän käyttää. 
+Kuten kuitenkin aikaisemminkin, ei laite suostu boottaamaan tälläkään vaihtoehdolla vaan saan virheet \EFI\BOOT\BOOTx64.EFI boot failed. tai \EFI\BOOT\grubx64.efi boot failed. , riippuen kumpaa tiedostoa \BOOT -kansiossa yritän käyttää. 
+
+![Tyhjää täys](img/bootx64.efi-boot-failed.jpg)
 
 En osaa varsinaisesti sanoa miksi en aikaisemmin ollut törmännyt "ainoaan viimeiseen vaihtoehtoon", eli Linuxiumin isorespin.sh:n https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html Isorespinin ohjeissa tiivistetään QM1 -kaltaisten laitteiden ongelmat, joka on siis 64-bittisten käyttöjärjestelmien boottaus ja asennus käyttäen 32-bittistä bootloaderia.. Mutta eipä onnistanut isorespinillä käyttäen Ubuntu Maten 16.04.3 -versiota. Tällä kertaa kuitenkin aikaisemmista kerroista eroavasti, tuli UEFI:n boottivalikkoon "Windows Boot Managerin" rinnalle uusi vaihtoehto "EFI SD/MMC Card". Myös microSD-kortille puretun Ubuntu-asennuksen GRUB-valikkoon päästiin tälläkertaa. Nyt saatiin myös selvät virheilmoitukset! 
+
+![Tyhjää täys](img/initramfs-pci-error.jpg)
+
+Edit: Tässä päästiin siis lataamaan Ubuntua muistiin, sillä kyseessähän ovat Kernelin virheilmoitukset.
 
 *intel_ish_ipc 0000:00:0a.0: [ishtp-ish]: Timed out waiting for FW*
 
@@ -76,7 +88,8 @@ sudo apt install neofetch
 Peek on erittäin helppokäyttöinen ja tehokas ohjelma pienien ruutukaappausvideoiden tekoon. Videot voi tehdä GIF, WebM tai mp4 -muotoon. Ensimmäinen on yhteensopiva melkein minkä tahansa selaimen kanssa (paitsi lynx tai links jne) ja WebM sekä mp4-videot toistuvat uusimmilla HTML5:sta tukevilla selaimilla ilman ongelmia.
 Peekin voi asentaa Ubuntuun lisäämällä PPA:n:
 Peekillä tälläisen luominen onnistui alle kahdessa minuutissa sovelluksen asentaminen mukaanlukien:
-![Peek:n nopea testaus](/img/peek-testi.gif "apt-get")
+![Peek:n nopea testaus](img/peek-testi.gif "apt-get")
+
 
 sudo add-apt-repository ppa:peek-developers/stable
 sudo apt update
