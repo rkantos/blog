@@ -89,7 +89,10 @@ Peek on erittäin helppokäyttöinen ja tehokas ohjelma pienien ruutukaappausvid
 Peekin voi asentaa Ubuntuun lisäämällä PPA:n:
 Peekillä tälläisen luominen onnistui alle kahdessa minuutissa sovelluksen asentaminen mukaanlukien:
 ![Peek:n nopea testaus](img/peek-testi.gif "apt-get")
+<<<<<<< HEAD
 
+=======
+>>>>>>> cfa8e0acfea79a572c5e511efe6461c379b2d259
 
 sudo add-apt-repository ppa:peek-developers/stable
 sudo apt update
