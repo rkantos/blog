@@ -54,9 +54,10 @@ Yleensä boottaavien USB-tikkujen asentamiseen olen tottunut käyttämään YUMI
 Asensin E2B:n ensin USB-tikulle... Sitten USB-hubin kanssa säätäessä muistin juuri sen toisen USB-paikan puuttumisen laitteestani. USB-hubin läpi en luonnollisesti saanut USB-tikkua boottaamaan. Suoraan USB-tikun liittäminen laitteeseen ei myöskään paljon edistä asiaa, sillä sitten laitteeseen ei voi enää liittää näppäimistöä.
 
 Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. -- Ei löytynyt sen paremmin mitään boottivalikosta. 
-![Asus QM-1 tyhjä boot-valikko](/img/emptybootmanager.jpg)
 
 ![Asus QM-1 UEFI-valikko](/img/qm1bootmenu.jpg)
+
+![Asus QM-1 tyhjää täynnä oleva boot-valikko](/img/emptybootmanager.jpg)
 
 ![Asus QM-1 UEFI-valikko](/img/bootx64.efi.jpg)
 Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä "Boot from file".. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media 
@@ -65,7 +66,7 @@ Koska olin jo samasta microsd-kortista tehnyt boottaavan, ei seuraava vaihe vaat
 
 Kuten kuitenkin aikaisemminkin, ei laite suostu boottaamaan tälläkään vaihtoehdolla vaan saan virheet \EFI\BOOT\BOOTx64.EFI boot failed. tai \EFI\BOOT\grubx64.efi boot failed. , riippuen kumpaa tiedostoa \BOOT -kansiossa yritän käyttää. 
 
-![Tyhjää täys](/img/bootx64.efi-boot-failed.jpg)
+![Ei onnistu](/img/bootx64.efi-boot-failed.jpg)
 
 #### USB-tikun luonti | Linuxium [15]
 
