@@ -7,13 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Linux palvelimet ICT4TN021 2017 H1</title>
-  <meta name="description" content="Publish H1 22.8.2017 ‘Livetikku’ ========================">
+  <meta name="description" content="Publish H1 22.8.2017 ‘Livetikku’">
 
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html">
   <link rel="alternate" type="application/rss+xml" title="rkantos&#39;s projects and endeavors in mostly educational times" href="/feed.xml">
   
   
+
+
+
+
+<style type="text/css">
+ 
+</style>
 </head>
 
 
@@ -80,14 +87,40 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <h1 id="publish-h1-2282017-livetikku">Publish H1 22.8.2017 ‘Livetikku’</h1>
-<p>========================</p>
+    <h1 class="no_toc" id="publish-h1-2282017-livetikku">Publish H1 22.8.2017 ‘Livetikku’</h1>
 
 <p><strong>Sivu on julkaistu ensimmäisen kerran 28.8.2017 ja</strong> 
 <strong>päivitetty 30.8.2017</strong></p>
 
-<p><a href="#tehtävänanto">Tehtävänanto</a>
-<a href="#usb-tikun-luonti--easy2boot-1">USB-tikun luonti | Easy2Boot</a></p>
+<h1 class="no_toc" id="sisältö">Sisältö</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#tehtävänanto" id="markdown-toc-tehtävänanto">Tehtävänanto</a></li>
+  <li><a href="#a-boottaavan-linux-usb-tikun-luominen" id="markdown-toc-a-boottaavan-linux-usb-tikun-luominen">A) Boottaavan Linux USB-tikun luominen</a>    <ul>
+      <li><a href="#kohde--asus-qm1--x5-z8300-soc" id="markdown-toc-kohde--asus-qm1--x5-z8300-soc">Kohde | Asus QM1 &amp; x5-Z8300 SoC</a></li>
+      <li><a href="#asus-qm1--laitteen-käynnistys-live-cdltä-" id="markdown-toc-asus-qm1--laitteen-käynnistys-live-cdltä-">Asus QM1 -laitteen käynnistys live cd:ltä |</a></li>
+      <li><a href="#usb-tikun-luonti--easy2boot" id="markdown-toc-usb-tikun-luonti--easy2boot">USB-tikun luonti | Easy2Boot</a></li>
+      <li><a href="#usb-tikun-luonti--linuxium-15" id="markdown-toc-usb-tikun-luonti--linuxium-15">USB-tikun luonti | Linuxium <a href="https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html">15</a></a></li>
+    </ul>
+  </li>
+  <li><a href="#b-koneen-rauta-sudo-lshw--short--sanitize" id="markdown-toc-b-koneen-rauta-sudo-lshw--short--sanitize">B) Koneen rauta sudo lshw -short -sanitize</a></li>
+  <li><a href="#c-uusien-ohjelmien-testaus" id="markdown-toc-c-uusien-ohjelmien-testaus">C) Uusien ohjelmien testaus</a>    <ul>
+      <li><a href="#neofetch-9--yksinkertainen-järjestelmä-ja-käyttöjärjestelmätietojen-näyttö" id="markdown-toc-neofetch-9--yksinkertainen-järjestelmä-ja-käyttöjärjestelmätietojen-näyttö">NeoFetch <a href="https://github.com/dylanaraps/neofetch">9</a> | Yksinkertainen järjestelmä ja käyttöjärjestelmätietojen näyttö</a></li>
+      <li><a href="#peek-10--tehokas-ohjelma-gif-animoitujen-ruutukappausvideoiden-tekoon" id="markdown-toc-peek-10--tehokas-ohjelma-gif-animoitujen-ruutukappausvideoiden-tekoon">Peek <a href="https://github.com/phw/peek">10</a> | Tehokas ohjelma GIF-animoitujen ruutukappausvideoiden tekoon</a></li>
+      <li><a href="#undistract-me-11--ilmoitus-pitkien-komentojen-loppumisesta" id="markdown-toc-undistract-me-11--ilmoitus-pitkien-komentojen-loppumisesta">undistract-me <a href="https://github.com/jml/undistract-me">11</a> | Ilmoitus pitkien komentojen loppumisesta</a></li>
+    </ul>
+  </li>
+  <li><a href="#d-ohjelmistojen-lisenssit" id="markdown-toc-d-ohjelmistojen-lisenssit">D) Ohjelmistojen lisenssit</a></li>
+  <li><a href="#e-linuxilla-käyttämäni-ohjelmat" id="markdown-toc-e-linuxilla-käyttämäni-ohjelmat">E) Linuxilla käyttämäni ohjelmat</a>    <ul>
+      <li><a href="#nettiselain-" id="markdown-toc-nettiselain-">Nettiselain |</a></li>
+      <li><a href="#tekstinkäsittely--toimistosovellukset-" id="markdown-toc-tekstinkäsittely--toimistosovellukset-">Tekstinkäsittely &amp; toimistosovellukset |</a></li>
+      <li><a href="#media-musiikki-videot-" id="markdown-toc-media-musiikki-videot-">Media, musiikki, videot |</a></li>
+      <li><a href="#pelaaminen-" id="markdown-toc-pelaaminen-">Pelaaminen |</a></li>
+      <li><a href="#työpöydän-etäohjaus-järjestelmäriippumaton-" id="markdown-toc-työpöydän-etäohjaus-järjestelmäriippumaton-">Työpöydän etäohjaus (järjestelmäriippumaton) |</a></li>
+      <li><a href="#lähteet-" id="markdown-toc-lähteet-">Lähteet |</a></li>
+    </ul>
+  </li>
+</ul>
 
 <h3 id="tehtävänanto">Tehtävänanto</h3>
 
@@ -117,7 +150,7 @@
 
 <p><img src="/img/w8uefirecovery.jpg" alt="Windows 10 Recovery -valikko" /></p>
 
-<p>Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa. Kaikki valinnat vievät lopulta samaan Asuksen UEFI-valikkoon,</p>
+<p>Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa. Kaikki valinnat vievät lopulta samaan Asuksen UEFI-valikkoon, joka näyttää samalta kuin kohdassa <a href="#usb-tikun-luonti--easy2boot">USB-tikun luonti | Easy2Boot</a></p>
 
 <h4 id="usb-tikun-luonti--easy2boot">USB-tikun luonti | Easy2Boot</h4>
 
@@ -128,7 +161,9 @@
 <p>Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. – Ei löytynyt sen paremmin mitään boottivalikosta. 
 <img src="/img/emptybootmanager.jpg" alt="Asus QM-1 tyhjä boot-valikko" /></p>
 
-<p><img src="/img/qm1bootmenu.jpg" alt="Asus QM-1 UEFI-valikko" />
+<p><img src="/img/qm1bootmenu.jpg" alt="Asus QM-1 UEFI-valikko" /></p>
+
+<p><img src="/img/bootx64.efi.jpg" alt="Asus QM-1 UEFI-valikko" />
 Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä “Boot from file”.. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media</p>
 
 <p>Koska olin jo samasta microsd-kortista tehnyt boottaavan, ei seuraava vaihe vaatinut kuin ISO-tiedoston tiedostojen purkamisen ja siirtämisen sille. Huomiona tosin se, että E2B formatoi muistitikun oletuksena NTFS -formaattiin ja Asuksen UEFI-bios lukee FAT32 -tiedostojärjestelmiä.</p>
@@ -307,7 +342,27 @@ Ongelmaksi jää myös Windows-lisensointi, johon periaatteessa jokaiselle virtu
 
 </footer>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/4.0.0/anchor.min.js"></script>
+<script type="text/javascript">/*global anchors*/
+/**
+ * Example 1
+ * Add anchors to all h1s, h2s and h3s inside of #post.
+ * Anchors will be always visible.
+ */
+ anchors.options = {
+  placement: 'left',
+  visible: 'touch',
+  icon: ''
+};
+anchors.options.visible = 'always';
+anchors.add('h1, h2, h3, h4, h5, h6');
 
+/**
+ * Example 2
+ * Provide options as an object before adding anchors to the page.
+ * Adds always-visible ¶ anchors in the left margin of each p tag inside .story
+ */</script>
   </body>
+
 
 </html>

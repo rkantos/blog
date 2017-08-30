@@ -1,11 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2017-08-30T18:00:40+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">rkantos’s projects and endeavors in mostly educational times</title><subtitle>rkantos's projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</subtitle><entry><title type="html">Linux palvelimet ICT4TN021 2017 H1</title><link href="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H1" /><published>2017-08-28T00:00:00+00:00</published><updated>2017-08-28T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1</id><content type="html" xml:base="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html">&lt;h1 id=&quot;publish-h1-2282017-livetikku&quot;&gt;Publish H1 22.8.2017 ‘Livetikku’&lt;/h1&gt;
-&lt;p&gt;========================&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2017-08-30T20:29:46+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">rkantos’s projects and endeavors in mostly educational times</title><subtitle>rkantos's projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</subtitle><entry><title type="html">Linux palvelimet ICT4TN021 2017 H1</title><link href="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H1" /><published>2017-08-28T00:00:00+00:00</published><updated>2017-08-28T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1</id><content type="html" xml:base="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html">&lt;h1 class=&quot;no_toc&quot; id=&quot;publish-h1-2282017-livetikku&quot;&gt;Publish H1 22.8.2017 ‘Livetikku’&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Sivu on julkaistu ensimmäisen kerran 28.8.2017 ja&lt;/strong&gt; 
 &lt;strong&gt;päivitetty 30.8.2017&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;#tehtävänanto&quot;&gt;Tehtävänanto&lt;/a&gt;
-&lt;a href=&quot;#usb-tikun-luonti--easy2boot-1&quot;&gt;USB-tikun luonti | Easy2Boot&lt;/a&gt;&lt;/p&gt;
+&lt;h1 class=&quot;no_toc&quot; id=&quot;sisältö&quot;&gt;Sisältö&lt;/h1&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#tehtävänanto&quot; id=&quot;markdown-toc-tehtävänanto&quot;&gt;Tehtävänanto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#a-boottaavan-linux-usb-tikun-luominen&quot; id=&quot;markdown-toc-a-boottaavan-linux-usb-tikun-luominen&quot;&gt;A) Boottaavan Linux USB-tikun luominen&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#kohde--asus-qm1--x5-z8300-soc&quot; id=&quot;markdown-toc-kohde--asus-qm1--x5-z8300-soc&quot;&gt;Kohde | Asus QM1 &amp;amp; x5-Z8300 SoC&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#asus-qm1--laitteen-käynnistys-live-cdltä-&quot; id=&quot;markdown-toc-asus-qm1--laitteen-käynnistys-live-cdltä-&quot;&gt;Asus QM1 -laitteen käynnistys live cd:ltä |&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#usb-tikun-luonti--easy2boot&quot; id=&quot;markdown-toc-usb-tikun-luonti--easy2boot&quot;&gt;USB-tikun luonti | Easy2Boot&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#usb-tikun-luonti--linuxium-15&quot; id=&quot;markdown-toc-usb-tikun-luonti--linuxium-15&quot;&gt;USB-tikun luonti | Linuxium &lt;a href=&quot;https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html&quot;&gt;15&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#b-koneen-rauta-sudo-lshw--short--sanitize&quot; id=&quot;markdown-toc-b-koneen-rauta-sudo-lshw--short--sanitize&quot;&gt;B) Koneen rauta sudo lshw -short -sanitize&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#c-uusien-ohjelmien-testaus&quot; id=&quot;markdown-toc-c-uusien-ohjelmien-testaus&quot;&gt;C) Uusien ohjelmien testaus&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#neofetch-9--yksinkertainen-järjestelmä-ja-käyttöjärjestelmätietojen-näyttö&quot; id=&quot;markdown-toc-neofetch-9--yksinkertainen-järjestelmä-ja-käyttöjärjestelmätietojen-näyttö&quot;&gt;NeoFetch &lt;a href=&quot;https://github.com/dylanaraps/neofetch&quot;&gt;9&lt;/a&gt; | Yksinkertainen järjestelmä ja käyttöjärjestelmätietojen näyttö&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#peek-10--tehokas-ohjelma-gif-animoitujen-ruutukappausvideoiden-tekoon&quot; id=&quot;markdown-toc-peek-10--tehokas-ohjelma-gif-animoitujen-ruutukappausvideoiden-tekoon&quot;&gt;Peek &lt;a href=&quot;https://github.com/phw/peek&quot;&gt;10&lt;/a&gt; | Tehokas ohjelma GIF-animoitujen ruutukappausvideoiden tekoon&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#undistract-me-11--ilmoitus-pitkien-komentojen-loppumisesta&quot; id=&quot;markdown-toc-undistract-me-11--ilmoitus-pitkien-komentojen-loppumisesta&quot;&gt;undistract-me &lt;a href=&quot;https://github.com/jml/undistract-me&quot;&gt;11&lt;/a&gt; | Ilmoitus pitkien komentojen loppumisesta&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#d-ohjelmistojen-lisenssit&quot; id=&quot;markdown-toc-d-ohjelmistojen-lisenssit&quot;&gt;D) Ohjelmistojen lisenssit&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#e-linuxilla-käyttämäni-ohjelmat&quot; id=&quot;markdown-toc-e-linuxilla-käyttämäni-ohjelmat&quot;&gt;E) Linuxilla käyttämäni ohjelmat&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#nettiselain-&quot; id=&quot;markdown-toc-nettiselain-&quot;&gt;Nettiselain |&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#tekstinkäsittely--toimistosovellukset-&quot; id=&quot;markdown-toc-tekstinkäsittely--toimistosovellukset-&quot;&gt;Tekstinkäsittely &amp;amp; toimistosovellukset |&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#media-musiikki-videot-&quot; id=&quot;markdown-toc-media-musiikki-videot-&quot;&gt;Media, musiikki, videot |&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pelaaminen-&quot; id=&quot;markdown-toc-pelaaminen-&quot;&gt;Pelaaminen |&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#työpöydän-etäohjaus-järjestelmäriippumaton-&quot; id=&quot;markdown-toc-työpöydän-etäohjaus-järjestelmäriippumaton-&quot;&gt;Työpöydän etäohjaus (järjestelmäriippumaton) |&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lähteet-&quot; id=&quot;markdown-toc-lähteet-&quot;&gt;Lähteet |&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;tehtävänanto&quot;&gt;Tehtävänanto&lt;/h3&gt;
 
@@ -35,7 +61,7 @@
 
 &lt;p&gt;&lt;img src=&quot;/img/w8uefirecovery.jpg&quot; alt=&quot;Windows 10 Recovery -valikko&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa. Kaikki valinnat vievät lopulta samaan Asuksen UEFI-valikkoon,&lt;/p&gt;
+&lt;p&gt;Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa. Kaikki valinnat vievät lopulta samaan Asuksen UEFI-valikkoon, joka näyttää samalta kuin kohdassa &lt;a href=&quot;#usb-tikun-luonti--easy2boot&quot;&gt;USB-tikun luonti | Easy2Boot&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;usb-tikun-luonti--easy2boot&quot;&gt;USB-tikun luonti | Easy2Boot&lt;/h4&gt;
 
@@ -46,7 +72,9 @@
 &lt;p&gt;Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. – Ei löytynyt sen paremmin mitään boottivalikosta. 
 &lt;img src=&quot;/img/emptybootmanager.jpg&quot; alt=&quot;Asus QM-1 tyhjä boot-valikko&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/qm1bootmenu.jpg&quot; alt=&quot;Asus QM-1 UEFI-valikko&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/img/qm1bootmenu.jpg&quot; alt=&quot;Asus QM-1 UEFI-valikko&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/bootx64.efi.jpg&quot; alt=&quot;Asus QM-1 UEFI-valikko&quot; /&gt;
 Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä “Boot from file”.. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media&lt;/p&gt;
 
 &lt;p&gt;Koska olin jo samasta microsd-kortista tehnyt boottaavan, ei seuraava vaihe vaatinut kuin ISO-tiedoston tiedostojen purkamisen ja siirtämisen sille. Huomiona tosin se, että E2B formatoi muistitikun oletuksena NTFS -formaattiin ja Asuksen UEFI-bios lukee FAT32 -tiedostojärjestelmiä.&lt;/p&gt;
@@ -166,7 +194,7 @@ Ongelmaksi jää myös Windows-lisensointi, johon periaatteessa jokaiselle virtu
 
 &lt;p&gt;[14: https://www.gnu.org/licenses/license-list.html#Expat&lt;/p&gt;
 
-&lt;p&gt;[15: https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="haaga-helia" /><category term="koulu" /><category term="infra" /><category term="such" /><category term="wow" /><category term="test" /><category term="tags" /><summary type="html">Publish H1 22.8.2017 ‘Livetikku’ ========================</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://0.0.0.0:8080/jekyll/update/2017/08/22/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-08-22T13:47:47+00:00</published><updated>2017-08-22T13:47:47+00:00</updated><id>http://0.0.0.0:8080/jekyll/update/2017/08/22/welcome-to-jekyll</id><content type="html" xml:base="http://0.0.0.0:8080/jekyll/update/2017/08/22/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;[15: https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="haaga-helia" /><category term="koulu" /><category term="infra" /><category term="such" /><category term="wow" /><category term="test" /><category term="tags" /><summary type="html">Publish H1 22.8.2017 ‘Livetikku’</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://0.0.0.0:8080/jekyll/update/2017/08/22/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-08-22T13:47:47+00:00</published><updated>2017-08-22T13:47:47+00:00</updated><id>http://0.0.0.0:8080/jekyll/update/2017/08/22/welcome-to-jekyll</id><content type="html" xml:base="http://0.0.0.0:8080/jekyll/update/2017/08/22/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 

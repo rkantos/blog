@@ -4,15 +4,21 @@ tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
 ---
 
 # Publish H1 22.8.2017 'Livetikku'
-========================
+{:.no_toc}
 
 **Sivu on julkaistu ensimmäisen kerran 28.8.2017 ja** 
 **päivitetty 30.8.2017**
 
+
 # Sisältö
+{:.no_toc}
+
+* Table of contents placeholder
 {:toc}
 
 ### Tehtävänanto
+
+
 
 Tehtävänanto on osa Tero Karvisen Haaga-Heliassa suoritettavaa Linux-kurssia. http://terokarvinen.com/2017/aikataulu-linux-palvelimet-ict4tn021-4-ti-ja-5-to-alkusyksy-2017-5-op
 
@@ -36,7 +42,7 @@ Päätin ottaa tässä kohtaa luonnollisesti yhden haastavimmista kohteista Linu
 #### Asus QM1 -laitteen käynnistys live cd:ltä |
 Laitteen pitäisi käynnistyä UEFI-valikkoon ESC-näppäimellä, missään ei kuitenkaan varsinaisesti kerrottu missä tai miten tätä nappia pitäisi painaa, joten yleensä helpoin tapa päästä laitteen UEFI-valikkoon on käynnistää Windows uudestaan painamalla shift näppäintä valitessa "käynnistä uudelleen" tai "restart" vaihtoehtoa. Näin päästään tämän näköiseen valikkoon:
 
-![Windows 10 Recovery -valikko](//img/w8uefirecovery.jpg)
+![Windows 10 Recovery -valikko](/img/w8uefirecovery.jpg)
 
  Myöhemmin myös itselle selvisi että ESC-nappia voi painaa pohjassa. Kaikki valinnat vievät lopulta samaan Asuksen UEFI-valikkoon, joka näyttää samalta kuin kohdassa [USB-tikun luonti &#124; Easy2Boot](#usb-tikun-luonti--easy2boot)
 
@@ -48,22 +54,24 @@ Yleensä boottaavien USB-tikkujen asentamiseen olen tottunut käyttämään YUMI
 Asensin E2B:n ensin USB-tikulle... Sitten USB-hubin kanssa säätäessä muistin juuri sen toisen USB-paikan puuttumisen laitteestani. USB-hubin läpi en luonnollisesti saanut USB-tikkua boottaamaan. Suoraan USB-tikun liittäminen laitteeseen ei myöskään paljon edistä asiaa, sillä sitten laitteeseen ei voi enää liittää näppäimistöä.
 
 Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. -- Ei löytynyt sen paremmin mitään boottivalikosta. 
-![Asus QM-1 tyhjä boot-valikko](///img/emptybootmanager.jpg)
+![Asus QM-1 tyhjä boot-valikko](/img/emptybootmanager.jpg)
 
-![Asus QM-1 UEFI-valikko](///img/qm1bootmenu.jpg)
+![Asus QM-1 UEFI-valikko](/img/qm1bootmenu.jpg)
+
+![Asus QM-1 UEFI-valikko](/img/bootx64.efi.jpg)
 Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä "Boot from file".. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media 
 
 Koska olin jo samasta microsd-kortista tehnyt boottaavan, ei seuraava vaihe vaatinut kuin ISO-tiedoston tiedostojen purkamisen ja siirtämisen sille. Huomiona tosin se, että E2B formatoi muistitikun oletuksena NTFS -formaattiin ja Asuksen UEFI-bios lukee FAT32 -tiedostojärjestelmiä.
 
 Kuten kuitenkin aikaisemminkin, ei laite suostu boottaamaan tälläkään vaihtoehdolla vaan saan virheet \EFI\BOOT\BOOTx64.EFI boot failed. tai \EFI\BOOT\grubx64.efi boot failed. , riippuen kumpaa tiedostoa \BOOT -kansiossa yritän käyttää. 
 
-![Tyhjää täys](//img/bootx64.efi-boot-failed.jpg)
+![Tyhjää täys](/img/bootx64.efi-boot-failed.jpg)
 
 #### USB-tikun luonti | Linuxium [15]
 
 En osaa varsinaisesti sanoa miksi en aikaisemmin ollut törmännyt "ainoaan viimeiseen vaihtoehtoon", eli Linuxiumin isorespin.sh:n https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html Isorespinin ohjeissa tiivistetään QM1 -kaltaisten laitteen ongelmat, joka on siis 64-bittisten käyttöjärjestelmien boottaus ja asennus käyttäen 32-bittistä bootloaderia.. Mutta eipä onnistanut isorespinillä käyttäen Ubuntu Maten 16.04.3 -versiota. Tällä kertaa kuitenkin aikaisemmista kerroista eroavasti, tuli UEFI:n boottivalikkoon "Windows Boot Managerin" rinnalle uusi vaihtoehto "EFI SD/MMC Card". Myös microSD-kortille puretun Ubuntu-asennuksen GRUB-valikkoon päästiin tälläkertaa. Nyt saatiin myös selvät virheilmoitukset! 
 
-![Kernelin virheilmoitukset](//img/initramfs-pci-error.jpg)
+![Kernelin virheilmoitukset](/img/initramfs-pci-error.jpg)
 
 Edit: Tässä päästiin siis lataamaan Ubuntua muistiin, sillä kyseessähän ovat Kernelin virheilmoitukset.
 
@@ -100,7 +108,7 @@ sudo apt install neofetch
 Peek on erittäin helppokäyttöinen ja tehokas ohjelma pienien ruutukaappausvideoiden tekoon. Videot voi tehdä GIF, WebM tai mp4 -muotoon. Ensimmäinen on yhteensopiva melkein minkä tahansa selaimen kanssa (paitsi lynx tai links jne) ja WebM sekä mp4-videot toistuvat uusimmilla HTML5:sta tukevilla selaimilla ilman ongelmia.
 Peekin voi asentaa Ubuntuun lisäämällä PPA:n:
 Peekillä tälläisen luominen onnistui alle kahdessa minuutissa sovelluksen asentaminen mukaanlukien:
-![Peek:n nopea testaus](//img/peek-testi.gif "apt-get")
+![Peek:n nopea testaus](/img/peek-testi.gif "apt-get")
 
 
 sudo add-apt-repository ppa:peek-developers/stable
