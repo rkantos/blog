@@ -93,7 +93,9 @@ Fail2Ban:in oma logi siis kertoo fail2ban.actions -prosessinimellä ja numerolla
 
 #### SSH | Github | Jekyll
 
-SSH-yhteyksien käyttäminen on itselle jo suhteellisen tuttua. Aikaisemmin käytin tiedostojen varmuuskopiointiin virtuaalipalvelinta ja käytin tarkoitukseen Baculaa, joka SSHFS:n avulla siirsi tiedostot. Kurssin yhteydessä ja tehtävien suositellun julkisen julkaisun vuoksi etsin itselle siihen tarkoitukseen parhaiten sopivan tavan. Mietin eri vahtoehtoja ja budjetti ja tietoturva edellä päädyin Githubin hostaukseen maksuttomuudesta ja luonnollisesta tietoturvasta johtuen. Maksuttomuus tulee ilmaisista repositoryjen ilmaisuudesta ja tietoturva vain HTML-sivujen julkaisun sallimisesta. Halusin kuitenkin käyttää jonkinlaista CMS-järjestelmää, ja ilman mahdollisuutta käyttää tietokantoja ja monimutkaisempaa ohjelmointia, päädyin Jekylliin. Tässä kohdassa siis näytän lyhyesti vain miten julkaisen sivut Githubiin Git -ohjelman avulla.
+SSH-yhteyksien käyttäminen on itselle jo suhteellisen tuttua. Aikaisemmin käytin tiedostojen varmuuskopiointiin virtuaalipalvelinta ja käytin tarkoitukseen Baculaa, joka SSHFS:n avulla siirsi tiedostot. 
+
+Kurssin yhteydessä ja tehtävien suositellun julkisen julkaisun vuoksi etsin itselle siihen tarkoitukseen parhaiten sopivan tavan. Mietin eri vahtoehtoja ja budjetti ja tietoturva edellä päädyin Githubin hostaukseen maksuttomuudesta ja luonnollisesta tietoturvasta johtuen. Maksuttomuus tulee ilmaisista repositoryjen ilmaisuudesta ja tietoturva vain HTML-sivujen julkaisun sallimisesta. Halusin kuitenkin käyttää jonkinlaista CMS-järjestelmää, ja ilman mahdollisuutta käyttää tietokantoja ja monimutkaisempaa ohjelmointia, päädyin Jekylliin. Tässä kohdassa siis näytän lyhyesti vain miten julkaisen sivut Githubiin Git -ohjelman avulla.
 
 
 ![alt text](/img/git-jekyll.gif "apt-get")
