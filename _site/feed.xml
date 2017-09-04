@@ -1,4 +1,230 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2017-08-30T20:32:03+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">rkantos’s projects and endeavors in mostly educational times</title><subtitle>rkantos's projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</subtitle><entry><title type="html">Linux palvelimet ICT4TN021 2017 H1</title><link href="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H1" /><published>2017-08-28T00:00:00+00:00</published><updated>2017-08-28T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1</id><content type="html" xml:base="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html">&lt;h1 class=&quot;no_toc&quot; id=&quot;publish-h1-2282017-livetikku&quot;&gt;Publish H1 22.8.2017 ‘Livetikku’&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2017-09-04T02:59:18+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">rkantos’s projects and endeavors in mostly educational times</title><subtitle>rkantos's projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</subtitle><entry><title type="html">Linux Palvelimet H2</title><link href="http://0.0.0.0:8080/2017/09/04/Linux-Palvelimet-H2.html" rel="alternate" type="text/html" title="Linux Palvelimet H2" /><published>2017-09-04T00:00:00+00:00</published><updated>2017-09-04T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/09/04/Linux-Palvelimet-H2</id><content type="html" xml:base="http://0.0.0.0:8080/2017/09/04/Linux-Palvelimet-H2.html">&lt;h1 id=&quot;h2-298-komennot--lokimerkinnät&quot;&gt;H2 29.8 Komennot &amp;amp; lokimerkinnät&lt;/h1&gt;
+&lt;p&gt;========================&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;title: Linux palvelimet ICT4TN021 2017 H2
+tags: [“linux”,”haaga-helia”,”koulu”,”infra”,”such”,”wow”,”test”,”tags”]
+—&lt;/p&gt;
+
+&lt;h1 class=&quot;no_toc&quot; id=&quot;sisältö&quot;&gt;Sisältö&lt;/h1&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#h2-298-komennot--lokimerkinnät&quot; id=&quot;markdown-toc-h2-298-komennot--lokimerkinnät&quot;&gt;H2 29.8 Komennot &amp;amp; lokimerkinnät&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#tehtävänanto-&quot; id=&quot;markdown-toc-tehtävänanto-&quot;&gt;Tehtävänanto |&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#a-lokitapahtumat--fail2ban&quot; id=&quot;markdown-toc-a-lokitapahtumat--fail2ban&quot;&gt;A) Lokitapahtumat | Fail2Ban&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#fail2ban--onnistunut-uudelleenkäynnistys&quot; id=&quot;markdown-toc-fail2ban--onnistunut-uudelleenkäynnistys&quot;&gt;Fail2Ban | Onnistunut uudelleenkäynnistys&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#fail2ban--iptables-onnistunut-kirjautumisten-estäminen&quot; id=&quot;markdown-toc-fail2ban--iptables-onnistunut-kirjautumisten-estäminen&quot;&gt;Fail2Ban &amp;amp; IpTables| Onnistunut kirjautumisten estäminen&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#b-ssh-daemon&quot; id=&quot;markdown-toc-b-ssh-daemon&quot;&gt;B) SSH-Daemon&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#ssh--github--jekyll&quot; id=&quot;markdown-toc-ssh--github--jekyll&quot;&gt;SSH | Github | Jekyll&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#c-kaikenkattava-komento-ohjelmien-asentamiseen&quot; id=&quot;markdown-toc-c-kaikenkattava-komento-ohjelmien-asentamiseen&quot;&gt;C) Kaikenkattava komento ohjelmien asentamiseen&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#ohjelmat-&quot; id=&quot;markdown-toc-ohjelmat-&quot;&gt;Ohjelmat |&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#palvelinten-ja-tietokoneiden-ylläpitoon-tarkoitetut-ohjelmat-&quot; id=&quot;markdown-toc-palvelinten-ja-tietokoneiden-ylläpitoon-tarkoitetut-ohjelmat-&quot;&gt;Palvelinten ja tietokoneiden ylläpitoon tarkoitetut ohjelmat |&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#tarvittavat-lisäohjelmavarastot-&quot; id=&quot;markdown-toc-tarvittavat-lisäohjelmavarastot-&quot;&gt;Tarvittavat lisäohjelmavarastot |&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#työpöytäohjelmat-&quot; id=&quot;markdown-toc-työpöytäohjelmat-&quot;&gt;Työpöytäohjelmat |&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#tarvittavat-lisäohjelmavarastot--1&quot; id=&quot;markdown-toc-tarvittavat-lisäohjelmavarastot--1&quot;&gt;Tarvittavat lisäohjelmavarastot |&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#guin-vaativat-muut-kuin-työpöytäohjelmat-&quot; id=&quot;markdown-toc-guin-vaativat-muut-kuin-työpöytäohjelmat-&quot;&gt;GUI:n vaativat muut kuin työpöytäohjelmat |&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#tarvittavat-lisäohjelmavarastot--2&quot; id=&quot;markdown-toc-tarvittavat-lisäohjelmavarastot--2&quot;&gt;Tarvittavat lisäohjelmavarastot |&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#koko-komento-&quot; id=&quot;markdown-toc-koko-komento-&quot;&gt;Koko komento |&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#d-komentorivillä-toimivat-ohjelmat-1&quot; id=&quot;markdown-toc-d-komentorivillä-toimivat-ohjelmat-1&quot;&gt;D) Komentorivillä toimivat ohjelmat &lt;a href=&quot;https://kkovacs.eu/cool-but-obscure-unix-tools/&quot;&gt;1&lt;/a&gt;&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#dtrx-2--do-the-right-extraction&quot; id=&quot;markdown-toc-dtrx-2--do-the-right-extraction&quot;&gt;dtrx &lt;a href=&quot;https://brettcsmith.org/2007/dtrx/&quot;&gt;2&lt;/a&gt; | “Do The Right Extraction”&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#mtr--mtr-tiny-3--traceroute--ping-20&quot; id=&quot;markdown-toc-mtr--mtr-tiny-3--traceroute--ping-20&quot;&gt;mtr / mtr-tiny &lt;a href=&quot;https://github.com/traviscross/mtr&quot;&gt;3&lt;/a&gt; | Traceroute &amp;amp; ping “2.0”&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ipcalc-4--verkko-osoitelaskuri&quot; id=&quot;markdown-toc-ipcalc-4--verkko-osoitelaskuri&quot;&gt;ipcalc &lt;a href=&quot;https://github.com/nmav/ipcalc&quot;&gt;4&lt;/a&gt; | Verkko-osoitelaskuri&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lähteet-&quot; id=&quot;markdown-toc-lähteet-&quot;&gt;Lähteet |&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tehtävänanto-&quot;&gt;Tehtävänanto |&lt;/h3&gt;
+
+&lt;p&gt;Tehtävänanto on osa Tero Karvisen Haaga-Heliassa suoritettavaa Linux-kurssia. http://terokarvinen.com/2017/aikataulu-linux-palvelimet-ict4tn021-4-ti-ja-5-to-alkusyksy-2017-5-op&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;a) Aiheuta lokiin kaksi eri tapahtumaa: yksi esimerkki onnistuneesta ja yksi esimerkki epäonnistuneesta tai kielletystä toimenpiteestä. Analysoi rivit yksityiskohtaisesti.&lt;/p&gt;
+
+  &lt;p&gt;b) Vapaaehtoinen kohta, ei ole opetettu vielä: Asenna SSH-demoni. Kokeile omalla ssh-palvelimellasi jotain seuraavista: ssh-copy-id, sshfs, scp tai git. (Helpoin lienee scp: ‘scp foo.txt tero@example.com:’)&lt;/p&gt;
+
+  &lt;p&gt;c) Tee unelmien apt-get -komento: yksi komentorivi, joka asentaa suosikkiohjelmasi.&lt;/p&gt;
+
+  &lt;p&gt;d) Asenna komentokehotteen paketinhallinnasta kolme itsellesi uutta komentorivillä toimivaa ohjelmaa. Kokeile kutakin ohjelmaa sen pääasiallisessa käyttötarkoituksessa.&lt;/p&gt;
+
+  &lt;p&gt;e) Opettele ulkoa ja harjoittele tärkeimmät komennot (tätä “opettele ulkoa” alakohtaa ei tarvitse raportoida):&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;a-lokitapahtumat--fail2ban&quot;&gt;A) Lokitapahtumat | Fail2Ban&lt;/h1&gt;
+
+&lt;p&gt;Päätin käyttää lokien analysointi-tehtävässä Fail2Ban -ohjelmaa. Fail2Ban on suuniteltu estämään verkkohyökkäyksiä perustuun erilaisiin triggereihin. Yksinkertaisimillaan Fail2Ban estää Linuxin palomuurin avulla (iptables) esimerkiksi liian monta kertaa SSH:n väärällä tunnuksella tai salasanalla yhdistäneen IP-osoitteen määrätyksi ajaksi. Näin voidaan tehokkaasti estää ja ainakin huomattavasti hidastaa hyökkäyksiä, joissa yritetään kokeilla mahdollisimman montaa käyttäjätunnusta tai salasanaa kirjautumiseen.&lt;/p&gt;
+
+&lt;h4 id=&quot;fail2ban--onnistunut-uudelleenkäynnistys&quot;&gt;Fail2Ban | Onnistunut uudelleenkäynnistys&lt;/h4&gt;
+
+&lt;p&gt;Ubuntulle valmiina saatava Fail2Ban -paketti on hyvin helppo laittaa toimimaan SSH:n kanssa. Ohjelmapaketin mukana tulevassa ohjelmapaketissa on valmiina kaikki Fail2Banin SSH:n kanssa toimimiseen saattamiseksi vaadittavat konfiguroinnit. Fail2Ban lukee authlogia, josta se sitten määritellyn mukaisesti estää iptables:n avulla IP-osoitteen tai osoitteet.&lt;/p&gt;
+
+&lt;p&gt;Varmistin jo olemassa olevan Fail2Banin toimivuuden ensin käynnistämällä Fail2Ban -daemonin uudelleen komennolla &lt;strong&gt;sudo service fail2ban restart&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Uudelleenkäynnistyksestä saamme lokiin (/var/syslog) seuraavat merkinnät:&lt;/p&gt;
+
+&lt;p&gt;Ensimmäisellä rivillä, joka on päivätty 4 Syyskuuta klo 02 systemd, eli käytössä olevan Debian 9:n palveluiden tai daemonien hallintaohjelma, kertoo että se on pysäyttämässä Fail2Ban -palvelua.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Sep  4 02:01:56 d systemd[1]: Stopping Fail2Ban Service...&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Fail2Ban -palvelun asiakasohjelma Fail2Ban-client ilmoittaa sekuntia myöhemmin sammuneensa onnistuneesti.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Sep  4 02:01:57 d fail2ban-client[27897]: Shutdown successful&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Systemd ilmoittaa suorittaneensa Fail2Ban -palvelun pysäytyksen onnistuneesti.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Sep  4 02:01:57 d systemd[1]: Stopped Fail2Ban Service.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Uudelleenkäynnistyksen seuraavassa vaiheessa Systemd kertoo seuraavaksi olevansa käynnistämässä Fail2Ban palvelua.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Sep  4 02:01:57 d systemd[1]: Starting Fail2Ban Service...&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Fail2Ban-asiakasohjelma prosessinumerolla 27923 kertoo käynnistävänsä Fail2Ban palvelinta fail2ban.server -prosessinimellä sekä numerolla 27924.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Sep  4 02:01:57 d fail2ban-client[27923]: 2017-09-04 02:01:57,477 fail2ban.server         [27924]: INFO    Starting Fail2ban v0.9.6&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Fail2Ban-asiakasohjelma kertoo Fail2Ban:in käynnistyvän daemon-tilassa.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Sep  4 02:01:57 d fail2ban-client[27923]: 2017-09-04 02:01:57,477 fail2ban.server         [27924]: INFO    Starting in daemon mode&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Systemd kertoo lopuksi Fail2Ban -palvelun käynnistyneen onnistuneesti.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Sep  4 02:01:57 d systemd[1]: Started Fail2Ban Service.&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;fail2ban--iptables-onnistunut-kirjautumisten-estäminen&quot;&gt;Fail2Ban &amp;amp; IpTables| Onnistunut kirjautumisten estäminen&lt;/h4&gt;
+
+&lt;p&gt;Fail2Ban:in aktivoimiseksi kirjauduin omalle palvelimelleni viisi kertaa virheellisillä tunnuksilla. Tämän jälkeen Fail2Ban estää seuraavat kirjautumisyritykset kyseisestä IP-osoitteesta kymmenen minuutin ajaksi.&lt;/p&gt;
+
+&lt;p&gt;Ensinäkin näemme /var/auth.log:ilta seuraavan viisi kertaa:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Sep  4 02:21:43 d sshd[15977]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=85.76.7.100  user=x
+Sep  4 02:21:45 d sshd[15945]: error: PAM: Authentication failure for x from 85.76.7.100
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Virheilmoituksessa sshd -daemon prosessinumerolla 15977 kertoo klo 02:21 epäonnistuneesta autentikoinnista käyttäjälle x, IP-osoitteesta 85.76.7.100. Autentikointi virhe on alunperin Linuxin PAM:n, eli Linuxin käyttäjien tunnistusjärjestelmän raportoima. SSH-palvelu yrittää siis kirjata käyttäjän sisään verraten käyttäjätunnusta ja salasanaa PAM:sta löytyviin tunnuksiin. Väärät tunnukset syötettäessä SSHd -daemon siis estää yhteyden avaamisen ja siitä syntyy lokimerkintä.&lt;/p&gt;
+
+&lt;p&gt;Fail2Ban lukee jatkuvasti tätä /var/auth.log -tiedostoa, ja pystyy sen perusteella tekemään muutoksia iptables-palomuuriin, estäen logeissa esiintyvän IP-osoitteen. Fail2Banin logitiedostosta /var/log/fail2ban.log näemme onnistuneen eston lokimerkintänä:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2017-09-04 02:21:53,948 fail2ban.actions        [27926]: NOTICE  [sshd] Ban 85.76.7.126
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Fail2Ban:in oma logi siis kertoo fail2ban.actions -prosessinimellä ja numerolla 27926 toimineen prosessin estäneensä ‘Ban’ sshd-konfiguraatiolla määrätyn IP-osoitteen 85.76.7.126.&lt;/p&gt;
+
+&lt;h1 id=&quot;b-ssh-daemon&quot;&gt;B) SSH-Daemon&lt;/h1&gt;
+
+&lt;h4 id=&quot;ssh--github--jekyll&quot;&gt;SSH | Github | Jekyll&lt;/h4&gt;
+
+&lt;p&gt;SSH-yhteyksien käyttäminen on itselle jo suhteellisen tuttua. Aikaisemmin käytin tiedostojen varmuuskopiointiin virtuaalipalvelinta ja käytin tarkoitukseen Baculaa, joka SSHFS:n avulla siirsi tiedostot. Kurssin yhteydessä ja tehtävien suositellun julkisen julkaisun vuoksi etsin itselle siihen tarkoitukseen parhaiten sopivan tavan. Mietin eri vahtoehtoja ja budjetti ja tietoturva edellä päädyin Githubin hostaukseen maksuttomuudesta ja luonnollisesta tietoturvasta johtuen. Maksuttomuus tulee ilmaisista repositoryjen ilmaisuudesta ja tietoturva vain HTML-sivujen julkaisun sallimisesta. Halusin kuitenkin käyttää jonkinlaista CMS-järjestelmää, ja ilman mahdollisuutta käyttää tietokantoja ja monimutkaisempaa ohjelmointia, päädyin Jekylliin. Tässä kohdassa siis näytän lyhyesti vain miten julkaisen sivut Githubiin Git -ohjelman avulla.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/git-jekyll.gif&quot; alt=&quot;alt text&quot; title=&quot;apt-get&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;c-kaikenkattava-komento-ohjelmien-asentamiseen&quot;&gt;C) Kaikenkattava komento ohjelmien asentamiseen&lt;/h1&gt;
+
+&lt;h4 id=&quot;ohjelmat-&quot;&gt;Ohjelmat |&lt;/h4&gt;
+
+&lt;p&gt;oracle-java7/8/9-installer adobe-flashplugin python python-pip git ruby-dev build-essential&lt;/p&gt;
+
+&lt;h4 id=&quot;palvelinten-ja-tietokoneiden-ylläpitoon-tarkoitetut-ohjelmat-&quot;&gt;Palvelinten ja tietokoneiden ylläpitoon tarkoitetut ohjelmat |&lt;/h4&gt;
+
+&lt;p&gt;xrdp htop openssh-server ssh bwm-ng aptitude dtrx mtr ipcalc&lt;/p&gt;
+
+&lt;h5 id=&quot;tarvittavat-lisäohjelmavarastot-&quot;&gt;Tarvittavat lisäohjelmavarastot |&lt;/h5&gt;
+&lt;p&gt;Kaikki ohjelmat eivät löydy Ubuntun tai Debianin oletusohjelmavarastoista, joten joudut lisäämään niitä varten kolmansien osapuolien ylläpitämät ohjelmavarastot:&lt;/p&gt;
+
+&lt;h4 id=&quot;työpöytäohjelmat-&quot;&gt;Työpöytäohjelmat |&lt;/h4&gt;
+
+&lt;p&gt;chrome chromium skype spotify firefox teamviewer icaclient libreoffice qownnotes flux vlc transmission mosh filezilla openvpn&lt;/p&gt;
+
+&lt;h5 id=&quot;tarvittavat-lisäohjelmavarastot--1&quot;&gt;Tarvittavat lisäohjelmavarastot |&lt;/h5&gt;
+
+&lt;p&gt;Kaikki ohjelmat eivät löydy Ubuntun tai Debianin oletusohjelmavarastoista, joten joudut lisäämään niitä varten kolmansien osapuolien ylläpitämät ohjelmavarastot:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo add-apt-repository ppa:pbek/qownnotes
+sudo add-apt-repository ppa:saiarcot895/chromium-dev
+sudo add-apt-repository ppa:nathan-renniewaldock/flux
+sudo add-apt-repository ppa:nilarimogard/webupd8 
+sudo add-apt-repository ppa:webupd8team/java
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Dropboxin ohjelmavaraston lisäämiseksi on tehtävä seuraavaa: https://www.dropbox.com/help/desktop-web/linux-repository&lt;/p&gt;
+
+&lt;p&gt;Dropboxin ohjelmavaraston lisääminen /etc/apt/sources.list -tiedostoon: deb http://linux.dropbox.com/ubuntu natty main
+Sekä Dropboxin ohjelmavaraston avaimen lisääminen apt:hen:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;guin-vaativat-muut-kuin-työpöytäohjelmat-&quot;&gt;GUI:n vaativat muut kuin työpöytäohjelmat |&lt;/h4&gt;
+&lt;p&gt;grub-customizer winehq-devel remmina teamspeak gimp blueman steam(multiverse tarvitaan) cheese obs-studio&lt;/p&gt;
+
+&lt;h5 id=&quot;tarvittavat-lisäohjelmavarastot--2&quot;&gt;Tarvittavat lisäohjelmavarastot |&lt;/h5&gt;
+&lt;p&gt;Kaikki ohjelmat eivät löydy Ubuntun tai Debianin oletusohjelmavarastoista, joten joudut lisäämään niitä varten kolmansien osapuolien ylläpitämät ohjelmavarastot:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo add-apt-repository ppa:materieller/teamspeak3
+sudo add-apt-repository ppa:obsproject/obs-studio
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;koko-komento-&quot;&gt;Koko komento |&lt;/h4&gt;
+
+&lt;p&gt;Lisätään ensin tarvittavat ohjelmavarastot:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo add-apt-repository ppa:pbek/qownnotes ppa:saiarcot895/chromium-dev ppa:nathan-renniewaldock/flux ppa:nilarimogard/webupd8 ppa:webupd8team/java ppa:danielrichter2007/grub-customizer ppa:materieller/teamspeak3 ppa:obsproject/obs-studio
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Asennetaan kaikki ohjelmat:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install oracle-java9-installer oracle-java8-installer adobe-flashplugin python python-pip git ruby-dev build-essential xrdp htop openssh-server ssh bwm-ng aptitude dtrx mtr ipcalc chrome chromium skype spotify firefox teamviewer icaclient libreoffice qownnotes flux vlc transmission mosh filezilla openvpn grub-customizer winehq-devel remmina teamspeak gimp blueman steam cheese obs-studio
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;d-komentorivillä-toimivat-ohjelmat-1&quot;&gt;D) Komentorivillä toimivat ohjelmat &lt;a href=&quot;https://kkovacs.eu/cool-but-obscure-unix-tools/&quot;&gt;1&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;Ubuntulla seuraavia ohjelmia varten ei tarvita erillisiä ohjelmavarastoja.&lt;/p&gt;
+
+&lt;h4 id=&quot;dtrx-2--do-the-right-extraction&quot;&gt;dtrx &lt;a href=&quot;https://brettcsmith.org/2007/dtrx/&quot;&gt;2&lt;/a&gt; | “Do The Right Extraction”&lt;/h4&gt;
+
+&lt;p&gt;Sovellus on tarkoitettu useiden eri pakkasuformaattien purkamiseen ilman kaikkien ohjelmien komentojen muistamista erikseen. Ohjelman luojan mukaan ohjelma purkaa tar, zip, cpio, deb, rpm, gem, 7z, cab, lzh, rar, gz, bz2, lzma, xz -tiedostot sekä useita exe -tiedostoja. Ohjelma pystyy purkamaan myös Microsoftin cab -tiedostoja, InstallShield -arkistoja ja itsestään purkautuvia zippejä.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/dtrx.gif&quot; alt=&quot;dtrx&quot; title=&quot;apt-get&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;mtr--mtr-tiny-3--traceroute--ping-20&quot;&gt;mtr / mtr-tiny &lt;a href=&quot;https://github.com/traviscross/mtr&quot;&gt;3&lt;/a&gt; | Traceroute &amp;amp; ping “2.0”&lt;/h4&gt;
+
+&lt;p&gt;mtr on erityisesti verkkossa esiintyvien ongelmien, mutta myös reitityksien selvittämiseen tehty ohjelma. Ohjelma näyttää kätevästi kaiken sekä traceroute:lla että ping:llä (vasteaika ja pakettihäviö) saatavan tiedon samassa ikkunassa.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/mtr.gif&quot; alt=&quot;mtr&quot; title=&quot;apt-get&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;ipcalc-4--verkko-osoitelaskuri&quot;&gt;ipcalc &lt;a href=&quot;https://github.com/nmav/ipcalc&quot;&gt;4&lt;/a&gt; | Verkko-osoitelaskuri&lt;/h4&gt;
+
+&lt;p&gt;Ohjelman nimen mukaisesti ipcalc on tarkoitettu laskemaan verkko-osoitteita esimerkiksi aliverkon peitteen perusteella.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/ipcalc.gif&quot; alt=&quot;ipcalc&quot; title=&quot;apt-get&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;lähteet-&quot;&gt;Lähteet |&lt;/h3&gt;
+
+&lt;p&gt;[1: https://kkovacs.eu/cool-but-obscure-unix-tools/&lt;/p&gt;
+
+&lt;p&gt;[2: https://brettcsmith.org/2007/dtrx/&lt;/p&gt;
+
+&lt;p&gt;[3: https://github.com/traviscross/mtr&lt;/p&gt;
+
+&lt;p&gt;[4: https://github.com/nmav/ipcalc&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Linux palvelimet ICT4TN021 2017 H1</title><link href="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H1" /><published>2017-08-28T00:00:00+00:00</published><updated>2017-08-28T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1</id><content type="html" xml:base="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html">&lt;h1 class=&quot;no_toc&quot; id=&quot;publish-h1-2282017-livetikku&quot;&gt;Publish H1 22.8.2017 ‘Livetikku’&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Sivu on julkaistu ensimmäisen kerran 28.8.2017 ja&lt;/strong&gt; 
 &lt;strong&gt;päivitetty 30.8.2017&lt;/strong&gt;&lt;/p&gt;
