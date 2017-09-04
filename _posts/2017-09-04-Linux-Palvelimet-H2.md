@@ -1,12 +1,12 @@
+---
+title: Linux palvelimet ICT4TN021 2017 H2
+tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
+---
 
 
 # H2 29.8 Komennot & lokimerkinnät
 ========================
 
----
-title: Linux palvelimet ICT4TN021 2017 H2
-tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
----
 
 # Sisältö
 {:.no_toc}

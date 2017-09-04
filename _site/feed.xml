@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2017-09-04T02:59:18+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">rkantos’s projects and endeavors in mostly educational times</title><subtitle>rkantos's projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</subtitle><entry><title type="html">Linux Palvelimet H2</title><link href="http://0.0.0.0:8080/2017/09/04/Linux-Palvelimet-H2.html" rel="alternate" type="text/html" title="Linux Palvelimet H2" /><published>2017-09-04T00:00:00+00:00</published><updated>2017-09-04T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/09/04/Linux-Palvelimet-H2</id><content type="html" xml:base="http://0.0.0.0:8080/2017/09/04/Linux-Palvelimet-H2.html">&lt;h1 id=&quot;h2-298-komennot--lokimerkinnät&quot;&gt;H2 29.8 Komennot &amp;amp; lokimerkinnät&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2017-09-04T03:11:28+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">rkantos’s projects and endeavors in mostly educational times</title><subtitle>rkantos's projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</subtitle><entry><title type="html">Linux palvelimet ICT4TN021 2017 H2</title><link href="http://0.0.0.0:8080/2017/09/04/Linux-Palvelimet-H2.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H2" /><published>2017-09-04T00:00:00+00:00</published><updated>2017-09-04T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/09/04/Linux-Palvelimet-H2</id><content type="html" xml:base="http://0.0.0.0:8080/2017/09/04/Linux-Palvelimet-H2.html">&lt;h1 id=&quot;h2-298-komennot--lokimerkinnät&quot;&gt;H2 29.8 Komennot &amp;amp; lokimerkinnät&lt;/h1&gt;
 &lt;p&gt;========================&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;title: Linux palvelimet ICT4TN021 2017 H2
-tags: [“linux”,”haaga-helia”,”koulu”,”infra”,”such”,”wow”,”test”,”tags”]
-—&lt;/p&gt;
 
 &lt;h1 class=&quot;no_toc&quot; id=&quot;sisältö&quot;&gt;Sisältö&lt;/h1&gt;
 
@@ -224,7 +219,7 @@ sudo add-apt-repository ppa:obsproject/obs-studio
 
 &lt;p&gt;[3: https://github.com/traviscross/mtr&lt;/p&gt;
 
-&lt;p&gt;[4: https://github.com/nmav/ipcalc&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Linux palvelimet ICT4TN021 2017 H1</title><link href="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H1" /><published>2017-08-28T00:00:00+00:00</published><updated>2017-08-28T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1</id><content type="html" xml:base="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html">&lt;h1 class=&quot;no_toc&quot; id=&quot;publish-h1-2282017-livetikku&quot;&gt;Publish H1 22.8.2017 ‘Livetikku’&lt;/h1&gt;
+&lt;p&gt;[4: https://github.com/nmav/ipcalc&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="haaga-helia" /><category term="koulu" /><category term="infra" /><category term="such" /><category term="wow" /><category term="test" /><category term="tags" /><summary type="html">H2 29.8 Komennot &amp;amp; lokimerkinnät ========================</summary></entry><entry><title type="html">Linux palvelimet ICT4TN021 2017 H1</title><link href="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H1" /><published>2017-08-28T00:00:00+00:00</published><updated>2017-08-28T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1</id><content type="html" xml:base="http://0.0.0.0:8080/2017/08/28/Linux-Palvelimet-H1.html">&lt;h1 class=&quot;no_toc&quot; id=&quot;publish-h1-2282017-livetikku&quot;&gt;Publish H1 22.8.2017 ‘Livetikku’&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Sivu on julkaistu ensimmäisen kerran 28.8.2017 ja&lt;/strong&gt; 
 &lt;strong&gt;päivitetty 30.8.2017&lt;/strong&gt;&lt;/p&gt;
@@ -295,19 +290,21 @@ sudo add-apt-repository ppa:obsproject/obs-studio
 
 &lt;p&gt;Asensin E2B:n ensin USB-tikulle… Sitten USB-hubin kanssa säätäessä muistin juuri sen toisen USB-paikan puuttumisen laitteestani. USB-hubin läpi en luonnollisesti saanut USB-tikkua boottaamaan. Suoraan USB-tikun liittäminen laitteeseen ei myöskään paljon edistä asiaa, sillä sitten laitteeseen ei voi enää liittää näppäimistöä.&lt;/p&gt;
 
-&lt;p&gt;Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. – Ei löytynyt sen paremmin mitään boottivalikosta. 
-&lt;img src=&quot;/img/emptybootmanager.jpg&quot; alt=&quot;Asus QM-1 tyhjä boot-valikko&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Seuraavaksi asensin E2B:n siis MicroSD-kortille ja kokeilin bootata laitteen sen kautta. – Ei löytynyt sen paremmin mitään boottivalikosta.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/qm1bootmenu.jpg&quot; alt=&quot;Asus QM-1 UEFI-valikko&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/bootx64.efi.jpg&quot; alt=&quot;Asus QM-1 UEFI-valikko&quot; /&gt;
-Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä “Boot from file”.. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/emptybootmanager.jpg&quot; alt=&quot;Asus QM-1 tyhjää täynnä oleva boot-valikko&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/bootx64.efi.jpg&quot; alt=&quot;Asus QM-1 UEFI-valikko&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Viimeisenä vaihtoehtona laitteen UEFI -valikossa on vielä “Boot from file”.. Tätä kautta voi selata Windowsin BOOT-osiolle josta löytyy .efi -päätteinen tiedosto, jonka kautta saa laitteelle esiasennetun Windowsin päälle. Tätä kautta muistinkin että vastaavanlainen tiedosto pitäisi löytyä myös Ubuntun live-cd isosta. Pienen Googletuksen jälkeen löysin mahdollisesti oikeille jäljille vievän ohjeen. https://askubuntu.com/questions/395879/how-to-create-uefi-only-bootable-usb-live-media&lt;/p&gt;
 
 &lt;p&gt;Koska olin jo samasta microsd-kortista tehnyt boottaavan, ei seuraava vaihe vaatinut kuin ISO-tiedoston tiedostojen purkamisen ja siirtämisen sille. Huomiona tosin se, että E2B formatoi muistitikun oletuksena NTFS -formaattiin ja Asuksen UEFI-bios lukee FAT32 -tiedostojärjestelmiä.&lt;/p&gt;
 
 &lt;p&gt;Kuten kuitenkin aikaisemminkin, ei laite suostu boottaamaan tälläkään vaihtoehdolla vaan saan virheet \EFI\BOOT\BOOTx64.EFI boot failed. tai \EFI\BOOT\grubx64.efi boot failed. , riippuen kumpaa tiedostoa \BOOT -kansiossa yritän käyttää.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/bootx64.efi-boot-failed.jpg&quot; alt=&quot;Tyhjää täys&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/bootx64.efi-boot-failed.jpg&quot; alt=&quot;Ei onnistu&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;usb-tikun-luonti--linuxium-15&quot;&gt;USB-tikun luonti | Linuxium &lt;a href=&quot;https://linuxiumcomau.blogspot.com/2017/06/customizing-ubuntu-isos-documentation.html&quot;&gt;15&lt;/a&gt;&lt;/h4&gt;
 
