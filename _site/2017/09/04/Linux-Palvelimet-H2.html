@@ -211,7 +211,9 @@ Sep  4 02:21:45 d sshd[15945]: error: PAM: Authentication failure for x from 85.
 
 <h4 id="ssh--github--jekyll">SSH | Github | Jekyll</h4>
 
-<p>SSH-yhteyksien käyttäminen on itselle jo suhteellisen tuttua. Aikaisemmin käytin tiedostojen varmuuskopiointiin virtuaalipalvelinta ja käytin tarkoitukseen Baculaa, joka SSHFS:n avulla siirsi tiedostot. Kurssin yhteydessä ja tehtävien suositellun julkisen julkaisun vuoksi etsin itselle siihen tarkoitukseen parhaiten sopivan tavan. Mietin eri vahtoehtoja ja budjetti ja tietoturva edellä päädyin Githubin hostaukseen maksuttomuudesta ja luonnollisesta tietoturvasta johtuen. Maksuttomuus tulee ilmaisista repositoryjen ilmaisuudesta ja tietoturva vain HTML-sivujen julkaisun sallimisesta. Halusin kuitenkin käyttää jonkinlaista CMS-järjestelmää, ja ilman mahdollisuutta käyttää tietokantoja ja monimutkaisempaa ohjelmointia, päädyin Jekylliin. Tässä kohdassa siis näytän lyhyesti vain miten julkaisen sivut Githubiin Git -ohjelman avulla.</p>
+<p>SSH-yhteyksien käyttäminen on itselle jo suhteellisen tuttua. Aikaisemmin käytin tiedostojen varmuuskopiointiin virtuaalipalvelinta ja käytin tarkoitukseen Baculaa, joka SSHFS:n avulla siirsi tiedostot.</p>
+
+<p>Kurssin yhteydessä ja tehtävien suositellun julkisen julkaisun vuoksi etsin itselle siihen tarkoitukseen parhaiten sopivan tavan. Mietin eri vahtoehtoja ja budjetti ja tietoturva edellä päädyin Githubin hostaukseen maksuttomuudesta ja luonnollisesta tietoturvasta johtuen. Maksuttomuus tulee ilmaisista repositoryjen ilmaisuudesta ja tietoturva vain HTML-sivujen julkaisun sallimisesta. Halusin kuitenkin käyttää jonkinlaista CMS-järjestelmää, ja ilman mahdollisuutta käyttää tietokantoja ja monimutkaisempaa ohjelmointia, päädyin Jekylliin. Tässä kohdassa siis näytän lyhyesti vain miten julkaisen sivut Githubiin Git -ohjelman avulla.</p>
 
 <p><img src="/img/git-jekyll.gif" alt="alt text" title="apt-get" /></p>
 
@@ -249,7 +251,9 @@ sudo add-apt-repository ppa:webupd8team/java
 <p>Dropboxin ohjelmavaraston lisääminen /etc/apt/sources.list -tiedostoon: deb http://linux.dropbox.com/ubuntu natty main
 Sekä Dropboxin ohjelmavaraston avaimen lisääminen apt:hen:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
+<div class="highlighter-rouge"><pre class="highlight"><code>echo deb http://linux.dropbox.com/ubuntu natty main | sudo tee /etc/apt/sources.list.d/dropbox.list
+
+sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
 </code></pre>
 </div>
 

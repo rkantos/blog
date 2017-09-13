@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Linux palvelimet ICT4TN021 2017 H3</title>
+  <meta name="description" content="Sisältö |">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3.html">
+  <link rel="alternate" type="application/rss+xml" title="rkantos&#39;s projects and endeavors in mostly educational times" href="/feed.xml">
+  
+  
+
+
+
+
+<style type="text/css">
+ 
+</style>
+</head>
+
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">rkantos&#39;s projects and endeavors in mostly educational times</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+          
+            
+            
+            <a class="page-link" href="/about/">About</a>
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Linux palvelimet ICT4TN021 2017 H3</h1>
+    <p class="post-meta">
+      <time datetime="2017-09-11T00:00:00+00:00" itemprop="datePublished">
+        
+        Sep 11, 2017
+      </time>
+      </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 class="no_toc" id="sisältö-">Sisältö |</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#tehtävänanto-" id="markdown-toc-tehtävänanto-">Tehtävänanto |</a></li>
+  <li><a href="#a-apache-ja-käyttäjäkohtaiset-kotisivut-" id="markdown-toc-a-apache-ja-käyttäjäkohtaiset-kotisivut-">A) Apache ja käyttäjäkohtaiset kotisivut |</a>    <ul>
+      <li><a href="#apache2--asennus" id="markdown-toc-apache2--asennus">Apache2 | Asennus</a></li>
+      <li><a href="#apache2---käyttäjien-kotisivut" id="markdown-toc-apache2---käyttäjien-kotisivut">Apache2 |  Käyttäjien kotisivut</a></li>
+      <li><a href="#apache2--muutoksien-käyttöönotto-ja-toiminnan-varmistus" id="markdown-toc-apache2--muutoksien-käyttöönotto-ja-toiminnan-varmistus">Apache2 | Muutoksien käyttöönotto ja toiminnan varmistus</a></li>
+    </ul>
+  </li>
+  <li><a href="#b-apachen-ilmoittamat-statukset" id="markdown-toc-b-apachen-ilmoittamat-statukset">B) Apachen ilmoittamat statukset</a>    <ul>
+      <li><a href="#http-tilannekoodi-200--onnistunut-sivulataus" id="markdown-toc-http-tilannekoodi-200--onnistunut-sivulataus">HTTP tilannekoodi 200 | onnistunut sivulataus</a></li>
+      <li><a href="#http-tilannekoodi-404--sivua-ei-löytynyt" id="markdown-toc-http-tilannekoodi-404--sivua-ei-löytynyt">HTTP tilannekoodi 404 | sivua ei löytynyt</a></li>
+    </ul>
+  </li>
+  <li><a href="#d-apachen-konfigurointivirhe--open-xchange" id="markdown-toc-d-apachen-konfigurointivirhe--open-xchange">D) Apachen konfigurointivirhe | Open-Xchange</a>    <ul>
+      <li><a href="#virheilmoitus--open-xchange" id="markdown-toc-virheilmoitus--open-xchange">Virheilmoitus | Open-Xchange</a></li>
+    </ul>
+  </li>
+  <li><a href="#e--phpmyadmin" id="markdown-toc-e--phpmyadmin">E)  phpMyAdmin</a></li>
+  <li><a href="#j-lamp--asennus" id="markdown-toc-j-lamp--asennus">J) LAMP -asennus</a>    <ul>
+      <li><a href="#apache2-testaus-" id="markdown-toc-apache2-testaus-">Apache2 testaus |</a></li>
+      <li><a href="#mysql-ja-php-testaus--phpmyadmin" id="markdown-toc-mysql-ja-php-testaus--phpmyadmin">MySQL ja PHP testaus | phpMyadmin</a></li>
+      <li><a href="#lähteet-" id="markdown-toc-lähteet-">Lähteet |</a></li>
+    </ul>
+  </li>
+</ul>
+<h3 id="tehtävänanto-">Tehtävänanto |</h3>
+
+<p>Tehtävänanto on osa Tero Karvisen Haaga-Heliassa suoritettavaa Linux-kurssia. http://terokarvinen.com/2017/aikataulu-linux-palvelimet-ict4tn021-4-ti-ja-5-to-alkusyksy-2017-5-op</p>
+
+<blockquote>
+  <p>a) Asenna Apache, laita käyttäjien kotisivut (http://example.com/~tero) toimimaan. Testaa esimerkkikotisivulla. Tämä a-kohta on vaihdettu.</p>
+
+  <p>b) Surffaa oman palvelimesi weppisivuja. Etsi Apachen lokista esimerkki onnistuneesta (200 ok) sivulatauksesta ja epäonnistuneesta (esim 404 not found) sivulatauksesta. Analysoi rivit.Tee jokin seuraavista (yksi riittää, useampi vapaaehtoisena lisätehtävänä):</p>
+
+  <p>c) Tee virhe weppipalvelimella ajettavaan koodiin (esim PHP tai Python), etsi se lokista ja analysoi tuo lokirivi</p>
+
+  <p>d) Tee virhe johonkin Apachen asetustiedostoon, etsi ja analysoi tuo rivi. Etsimiseen sopivat esimerkiksi Apachen omat lokit, syslog sekä ‘apache2ctl configtest’.</p>
+
+  <p>e) Asenna ja kokeile PhpMyAdmin:a tai jotain muuta valmista weppiliittymää tietokantojen hallinnointiin.</p>
+
+  <p>f) Tee palvelimella ajettava weppiohjelma, joka tekee käyttäjälle jonkin yksinkertaisen laskun (esim. painoindeksi BMI)</p>
+
+  <p>g) Tee palvelimella ajettava weppiohjelma, joka käyttää tietokantaa. Voit tehdä jonkin yksinkertaisen CRUD-ohjelman, esimerkiksi TODO-listan</p>
+
+  <p>h) Tee Apachelle uusi sivu, joka näkyy suoraan palvelimen pääsivulla, mutta jonka sivuja voi muokata normaalin käyttäjän oikeuksilla (name based virtual host, DocumentRoot käyttäjän kotihakemistoon).</p>
+
+  <p>i) Kuinka monta eri HTTP Status:ta (200, 404, 500…) saat aiheutettua lokeihin? Selitä, miten aiheutit tilanteet ja analysoi yksi rivi kustakin statuksesta.</p>
+
+  <p>j) Asenna LAMP (Linux, Apache, MySQL, PHP). Testaa kunkin komponentin toiminta. Testaa lopuksi kokonaisuus. (Voit aloittaa tilanteesta, jossa Linux-käyttöjärjestelmä on jo asennettu, mutta ei muita (AMP) osia.</p>
+
+  <p>k) Kokeile jotain Flaskin uutta ominaisuutta flask-testipalvelimessa. Voit kokeilla esim. muotteja (templates), tietokantaa tai syötteiden ottamista lomakkeilta (forms).</p>
+
+  <p>l) Asenna Python Flask + PostgreSQL + Apache mod WSGI. Testaa kunkin komponentin toiminta. Testaa lopuksi kokonaisuus. (vaikea)</p>
+</blockquote>
+
+<h1 id="a-apache-ja-käyttäjäkohtaiset-kotisivut-">A) Apache ja käyttäjäkohtaiset kotisivut |</h1>
+
+<h4 id="apache2--asennus">Apache2 | Asennus</h4>
+
+<p>Apachen asennuspaketti löytyy suurimpien distrojen oletusohjelmavarastoista ja sen asentaminen onnistuu komennolla <code class="highlighter-rouge">sudo apt-get install apache2</code></p>
+
+<p>Käyttämässäni Ubuntu 16.04.3 -versiossa Apachen oletuskonfigurointitiedostot ovat valmiina näyttämään sivun kaikissa kyseiseen tietokoneeseen osoittavissa osoitteissa. Tämä selviää oletus virtuaali-isännän konfigurointitiedostosta, joka löytyy polusta <code class="highlighter-rouge">/etc/apache2/sites-available/000-default.conf</code>Ubuntulla voit muokata tiedostoa komennolla <em>sudoedit</em>, joka avaa oletuksena helppokäyttöisen Nano -editorin.</p>
+
+<p>Tiedostosta löytyy rivi <code class="highlighter-rouge">&lt;VirtualHost *:80&gt;</code>,  jossa tähteä käytetään villikorttina kuvaamaan mitä tahansa osoitetta joka koneeseen osoittaa. Kaksoispiste ja numero kuvaa sitä porttia missä Apache2 -palvelin kuuntelee pyyntöjä. Tässä on kyseessä portti 80, joka on normaali HTTP-portti. Voit halutessasi estää oletussivuston näkymisen kaikkiin osoitteisiin, joko muokkaamalla VirtualHost -riviä näin, jolloin palvelin kuuntelee vain paikallisia pyyntöjä:</p>
+
+<p><code class="highlighter-rouge">&lt;VirtualHost localhost:80&gt;</code></p>
+
+<p>Tai poistamalla koko oletussivun konfiguroinnin käytöstä komennolla:</p>
+
+<p><code class="highlighter-rouge">a2dissite 000-default  &amp;&amp; sudo service apache2 reload</code></p>
+
+<h4 id="apache2---käyttäjien-kotisivut">Apache2 |  Käyttäjien kotisivut</h4>
+
+<p>Käyttäjien kotisivut saadaan toimintaan lisäämällä käyttäjän, jolle kotisivut halutaan lisätä, kotihakemistoon kansio <code class="highlighter-rouge">public_html</code>. Ubuntulla Apachen mukana tulevat konfigurointiskriptit sisältävät konfigurointityökalun käyttäjäkohtaisten kotihakemistojen lisäämiseen.</p>
+
+<p>Otetaan siis käyttäjien omat kotisivut käyttöön komennolla <code class="highlighter-rouge">sudo a2enmod userdir</code></p>
+
+<p>Luodaan siis sisäänkirjautuneell käyttäjälle kotihakemistoon public_html -kansio komennolla <code class="highlighter-rouge">mkdir ~/public_html_</code>. Tilde, eli “~”-merkki tarkoittaa tässä siis kirjautuneen käyttäjän kotihakemistoa. Myöhemmin käyttäjien sivuja selattaessa tilde tarkoittaa, että ollaan jonkin käyttäjän kotisivuilla, eli käyttäjälle tehdyn public_html -kansion sisällä. Esimerkiksi “http://localhost/~käyttäjä”</p>
+
+<h4 id="apache2--muutoksien-käyttöönotto-ja-toiminnan-varmistus">Apache2 | Muutoksien käyttöönotto ja toiminnan varmistus</h4>
+
+<p>Käynnistetään ensin Apache2 -palvelin uudelleen, jotta kaikki muutokset tulevat voimaan. Palvelimen voi käynnistää uudelleen komennolla<code class="highlighter-rouge">sudo service apache2 restart</code></p>
+
+<p>Varmistetaan Apachen -testisivun toiminta menemällä osoitteeseen http://localhost ja kotisivujen toiminta menemällä osoitteeseen http://localhost/~käyttäjänimi , omassa tapauksessani http://localhost/~k</p>
+
+<p>Tässä koko asennus giffinä!
+<img src="/img/apache2-asennus.gif" alt="Apache2" title="apt-get" /></p>
+
+<h1 id="b-apachen-ilmoittamat-statukset">B) Apachen ilmoittamat statukset</h1>
+
+<p>Apachelle lähetettyihin pyyntöihin liittyvät lokimerkinnät löytyvät /var/log/apache2/access.log -polusta. Apache kirjoittaa lokiin Ubuntun oletuskonfiguraatiolla kaikki palvelimelle tehdyt pyynnöt ja niihin liittyvät metatiedot. <a href="https://httpd.apache.org/docs/2.4/logs.html">6</a></p>
+
+<h4 id="http-tilannekoodi-200--onnistunut-sivulataus">HTTP tilannekoodi 200 | onnistunut sivulataus</h4>
+
+<p>Onnistuneen sivulatauksen lokimerkintään kuuluu, kuten kaikkiin access.log -tiedostoon oletuksena merkittäviin riveihin, sivua pyytäneen asiakkaan IP-osoite, aika, päivämäärä, palvelimen aikavyöhyke, pyynnön tyyppi, hakemisto, protokolla, HTTP-tilannekoodi, pyynnön koko ja tiedot käyttäjän selaimesta (User Agent).</p>
+
+<p><code class="highlighter-rouge">127.0.0.1 - - [12/Sep/2017:00:07:01 +0300] "GET /~k/ HTTP/1.1" 200 696 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0"</code></p>
+
+<p>Oheisessa lokimerkinnässä kohdat tarkoittavat seuraavaa:</p>
+
+<p>Asiakkaan IP-osoite: 127.0.0.1, pyyntö tuli siis localhostilta eli samalta tietokoneelta.</p>
+
+<p>Päivämäärä, aika ja aikavyöhyke: [12/Sep/2017:00:07:01 +0300]</p>
+
+<p>Pyynnön sisältö: “GET /~k/ HTTP/1.1”, pyyntö käytti HTTP1.1 -protokollaa ja pyysi GET-pyynnöllä palvelimelta hakemistoa /~k/</p>
+
+<p>Pyynnön koko ja HTTP-tilannekoodi: 200 696, HTTP-tilannekoodi 200 kertoo onnistuneesta latauksesta ja luku 696 pyynnön koosta tavuina.</p>
+
+<p>Välittäjätieto tulisi “-“ kohdassa väliviivan tilalle, mutta koska tässä tapauksessa asiakas pyysi suoraan hakemistoa /~k/ eikä tullut esimerkiksi linkin kautta ei lokimerkintä ole viivaa rikkaampi.</p>
+
+<p>Viimeisenä kerrotaan käyttäjän tietoja User Agentin muodossa: “Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:55.0) Gecko/20100101 Firefox/55.0”, Käyttäjä tuli sivulle siis käyttäen selaimella joka mainostaa itseään Mozilla/5.0 yhteensopivana. Käyttäjällä oli käytössä 64 bittinen todennäköisesti graafisella ympäristöllä toimiva (X11) Ubuntu. User Agent kertoo vielä myös Firefoxin tarkan version (Firefox/55.0) sekä sen käyttämän selainmoottorin version (Gecko/20100101).</p>
+
+<h4 id="http-tilannekoodi-404--sivua-ei-löytynyt">HTTP tilannekoodi 404 | sivua ei löytynyt</h4>
+
+<p><code class="highlighter-rouge">::1 - - [12/Sep/2017:00:10:40 +0300] "GET /~k/blog/ HTTP/1.1" 404 498 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/62.0.3202.9 Chrome/62.0.3202.9 Safari/537.36"</code></p>
+
+<p>404 -tilannekoodin kanssa suurimpana erona oli käyttämäni selain Chromium.</p>
+
+<p>Asiakkaan IP-osoite: ::1, pyyntö tuli siis localhostilta (IPv6) eli samalta tietokoneelta.</p>
+
+<p>Päivämäärä, aika ja aikavyöhyke: [13/Sep/2017:00:10:40 +0300]</p>
+
+<p>Pyynnön sisältö: “GET /~k/blog/ HTTP/1.1”, pyyntö käytti HTTP1.1 -protokollaa ja pyysi GET-pyynnöllä palvelimelta hakemistoa /~k/blog/</p>
+
+<p>Pyynnön koko ja HTTP-tilannekoodi: 404 498, HTTP-tilannekoodi 404 kertoo sivulatauksesta, jota ei löytynyt asiakkaan pyytämästä hakemistosta ja luku 498 pyynnön koosta tavuina.</p>
+
+<p>Välittäjätieto tulisi “-“ kohdassa väliviivan tilalle, mutta koska tässä tapauksessa asiakas pyysi suoraan hakemistoa /~k/blog/ eikä tullut esimerkiksi linkin kautta ei lokimerkintä ole viivaa rikkaampi.</p>
+
+<p>Viimeisenä kerrotaan käyttäjän tietoja User Agentin muodossa: “Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/62.0.3202.9 Chrome/62.0.3202.9 Safari/537.36”, Käyttäjä tuli sivulle siis käyttäen selaimella joka mainostaa itseään Mozilla/5.0 yhteensopivana. Käyttäjällä oli käytössä 64 bittinen todennäköisesti graafisella ympäristöllä toimiva (X11) Linux. User Agent kertoo vielä myös Chromiumin tarkan version (Ubuntu Chromium/62.0.3202.9) sekä sen käyttämän selainmoottorin version (AppleWebKit/537.36 (KHTML, like Gecko)).</p>
+
+<h1 id="d-apachen-konfigurointivirhe--open-xchange">D) Apachen konfigurointivirhe | Open-Xchange</h1>
+
+<p>Olen noin vuoden ajan ajanut omalla palvelimellani Open-Xchange-nimistä groupware-sovellusta. <a href="https://fi.wikipedia.org/wiki/Ryhm%C3%A4ty%C3%B6sovellus">2</a> Sovellus pyrkii etenkin nykypäivänä olemaan vastine Googlen ja Microsoftin tarjoamille yhdistelmäpalveluille, jotka ovat saaneet alun hyvin nettiselaimessa toimivan sähköpostiohjelman luomisesta. Open-Xchange on vahvasti sähköpostiin perustuva, eikä se sellaisenaan toimi ilman sähköpostipalvelinta. Suurinosa Open-Xchangen komponenteista on avoimeen lähdekoodiin perustuvia, mutta sovellukseen on kuitenkin saatavilla monia lisäosia, joita varten tarvitaan ainakin maksullisia lisenssejä. Olen myös ottanut omalla palvelimellani käyttöön Nextcloudin, jossa on hyvin monia samankaltaisia ominaisuuksia kuin Open-Xchangessa. Kummassakin sovelluksessa on kuitenkin hyvät ja huonot puolensa ja etenkin sähköposti- ja toimistokäytössä Open-Xchange vaikuttaa tällä hetkellä paremmalta.</p>
+
+<p>Päätin ottaa esimerkiksi Open-Xchangen, sillä juuri pariviikkoa aikaisemmin se oli taas lopettanut toimintansa. Yleensä päivitän kaikki palvelimen paketit lähes heti kun ne tulevat saataville. Open-Xchange:lla on tapana päivittyä usein ja yleensä päivityksillä on tapana aiheuttaa ongelmia Open-Xchangen toimivuuteen Apachen kanssa. Ongelmat liittyvät Open-Xchangen Apacheen tarkoitettuun proxy_http -konfigurointitiedostoon, joka on siis  Apachelle tarkoitettu reverse proxy*, joka välittä Open-Xchangen käyttöliittymän eteenpäin. <a href="https://oxpedia.org/wiki/index.php?title=AppSuite:Open-Xchange_Installation_Guide_for_Debian_8.0#Configure_services">1</a></p>
+
+<ul>
+  <li>Reverse proxy tarkoittaa välityspalvelinta, joka piilottaa yleensä palvelimella sijaitsevan sovelluksen taustapalvelut taakseen ja välittää näin tietoa palvelimen tai verkon sisältä ikään kuin se tulisi samalta palvelimelta.</li>
+</ul>
+
+<h4 id="virheilmoitus--open-xchange">Virheilmoitus | Open-Xchange</h4>
+
+<p>Apache käynnistyy Open-Xchangen oletusasennusohjeiden mukaisella konfiguraatiolla ongelmitta. Kuitenkin viimeisimmän Open-Xchangen päivityksen jälkeen sain seuraavanlaista virhettä Apachen error.log -lokitiedostoon, jonka löytää polusta /var/log/apache2/error.log</p>
+
+<p>Ensimmäisellä rivillä Apache kertoo klo 23:06 tapahtuneesta välityspalvelin (proxy) modulin virheestä Apachen prosessissa 17653 . <em>(111)Connection refused: AH00957:</em> , kertoo kuinka Apachen proxy-liitännäinen worker ei onnistunut yhdistämään konfiguroinnin (proxy_http.conf)  mukaiseen osoitteeseen, koska yhteys kiellettiin. AH00957 on ilmeisimmin proxy-liitännäisen virhekoodi <em>connection refused</em> -sanomalle. Viimeinen osa lokimerkintää kertoo protokollan (HTTP) ja portin (IPv4/IPv6 portti 8009), jolla proxy-moduuli yritti yhdistää paikalliseen (localhost<em>) palvelimeen.</em>HTTP: attempt to connect to [::1]:8009 (localhost) failed*</p>
+
+<p><code class="highlighter-rouge">[Wed Sep 11 23:06:01.257436 2017] [proxy:error] [pid 17653] (111)Connection refused: AH00957: HTTP: attempt to connect to [::1]:8009 (localhost) failed</code></p>
+
+<p>Seuraavalla rivillä Apachen saman proxy-moduulin funktio <em>ap_proxy_connect_backend</em> kertoo poistavansa modulin workerin käytöstä konfigurointitiedostossa määritellylle osoitteelle <em>localhost</em>. Myös 60s “katkaisuaika” on määritelty konfigurointitedostoon. (proxy_http.conf)</p>
+
+<p><code class="highlighter-rouge">[Wed Sep 11 23:06:01.297297 2017] [proxy:error] [pid 17653] AH00959: ap_proxy_connect_backend disabling worker for (localhost) for 60s</code></p>
+
+<p>Viimeisellä rivillä kerrotaan koko tapahtuman lopputulema pyynnön aloittaneen asiakkaan <em>84.248.1.11</em> osoitetta myöden. Lokimerkinnässä näkyy myös HTTP-asiakasportti 44508. Jälleen AH -alkuinen AH01114 -virhekoodi vaikuttaa olevan Apachen mod_proxy -liitännäisen virhekoodi <em>failed to make connection to backend</em> -sanomalle. mod_proxy -liitännäinen ei siis onnistunut yhdistämään localhostilla sijaitsevaan taustapalveluun “backend”. Viimeisimpänä lokirivillä kerrotaan mistä osoitteesta virhe on saanut alkunsa. Kyseessä on juuri Open-Xchange -ympäristön etusivu, joka tässä merkinnässä oli osoitteessa <em>https://example.com/appsuite/</em></p>
+
+<p><code class="highlighter-rouge">[Wed Sep 11 23:06:01.297388 2017] [proxy_http:error] [pid 17653] [client 84.248.1.11:44508] AH01114: HTTP: failed to make connection to backend: localhost, referer: https://example.com/appsuite/</code></p>
+
+<h1 id="e--phpmyadmin">E)  phpMyAdmin</h1>
+
+<p>Tämä tehtävä on tehty LAMP-asennuksen MySQL:n ja PHP:n testaus -kohdassa <a href="#mysql-ja-php-testaus--phpmyadmin">PhpMyAdmin</a></p>
+
+<h1 id="j-lamp--asennus">J) LAMP -asennus</h1>
+
+<p>Ubuntulla LAMP-asennus on helppo tehdä, sillä kaikki vaadittavat paketit löytyvät oletusohjelmavarastoista. Kaikki ohjelmat ovat myös lisensoitu avoimen lähdekoodin määrityksen mukaisilla (FSF[]) lisensseillä, joskin vain MySQL on GPL2 lisensoitu. Apache <a href="https://github.com/apache/httpd/blob/trunk/LICENSE">4</a> ja PHP <a href="http://php.net/license/">5</a> käyttävät kummatkin omia lisenssejään. Sekä Apache että PHP -lisenssit ovat BSD tai MIT -tyyppisiä lisenssejä, jotka eivät sisällä rajoituksia koodin käyttämiselle suljetun lähdekoodin sovellutuksissa.</p>
+
+<p>LAMP-asennuksen voi suorittaa komennolla <code class="highlighter-rouge">sudo apt-get install lamp-server^</code> (<code class="highlighter-rouge">^</code> on tärkeä)</p>
+
+<p>Komento on sama, joka ajetaan jos LAMP-palvelin valitaan asennettavaksi Ubuntun asennuksen yhteydessä. <a href="https://help.ubuntu.com/community/ApacheMySQLPHP">3</a></p>
+
+<p>Ainoa käyttäjältä vaadittava toimenpide on vahvan pääkäyttäjän salasanan valitseminen MySQL-palvelimelle. Yksi luotettavimmista tavoista luoda vahva salasana on käyttää APG:ta. <a href="https://help.ubuntu.com/community/StrongPasswords#Generating_Strong_Passwords_in_Ubuntu">7</a> APG:n asentaminen onnistuu komennolla <code class="highlighter-rouge">sudo apt-get install apg</code> , jonka jälkeen vahvoja salasanoja voi luoda vain suorittamalla apg-komennon.</p>
+
+<p>Valittuasi vahvan salasanan ja kirjoitettuasi (tai kopioituasi sen asennusikkunaan ja talteen) asennus valmistuu.</p>
+
+<h4 id="apache2-testaus-">Apache2 testaus |</h4>
+
+<p>Apache voidaan testata menemällä paikalliseen osoitteeseen http://localhost/</p>
+
+<h4 id="mysql-ja-php-testaus--phpmyadmin">MySQL ja PHP testaus | phpMyadmin</h4>
+
+<p>Ehkä helpoin tapa testata kummatkin on asentaa phpMyAdmin. phpMyAdmin käyttää sekä php:ta että MySQL-tietokantaa toimiakseen.</p>
+
+<p>Myös phpMyAdmin voidaan asentaa Ubuntussa oletuksena löytyvistä ohjelmavarastoista komennolla <code class="highlighter-rouge">sudo apt-get install phpmyadmin</code>
+Asennus pyytää antamaan MySQL:lle pääkäyttäjän salasanan, joka on määritelty asennettaessa mysql-server -pakettia LAMP:n asennuksen yhteydessä.</p>
+
+<p>Ubuntun ohjelmavarastoista löytyvä phpMyAdmin -paketti asentaa itselleen automaattisesti oman virtualhost -konfiguroinnin, jonka seurauksena phpMyAdminin hallintapaneeliin pääsee osoitteesta http://localhost/phpmyadmin</p>
+
+<p>Ohessa jälleen phpMyAdminin asennus ja siten myös MySQL:n ja PHP:n testaus giffinä.</p>
+
+<p><img src="/img/phpmyadmin.gif" alt="PHP &amp; MySQL &amp; phpMyAdmin" title="apt-get" /></p>
+
+<h3 id="lähteet-">Lähteet |</h3>
+
+<p>[1: https://oxpedia.org/wiki/index.php?title=AppSuite:Open-Xchange_Installation_Guide_for_Debian_8.0#Configure_services</p>
+
+<p>[2: https://fi.wikipedia.org/wiki/Ryhm%C3%A4ty%C3%B6sovellus</p>
+
+<p>[3: https://help.ubuntu.com/community/ApacheMySQLPHP</p>
+
+<p>[4: https://github.com/apache/httpd/blob/trunk/LICENSE</p>
+
+<p>[5: http://php.net/license/</p>
+
+<p>[6: https://httpd.apache.org/docs/2.4/logs.html</p>
+
+<p>[7: https://help.ubuntu.com/community/StrongPasswords#Generating_Strong_Passwords_in_Ubuntu</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">rkantos&#39;s projects and endeavors in mostly educational times</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              rkantos&#39;s projects and endeavors in mostly educational times
+            
+            </li>
+            
+            <li><a href="mailto:robin@4e.fi">robin@4e.fi</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/rkantos"><span class="icon icon--github"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">rkantos</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/rkantos"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">rkantos</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>rkantos&#39;s projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/4.0.0/anchor.min.js"></script>
+<script type="text/javascript">/*global anchors*/
+/**
+ * Example 1
+ * Add anchors to all h1s, h2s and h3s inside of #post.
+ * Anchors will be always visible.
+ */
+ anchors.options = {
+  placement: 'left',
+  visible: 'touch',
+  icon: ''
+};
+anchors.options.visible = 'always';
+anchors.add('h1, h2, h3, h4, h5, h6');
+
+/**
+ * Example 2
+ * Provide options as an object before adding anchors to the page.
+ * Adds always-visible ¶ anchors in the left margin of each p tag inside .story
+ */</script>
+  </body>
+
+
+</html>
