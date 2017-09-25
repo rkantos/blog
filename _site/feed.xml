@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2017-09-25T08:57:25+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">rkantos’s projects and endeavors in mostly educational times</title><subtitle>rkantos's projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</subtitle><entry><title type="html">Linux palvelimet ICT4TN021 2017 H4</title><link href="http://0.0.0.0:8080/2017/09/22/Linux-Palvelimet-H4.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H4" /><published>2017-09-22T00:00:00+00:00</published><updated>2017-09-22T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/09/22/Linux-Palvelimet-H4</id><content type="html" xml:base="http://0.0.0.0:8080/2017/09/22/Linux-Palvelimet-H4.html">&lt;h1 id=&quot;h4-virtuaalipalvelimet-vps--wordpress&quot;&gt;H4 Virtuaalipalvelimet (VPS) &amp;amp; Wordpress&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2017-09-25T09:02:32+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">rkantos’s projects and endeavors in mostly educational times</title><subtitle>rkantos's projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</subtitle><entry><title type="html">Linux palvelimet ICT4TN021 2017 H4</title><link href="http://0.0.0.0:8080/2017/09/22/Linux-Palvelimet-H4.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H4" /><published>2017-09-22T00:00:00+00:00</published><updated>2017-09-22T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/09/22/Linux-Palvelimet-H4</id><content type="html" xml:base="http://0.0.0.0:8080/2017/09/22/Linux-Palvelimet-H4.html">&lt;h1 id=&quot;h4-virtuaalipalvelimet-vps--wordpress&quot;&gt;H4 Virtuaalipalvelimet (VPS) &amp;amp; Wordpress&lt;/h1&gt;
 
 &lt;h1 id=&quot;hx&quot;&gt;Hx&lt;/h1&gt;
 &lt;p&gt;========================&lt;/p&gt;
@@ -114,7 +114,7 @@ OpenVZ:hen perustuvalla vuoden sopimuksella reilut 12€/1v maksava 768MB muisti
 &lt;p&gt;Eri LEB-palvelimien vertailuun on muutaman vuoden ajan ollut erilaisia suorituskykytesteihin perustuvia vertailusivustoja. Näistä tunnetuin oli ServerBear, joka kuitenkin lopetti toimintansa oikeasti 2014, mutta virallisesti vasta viimevuonna. &lt;a href=&quot;https://twitter.com/ServerBear/status/765034545703813121&quot;&gt;8&lt;/a&gt; ServerBearin tilalle näyttää tällä hetkellä tulleen ainakin ServerScope &lt;a href=&quot;https://www.lowendtalk.com/discussion/85392/building-a-serverbear-alternative/p1&quot;&gt;9&lt;/a&gt;. ServerScope testaa ServerBearin tapaan avoimeen lähdekoodiin perustuvalla skriptillä palvelimien eri ominaisuuksia verkon nopeudesta massamuistin I/O (operaatioita sekunnissa) nopeuteen. &lt;a href=&quot;https://github.com/serverscope/serverscope-benchmark&quot;&gt;10&lt;/a&gt; Muistutan että jos haluat ajaa mitä tahansa ServerScopen kaltaisia skriptejä omalla (virtuaali)palvelimellasi, suosittelen että teet sen heti kun olet ostanut ja asentanut palvelimen. Skripti käyttää luonnollisesti pääkäyttäjän oikeuksia, ja täten sillä on pääsy kaikkeen mitä palvelimellasi on. Tietoturvan säilyttämiseksi kannattaa virtuaalipalvelimen asennus suorittaa tyhjästä heti skirptin suorittamisen jälkeen uudelleen.&lt;/p&gt;
 
 &lt;p&gt;Kuva https://i.imgur.com/NEj56T4.png
-&lt;img src=&quot;/www/img/serverscope.png&quot; alt=&quot;ServerScope Syyskuu 2017&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/img/serverscope.png&quot; alt=&quot;ServerScope Syyskuu 2017&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;ServerScope:n etusivu ja top10 hinta-laatusuhteen omaavat virtuaalipalvelimet. Kärjessä mainitsemisen arvoisia tarjoajia ainakin BuyVM &lt;a href=&quot;https://lowendbox.com/?s=buyvm&amp;amp;searchsubmit=Find&quot;&gt;11&lt;/a&gt; Time4VPS tarjoamat palvelimet ovat tähän asti halvimmat alle 700km etäisyydellä (Helsinki) suomesta löytyvät palvelimet. Kyseessä on usein myös yksi halvimmista Eurooppalaisista palveluntarjoajista hinta-laatusuhteella mitattuna. Vielä lähempänä OpenVZ.io tarjoaa Tukholmasta halpoja virtuaalipalvelimia “Extreme” -luokassaan. Extreme -luokka OpenVZ.io:lla tarkoittaa virtuaalipalvelintarjontaa sellaisista sijanneista, joissa palveluntarjoajalla on mahdollisesti paikallisesti vain yksi tai muutama fyysinen palvelin.&lt;/p&gt;
 
@@ -162,11 +162,11 @@ $ vagrant ssh&lt;/p&gt;
 
 &lt;p&gt;Tämän jälkeen komennolla &lt;code class=&quot;highlighter-rouge&quot;&gt;vagrant init bento/ubuntu-16.04&lt;/code&gt; saimme ladattua Vagrantin “levykuvan”, josta virtualisoitu Ubuntun asennus käynnistetään.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/www/img/Vagrant-A.gif&quot; alt=&quot;Vagrant-A / Lataus&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/Vagrant-A.gif&quot; alt=&quot;Vagrant-A / Lataus&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Lopuksi käynnistetään Vagrant ja yhdistetään siihen SSH:lla. &lt;code class=&quot;highlighter-rouge&quot;&gt;vagrant up&lt;/code&gt; ja &lt;code class=&quot;highlighter-rouge&quot;&gt;vagrant ssh&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/www/img/Vagrant-B.gif&quot; alt=&quot;Vagrant-B / Käynnistys&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/Vagrant-B.gif&quot; alt=&quot;Vagrant-B / Käynnistys&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;x-oma-domain&quot;&gt;X) Oma domain&lt;/h1&gt;
 
@@ -177,9 +177,9 @@ $ vagrant ssh&lt;/p&gt;
 &lt;p&gt;En ole täysin varma “aktivoituiko” Domainhotellista hankkimani domaini viimeksi käyttämällä pelkkiä Cloudflaren DNS-palvelimia, vai auttoiko siihen se että konfiguroin ensin Domainhotellin DNS-palvelimet domainille. Suoraan Ficoralta domaineja hankittaessa vaaditaan jokin nimipalvelin ennen kun domain “aktivoituu”. Aktivoituminen vaaditaan domainin lisäämiseksi Cloudflarelle.&lt;/p&gt;
 
 &lt;p&gt;https://i.imgur.com/oDXr0CZ.png
-&lt;img src=&quot;/www/img/domainhotelli.png&quot; alt=&quot;Domainhotelli DNS-asetukset&quot; /&gt;
+&lt;img src=&quot;/img/domainhotelli.png&quot; alt=&quot;Domainhotelli DNS-asetukset&quot; /&gt;
 kuva hallintapaneelista
-&lt;img src=&quot;/www/img/cloudflare-a-tietue.gif&quot; alt=&quot;Cloudflaren asetukset&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/img/cloudflare-a-tietue.gif&quot; alt=&quot;Cloudflaren asetukset&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;s-käyttäjän-public_html--hakemisto-domainin-pääsivulle&quot;&gt;S) Käyttäjän public_html -hakemisto domainin pääsivulle&lt;/h1&gt;
 
@@ -255,20 +255,33 @@ Sep 21 21:02:42 d sshd[23742]: PAM 2 more authentication failures; logname= uid=
 
 &lt;h3 id=&quot;lähteet-&quot;&gt;Lähteet |&lt;/h3&gt;
 
-&lt;p&gt;[1: https://www.cinia.fi/palvelut/kansainvaliset-yhteyspalvelut/c-lion1-merikaapeli.html
-[2: https://yle.fi/uutiset/3-6915349
-[3: http://www.tivi.fi/Kaikki_uutiset/2015-03-11/Yle-Google-laajentaa-rajusti-Haminassa-tilat-moninkertaisiksi-3217212.html
-[4: http://terokarvinen.com/2017/virtual-machine-in-two-minutes-install-vagrant-and-virtualbox-on-ubuntu-16-04-3-live-usb
-[5: https://yle.fi/uutiset/3-7550739
-[6: http://www.is.fi/taloussanomat/art-2000001898010.html
-[7: https://www.telia.fi/yrityksille/tuotteet/tietoliikenne/telia-data-center/datakeskus-pitajanmakeen
-[8: https://twitter.com/ServerBear/status/765034545703813121
-[9: https://www.lowendtalk.com/discussion/85392/building-a-serverbear-alternative/p1
-[10: https://github.com/serverscope/serverscope-benchmark
-[11: https://lowendbox.com/?s=buyvm&amp;amp;searchsubmit=Find
-[12: http://www.zdnet.com/article/finlands-baltic-undersea-cable-gets-a-10m-to-help-boost-datacentre-connections/
-[13: https://www.rakennuslehti.fi/2017/09/paakaupunkiseudulle-suunnitellaan-uutta-datakeskusta/
-[14: https://askubuntu.com/questions/449364/what-does-without-password-mean-in-sshd-config-file&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="haaga-helia" /><category term="koulu" /><category term="infra" /><category term="such" /><category term="wow" /><category term="test" /><category term="tags" /><summary type="html">H4 Virtuaalipalvelimet (VPS) &amp;amp; Wordpress</summary></entry><entry><title type="html">Linux palvelimet ICT4TN021 2017 H3</title><link href="http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H3" /><published>2017-09-11T00:00:00+00:00</published><updated>2017-09-11T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3</id><content type="html" xml:base="http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3.html">&lt;h1 class=&quot;no_toc&quot; id=&quot;sisältö-&quot;&gt;Sisältö |&lt;/h1&gt;
+&lt;p&gt;[1: https://www.cinia.fi/palvelut/kansainvaliset-yhteyspalvelut/c-lion1-merikaapeli.html&lt;/p&gt;
+
+&lt;p&gt;[2: https://yle.fi/uutiset/3-6915349&lt;/p&gt;
+
+&lt;p&gt;[3: http://www.tivi.fi/Kaikki_uutiset/2015-03-11/Yle-Google-laajentaa-rajusti-Haminassa-tilat-moninkertaisiksi-3217212.html&lt;/p&gt;
+
+&lt;p&gt;[4: http://terokarvinen.com/2017/virtual-machine-in-two-minutes-install-vagrant-and-virtualbox-on-ubuntu-16-04-3-live-usb&lt;/p&gt;
+
+&lt;p&gt;[5: https://yle.fi/uutiset/3-7550739&lt;/p&gt;
+
+&lt;p&gt;[6: http://www.is.fi/taloussanomat/art-2000001898010.html&lt;/p&gt;
+
+&lt;p&gt;[7: https://www.telia.fi/yrityksille/tuotteet/tietoliikenne/telia-data-center/datakeskus-pitajanmakeen&lt;/p&gt;
+
+&lt;p&gt;[8: https://twitter.com/ServerBear/status/765034545703813121&lt;/p&gt;
+
+&lt;p&gt;[9: https://www.lowendtalk.com/discussion/85392/building-a-serverbear-alternative/p1&lt;/p&gt;
+
+&lt;p&gt;[10: https://github.com/serverscope/serverscope-benchmark&lt;/p&gt;
+
+&lt;p&gt;[11: https://lowendbox.com/?s=buyvm&amp;amp;searchsubmit=Find&lt;/p&gt;
+
+&lt;p&gt;[12: http://www.zdnet.com/article/finlands-baltic-undersea-cable-gets-a-10m-to-help-boost-datacentre-connections/&lt;/p&gt;
+
+&lt;p&gt;[13: https://www.rakennuslehti.fi/2017/09/paakaupunkiseudulle-suunnitellaan-uutta-datakeskusta/&lt;/p&gt;
+
+&lt;p&gt;[14: https://askubuntu.com/questions/449364/what-does-without-password-mean-in-sshd-config-file&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="haaga-helia" /><category term="koulu" /><category term="infra" /><category term="such" /><category term="wow" /><category term="test" /><category term="tags" /><summary type="html">H4 Virtuaalipalvelimet (VPS) &amp;amp; Wordpress</summary></entry><entry><title type="html">Linux palvelimet ICT4TN021 2017 H3</title><link href="http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H3" /><published>2017-09-11T00:00:00+00:00</published><updated>2017-09-11T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3</id><content type="html" xml:base="http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3.html">&lt;h1 class=&quot;no_toc&quot; id=&quot;sisältö-&quot;&gt;Sisältö |&lt;/h1&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#tehtävänanto-&quot; id=&quot;markdown-toc-tehtävänanto-&quot;&gt;Tehtävänanto |&lt;/a&gt;&lt;/li&gt;

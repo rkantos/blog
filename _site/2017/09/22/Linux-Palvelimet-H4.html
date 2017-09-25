@@ -203,7 +203,7 @@ OpenVZ:hen perustuvalla vuoden sopimuksella reilut 12€/1v maksava 768MB muisti
 <p>Eri LEB-palvelimien vertailuun on muutaman vuoden ajan ollut erilaisia suorituskykytesteihin perustuvia vertailusivustoja. Näistä tunnetuin oli ServerBear, joka kuitenkin lopetti toimintansa oikeasti 2014, mutta virallisesti vasta viimevuonna. <a href="https://twitter.com/ServerBear/status/765034545703813121">8</a> ServerBearin tilalle näyttää tällä hetkellä tulleen ainakin ServerScope <a href="https://www.lowendtalk.com/discussion/85392/building-a-serverbear-alternative/p1">9</a>. ServerScope testaa ServerBearin tapaan avoimeen lähdekoodiin perustuvalla skriptillä palvelimien eri ominaisuuksia verkon nopeudesta massamuistin I/O (operaatioita sekunnissa) nopeuteen. <a href="https://github.com/serverscope/serverscope-benchmark">10</a> Muistutan että jos haluat ajaa mitä tahansa ServerScopen kaltaisia skriptejä omalla (virtuaali)palvelimellasi, suosittelen että teet sen heti kun olet ostanut ja asentanut palvelimen. Skripti käyttää luonnollisesti pääkäyttäjän oikeuksia, ja täten sillä on pääsy kaikkeen mitä palvelimellasi on. Tietoturvan säilyttämiseksi kannattaa virtuaalipalvelimen asennus suorittaa tyhjästä heti skirptin suorittamisen jälkeen uudelleen.</p>
 
 <p>Kuva https://i.imgur.com/NEj56T4.png
-<img src="/www/img/serverscope.png" alt="ServerScope Syyskuu 2017" /></p>
+<img src="/img/serverscope.png" alt="ServerScope Syyskuu 2017" /></p>
 
 <p>ServerScope:n etusivu ja top10 hinta-laatusuhteen omaavat virtuaalipalvelimet. Kärjessä mainitsemisen arvoisia tarjoajia ainakin BuyVM <a href="https://lowendbox.com/?s=buyvm&amp;searchsubmit=Find">11</a> Time4VPS tarjoamat palvelimet ovat tähän asti halvimmat alle 700km etäisyydellä (Helsinki) suomesta löytyvät palvelimet. Kyseessä on usein myös yksi halvimmista Eurooppalaisista palveluntarjoajista hinta-laatusuhteella mitattuna. Vielä lähempänä OpenVZ.io tarjoaa Tukholmasta halpoja virtuaalipalvelimia “Extreme” -luokassaan. Extreme -luokka OpenVZ.io:lla tarkoittaa virtuaalipalvelintarjontaa sellaisista sijanneista, joissa palveluntarjoajalla on mahdollisesti paikallisesti vain yksi tai muutama fyysinen palvelin.</p>
 
@@ -251,11 +251,11 @@ $ vagrant ssh</p>
 
 <p>Tämän jälkeen komennolla <code class="highlighter-rouge">vagrant init bento/ubuntu-16.04</code> saimme ladattua Vagrantin “levykuvan”, josta virtualisoitu Ubuntun asennus käynnistetään.</p>
 
-<p><img src="/www/img/Vagrant-A.gif" alt="Vagrant-A / Lataus" /></p>
+<p><img src="/img/Vagrant-A.gif" alt="Vagrant-A / Lataus" /></p>
 
 <p>Lopuksi käynnistetään Vagrant ja yhdistetään siihen SSH:lla. <code class="highlighter-rouge">vagrant up</code> ja <code class="highlighter-rouge">vagrant ssh</code></p>
 
-<p><img src="/www/img/Vagrant-B.gif" alt="Vagrant-B / Käynnistys" /></p>
+<p><img src="/img/Vagrant-B.gif" alt="Vagrant-B / Käynnistys" /></p>
 
 <h1 id="x-oma-domain">X) Oma domain</h1>
 
@@ -266,9 +266,9 @@ $ vagrant ssh</p>
 <p>En ole täysin varma “aktivoituiko” Domainhotellista hankkimani domaini viimeksi käyttämällä pelkkiä Cloudflaren DNS-palvelimia, vai auttoiko siihen se että konfiguroin ensin Domainhotellin DNS-palvelimet domainille. Suoraan Ficoralta domaineja hankittaessa vaaditaan jokin nimipalvelin ennen kun domain “aktivoituu”. Aktivoituminen vaaditaan domainin lisäämiseksi Cloudflarelle.</p>
 
 <p>https://i.imgur.com/oDXr0CZ.png
-<img src="/www/img/domainhotelli.png" alt="Domainhotelli DNS-asetukset" />
+<img src="/img/domainhotelli.png" alt="Domainhotelli DNS-asetukset" />
 kuva hallintapaneelista
-<img src="/www/img/cloudflare-a-tietue.gif" alt="Cloudflaren asetukset" /></p>
+<img src="/img/cloudflare-a-tietue.gif" alt="Cloudflaren asetukset" /></p>
 
 <h1 id="s-käyttäjän-public_html--hakemisto-domainin-pääsivulle">S) Käyttäjän public_html -hakemisto domainin pääsivulle</h1>
 
@@ -344,20 +344,33 @@ Sep 21 21:02:42 d sshd[23742]: PAM 2 more authentication failures; logname= uid=
 
 <h3 id="lähteet-">Lähteet |</h3>
 
-<p>[1: https://www.cinia.fi/palvelut/kansainvaliset-yhteyspalvelut/c-lion1-merikaapeli.html
-[2: https://yle.fi/uutiset/3-6915349
-[3: http://www.tivi.fi/Kaikki_uutiset/2015-03-11/Yle-Google-laajentaa-rajusti-Haminassa-tilat-moninkertaisiksi-3217212.html
-[4: http://terokarvinen.com/2017/virtual-machine-in-two-minutes-install-vagrant-and-virtualbox-on-ubuntu-16-04-3-live-usb
-[5: https://yle.fi/uutiset/3-7550739
-[6: http://www.is.fi/taloussanomat/art-2000001898010.html
-[7: https://www.telia.fi/yrityksille/tuotteet/tietoliikenne/telia-data-center/datakeskus-pitajanmakeen
-[8: https://twitter.com/ServerBear/status/765034545703813121
-[9: https://www.lowendtalk.com/discussion/85392/building-a-serverbear-alternative/p1
-[10: https://github.com/serverscope/serverscope-benchmark
-[11: https://lowendbox.com/?s=buyvm&amp;searchsubmit=Find
-[12: http://www.zdnet.com/article/finlands-baltic-undersea-cable-gets-a-10m-to-help-boost-datacentre-connections/
-[13: https://www.rakennuslehti.fi/2017/09/paakaupunkiseudulle-suunnitellaan-uutta-datakeskusta/
-[14: https://askubuntu.com/questions/449364/what-does-without-password-mean-in-sshd-config-file</p>
+<p>[1: https://www.cinia.fi/palvelut/kansainvaliset-yhteyspalvelut/c-lion1-merikaapeli.html</p>
+
+<p>[2: https://yle.fi/uutiset/3-6915349</p>
+
+<p>[3: http://www.tivi.fi/Kaikki_uutiset/2015-03-11/Yle-Google-laajentaa-rajusti-Haminassa-tilat-moninkertaisiksi-3217212.html</p>
+
+<p>[4: http://terokarvinen.com/2017/virtual-machine-in-two-minutes-install-vagrant-and-virtualbox-on-ubuntu-16-04-3-live-usb</p>
+
+<p>[5: https://yle.fi/uutiset/3-7550739</p>
+
+<p>[6: http://www.is.fi/taloussanomat/art-2000001898010.html</p>
+
+<p>[7: https://www.telia.fi/yrityksille/tuotteet/tietoliikenne/telia-data-center/datakeskus-pitajanmakeen</p>
+
+<p>[8: https://twitter.com/ServerBear/status/765034545703813121</p>
+
+<p>[9: https://www.lowendtalk.com/discussion/85392/building-a-serverbear-alternative/p1</p>
+
+<p>[10: https://github.com/serverscope/serverscope-benchmark</p>
+
+<p>[11: https://lowendbox.com/?s=buyvm&amp;searchsubmit=Find</p>
+
+<p>[12: http://www.zdnet.com/article/finlands-baltic-undersea-cable-gets-a-10m-to-help-boost-datacentre-connections/</p>
+
+<p>[13: https://www.rakennuslehti.fi/2017/09/paakaupunkiseudulle-suunnitellaan-uutta-datakeskusta/</p>
+
+<p>[14: https://askubuntu.com/questions/449364/what-does-without-password-mean-in-sshd-config-file</p>
 
   </div>
 

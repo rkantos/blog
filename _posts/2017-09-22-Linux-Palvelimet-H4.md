@@ -103,7 +103,7 @@ OpenVZ:hen perustuvalla vuoden sopimuksella reilut 12€/1v maksava 768MB muisti
 Eri LEB-palvelimien vertailuun on muutaman vuoden ajan ollut erilaisia suorituskykytesteihin perustuvia vertailusivustoja. Näistä tunnetuin oli ServerBear, joka kuitenkin lopetti toimintansa oikeasti 2014, mutta virallisesti vasta viimevuonna. [8] ServerBearin tilalle näyttää tällä hetkellä tulleen ainakin ServerScope [9]. ServerScope testaa ServerBearin tapaan avoimeen lähdekoodiin perustuvalla skriptillä palvelimien eri ominaisuuksia verkon nopeudesta massamuistin I/O (operaatioita sekunnissa) nopeuteen. [10] Muistutan että jos haluat ajaa mitä tahansa ServerScopen kaltaisia skriptejä omalla (virtuaali)palvelimellasi, suosittelen että teet sen heti kun olet ostanut ja asentanut palvelimen. Skripti käyttää luonnollisesti pääkäyttäjän oikeuksia, ja täten sillä on pääsy kaikkeen mitä palvelimellasi on. Tietoturvan säilyttämiseksi kannattaa virtuaalipalvelimen asennus suorittaa tyhjästä heti skirptin suorittamisen jälkeen uudelleen.
 
 Kuva https://i.imgur.com/NEj56T4.png
-![ServerScope Syyskuu 2017](/www/img/serverscope.png)
+![ServerScope Syyskuu 2017](/img/serverscope.png)
 
 
 ServerScope:n etusivu ja top10 hinta-laatusuhteen omaavat virtuaalipalvelimet. Kärjessä mainitsemisen arvoisia tarjoajia ainakin BuyVM [11] Time4VPS tarjoamat palvelimet ovat tähän asti halvimmat alle 700km etäisyydellä (Helsinki) suomesta löytyvät palvelimet. Kyseessä on usein myös yksi halvimmista Eurooppalaisista palveluntarjoajista hinta-laatusuhteella mitattuna. Vielä lähempänä OpenVZ.io tarjoaa Tukholmasta halpoja virtuaalipalvelimia "Extreme" -luokassaan. Extreme -luokka OpenVZ.io:lla tarkoittaa virtuaalipalvelintarjontaa sellaisista sijanneista, joissa palveluntarjoajalla on mahdollisesti paikallisesti vain yksi tai muutama fyysinen palvelin. 
@@ -149,11 +149,11 @@ Ensin asensin Vagrantin komennolla `sudo apt-get -y install virtualbox vagrant`
 
 Tämän jälkeen komennolla `vagrant init bento/ubuntu-16.04` saimme ladattua Vagrantin "levykuvan", josta virtualisoitu Ubuntun asennus käynnistetään.
 
-![Vagrant-A / Lataus](/www/img/Vagrant-A.gif)
+![Vagrant-A / Lataus](/img/Vagrant-A.gif)
 
 Lopuksi käynnistetään Vagrant ja yhdistetään siihen SSH:lla. `vagrant up` ja `vagrant ssh`
 
-![Vagrant-B / Käynnistys](/www/img/Vagrant-B.gif)
+![Vagrant-B / Käynnistys](/img/Vagrant-B.gif)
 
 
 # X) Oma domain
@@ -165,9 +165,9 @@ Käytän nimipalvelintarjoajani Cloudflarea, jolla on globaalisti toteutettu nim
 En ole täysin varma "aktivoituiko" Domainhotellista hankkimani domaini viimeksi käyttämällä pelkkiä Cloudflaren DNS-palvelimia, vai auttoiko siihen se että konfiguroin ensin Domainhotellin DNS-palvelimet domainille. Suoraan Ficoralta domaineja hankittaessa vaaditaan jokin nimipalvelin ennen kun domain "aktivoituu". Aktivoituminen vaaditaan domainin lisäämiseksi Cloudflarelle.
 
 https://i.imgur.com/oDXr0CZ.png
-![Domainhotelli DNS-asetukset](/www/img/domainhotelli.png)
+![Domainhotelli DNS-asetukset](/img/domainhotelli.png)
 kuva hallintapaneelista
-![Cloudflaren asetukset](/www/img/cloudflare-a-tietue.gif)
+![Cloudflaren asetukset](/img/cloudflare-a-tietue.gif)
 
 
 # S) Käyttäjän public_html -hakemisto domainin pääsivulle
@@ -264,16 +264,29 @@ Sep 21 21:02:42 d sshd[23742]: PAM 2 more authentication failures; logname= uid=
 [14]: https://askubuntu.com/questions/449364/what-does-without-password-mean-in-sshd-config-file
 
 [1: https://www.cinia.fi/palvelut/kansainvaliset-yhteyspalvelut/c-lion1-merikaapeli.html
+
 [2: https://yle.fi/uutiset/3-6915349
+
 [3: http://www.tivi.fi/Kaikki_uutiset/2015-03-11/Yle-Google-laajentaa-rajusti-Haminassa-tilat-moninkertaisiksi-3217212.html
+
 [4: http://terokarvinen.com/2017/virtual-machine-in-two-minutes-install-vagrant-and-virtualbox-on-ubuntu-16-04-3-live-usb
+
 [5: https://yle.fi/uutiset/3-7550739
+
 [6: http://www.is.fi/taloussanomat/art-2000001898010.html
+
 [7: https://www.telia.fi/yrityksille/tuotteet/tietoliikenne/telia-data-center/datakeskus-pitajanmakeen
+
 [8: https://twitter.com/ServerBear/status/765034545703813121
+
 [9: https://www.lowendtalk.com/discussion/85392/building-a-serverbear-alternative/p1
+
 [10: https://github.com/serverscope/serverscope-benchmark
+
 [11: https://lowendbox.com/?s=buyvm&searchsubmit=Find
+
 [12: http://www.zdnet.com/article/finlands-baltic-undersea-cable-gets-a-10m-to-help-boost-datacentre-connections/
+
 [13: https://www.rakennuslehti.fi/2017/09/paakaupunkiseudulle-suunnitellaan-uutta-datakeskusta/
+
 [14: https://askubuntu.com/questions/449364/what-does-without-password-mean-in-sshd-config-file
