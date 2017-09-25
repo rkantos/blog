@@ -1,4 +1,274 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2017-09-13T10:36:59+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">rkantos’s projects and endeavors in mostly educational times</title><subtitle>rkantos's projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</subtitle><entry><title type="html">Linux palvelimet ICT4TN021 2017 H3</title><link href="http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H3" /><published>2017-09-11T00:00:00+00:00</published><updated>2017-09-11T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3</id><content type="html" xml:base="http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3.html">&lt;h1 class=&quot;no_toc&quot; id=&quot;sisältö-&quot;&gt;Sisältö |&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://0.0.0.0:8080/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:8080/" rel="alternate" type="text/html" /><updated>2017-09-25T08:57:25+00:00</updated><id>http://0.0.0.0:8080/</id><title type="html">rkantos’s projects and endeavors in mostly educational times</title><subtitle>rkantos's projects and some school work, mostly in Finnish though sometimes also in English. You can also find me @ rkantos@ircnet</subtitle><entry><title type="html">Linux palvelimet ICT4TN021 2017 H4</title><link href="http://0.0.0.0:8080/2017/09/22/Linux-Palvelimet-H4.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H4" /><published>2017-09-22T00:00:00+00:00</published><updated>2017-09-22T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/09/22/Linux-Palvelimet-H4</id><content type="html" xml:base="http://0.0.0.0:8080/2017/09/22/Linux-Palvelimet-H4.html">&lt;h1 id=&quot;h4-virtuaalipalvelimet-vps--wordpress&quot;&gt;H4 Virtuaalipalvelimet (VPS) &amp;amp; Wordpress&lt;/h1&gt;
+
+&lt;h1 id=&quot;hx&quot;&gt;Hx&lt;/h1&gt;
+&lt;p&gt;========================&lt;/p&gt;
+
+&lt;h1 class=&quot;no_toc&quot; id=&quot;sisältö-&quot;&gt;Sisältö |&lt;/h1&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#h4-virtuaalipalvelimet-vps--wordpress&quot; id=&quot;markdown-toc-h4-virtuaalipalvelimet-vps--wordpress&quot;&gt;H4 Virtuaalipalvelimet (VPS) &amp;amp; Wordpress&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#hx&quot; id=&quot;markdown-toc-hx&quot;&gt;Hx&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#tehtävänanto-&quot; id=&quot;markdown-toc-tehtävänanto-&quot;&gt;Tehtävänanto |&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#r-virtuaalipalvelimet--vagrant&quot; id=&quot;markdown-toc-r-virtuaalipalvelimet--vagrant&quot;&gt;R) Virtuaalipalvelimet &amp;amp; Vagrant&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#lowendbox--lowendtalk-&quot; id=&quot;markdown-toc-lowendbox--lowendtalk-&quot;&gt;LowEndBox &amp;amp; LowEndTalk |&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#serverbear-ja-korvaaja-serverscope-&quot; id=&quot;markdown-toc-serverbear-ja-korvaaja-serverscope-&quot;&gt;ServerBear ja korvaaja ServerScope |&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#eri-virtualisointitavat-&quot; id=&quot;markdown-toc-eri-virtualisointitavat-&quot;&gt;Eri virtualisointitavat |&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#virtuaalipalvelintarjoajien-top3-&quot; id=&quot;markdown-toc-virtuaalipalvelintarjoajien-top3-&quot;&gt;virtuaalipalvelintarjoajien TOP3 |&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#vagrant-&quot; id=&quot;markdown-toc-vagrant-&quot;&gt;Vagrant |&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#x-oma-domain&quot; id=&quot;markdown-toc-x-oma-domain&quot;&gt;X) Oma domain&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#cloudflare-&quot; id=&quot;markdown-toc-cloudflare-&quot;&gt;Cloudflare |&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#s-käyttäjän-public_html--hakemisto-domainin-pääsivulle&quot; id=&quot;markdown-toc-s-käyttäjän-public_html--hakemisto-domainin-pääsivulle&quot;&gt;S) Käyttäjän public_html -hakemisto domainin pääsivulle&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#y-murtautumisyritykset-ssh-lokeilla&quot; id=&quot;markdown-toc-y-murtautumisyritykset-ssh-lokeilla&quot;&gt;Y) Murtautumisyritykset SSH-lokeilla&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#lähteet-&quot; id=&quot;markdown-toc-lähteet-&quot;&gt;Lähteet |&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;tehtävänanto-&quot;&gt;Tehtävänanto |&lt;/h3&gt;
+
+&lt;p&gt;Tehtävänanto on osa Tero Karvisen Haaga-Heliassa suoritettavaa Linux-kurssia. http://terokarvinen.com/2017/aikataulu-linux-palvelimet-ict4tn021-4-ti-ja-5-to-alkusyksy-2017-5-op&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;r) Kokeile julkista virtuaalipalvelinta (VPS). Voit vuokrata palvelimen esimerkiksi Linodelta, Amazonilta, DigitalOceanilta, OVH:lta tai monista muista paikoista. Edullisinta on käyttää GitHub Education -paketista DigitalOceanin palveluita.&lt;/p&gt;
+
+  &lt;p&gt;Vaihtoehto: jos et jostain syystä halua vuokrata virtuaalipalvelinta, voit kokeilla tehdä testipalvelimen vagrantilla, mutta tämä ei ole yhtä jännittävää.&lt;/p&gt;
+
+  &lt;p&gt;x) Laita julkinen domain-nimi osoittamaan koneeseesi. NameCheap ja Gandi ovat tunnettuja nimien vuokraajia. GitHub Education -paketista saa NameCheapilta .me domainin ilmaiseksi vuodeksi.&lt;/p&gt;
+
+  &lt;p&gt;s) Laita julkiselle palvelimellesi käyttäjän kotihakemistoon tallennettu sivu näkymään Apachen oletussivuna.&lt;/p&gt;
+
+  &lt;p&gt;y) Etsi julkisen palvelimesi lokeista esimerkkejä murtautumisyrityksistä. Voit etsiä lisätietoa IP-osoitteista ottamatta niihin yhteyttä esimerkiksi komennoilla geoiplookup tai whois.&lt;/p&gt;
+
+  &lt;p&gt;Vapaaehtoisia lisätehtäviä:&lt;/p&gt;
+
+  &lt;p&gt;v) Laita monta DNS-nimeä samaan IP-osoitteeseen. Apache Name Based Virtual Hosting.t) Asenna WordPress. Se on maailman suosituin sisällönhallintajärjestelmä (CMS). Samalla opit asentamaan kolmannen osapuolen valmiita PHP-ohjelmia. WordPress kannattaa asentaa wordpress.org:sta löytyvästä tervapallosta (.tar.gz).&lt;/p&gt;
+
+  &lt;p&gt;u) Kokeile WordPressia kirjoittamalla esimerkkisisältöä.&lt;/p&gt;
+
+  &lt;p&gt;WordPress vapaaehtoisia:&lt;/p&gt;
+
+  &lt;p&gt;c) Ota järkevät URLit (permalinks) käyttöön
+d) Vaihda teema
+e) Varmuuskopioi sisältö
+f) Palauta varmuuskopioitu sisältö puhtaaseen WordPress-asennukseen
+g) Tee WordPressiin oma teema
+h) Asenna WordPressiin plugin (esim Dofollow)
+i) Tee WordPressiin oma plugin
+j) Lisää kuvia WordPressiin (ja laita tämä toimimaan)
+k) Laita WordPress nimipohjaiseen virtuaalipalvelimeen (http://thello.foo tms)&lt;/p&gt;
+
+  &lt;p&gt;Muita vapaaehtoisia:&lt;/p&gt;
+
+  &lt;p&gt;l) Asenna Drupal ja kokeile sitä
+m) Asenna Joomla ja kokeile sitä
+n) Hanki virallinen, selainten hyväksymä TLS-sertifikaatti Let’s Encryptistä
+o) Vaikea: Tee esimerkkisivu Python Flaskilla
+p) Vaikea: Tee esimerkkisivu Ruby on Rails (tuotantotyyppinen, ei pelkkä yhden käyttäjän testipalvelin)
+q) Vaikea: Tee esimerkkisivu Python Django:lla (tuotantotyyppinen, ei pelkkä yhden käyttäjän testipalvelin)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;r-virtuaalipalvelimet--vagrant&quot;&gt;R) Virtuaalipalvelimet &amp;amp; Vagrant&lt;/h1&gt;
+
+&lt;p&gt;Tällä hetkellä itsellä ei ole tarvetta virtuaaliapalvelimelle, ja koska en ollut aikaisemmin kuullut Vagrantista, päätin kokeilla sitä. Olen vuokrannut virtuaaliapalvelimia jo vuodesta 2010. Jopa ennen ensimmäisen virtuaalipalvelimen vuokraamistani suunittelin oman virtuaalipalvelinpalvelun perustamista Suomeen. 2010 virtuaalipalvelimien hinnoittelu oli vielä aika kovaa, ja etenkin suomessa näin raon pienemmälle halvempia palvelimia tarjoavalle palveluntarjoajalle. Periaatteessa vieläkin Suomessa olisi hyvin rakoa etenkin hallituille palvelinpalveluntarjoajille. 2010 vuoden jälkeen kuitenkin monta asiaa on muuttunut ja vuosi 2017 taitaa olla kulminoitumispiste sille, että suomestakin alkaa saamaan jo “LEB” (ks. https://lowendbox.com/about/) hintaluokkaan mahtuvia palvelimia.&lt;/p&gt;
+
+&lt;p&gt;Edesvaikuttajina tähän ovat olleet erityisesti C-lion1 tietoliikennemerikaapeli, joka valmistui 2016 palvelemaan erityisesti yrityksiä. &lt;a href=&quot;https://www.cinia.fi/palvelut/kansainvaliset-yhteyspalvelut/c-lion1-merikaapeli.html&quot;&gt;1&lt;/a&gt; Suomessa suuria palvelinkeskuksia on vuoden 2014 jälkeen tullut kuin sieniä sateella. Alla listaa palvelinkeskuksista joita suomessa on otettu käyttöön hieman ennen merikaapelin valmistumista ja sen jälkeen.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Google, Hamina, 2011, jonka jälkeen laajennuksia vuonna 2012 ja 2015 &lt;a href=&quot;http://www.tivi.fi/Kaikki_uutiset/2015-03-11/Yle-Google-laajentaa-rajusti-Haminassa-tilat-moninkertaisiksi-3217212.html&quot;&gt;2&lt;/a&gt;&lt;/em&gt;
+&lt;em&gt;Yandex, Mäntsälä, 2014 &lt;a href=&quot;https://yle.fi/uutiset/3-7550739&quot;&gt;5&lt;/a&gt;&lt;/em&gt;
+&lt;em&gt;Hetzner, Tuusula, 2017 &lt;a href=&quot;http://www.is.fi/taloussanomat/art-2000001898010.html&quot;&gt;6&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ja suomalaiset jälkijunassa, kuten aina:
+&lt;em&gt;Telia, Helsinki, 2018 &lt;a href=&quot;https://www.telia.fi/yrityksille/tuotteet/tietoliikenne/telia-data-center/datakeskus-pitajanmakeen&quot;&gt;7&lt;/a&gt; *
+*Ficolo, Ulvila, 2018 -2019&lt;a href=&quot;https://www.rakennuslehti.fi/2017/09/paakaupunkiseudulle-suunnitellaan-uutta-datakeskusta/&quot;&gt;13&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Edellä mainituista vain oikeastaan Google ja Hetzner ovat kunnostautuneet virtuaalipalvelimien myymisessä suoraan kuluttajille. Googlelta ei Haminasta virtuaalipalvelimia ole kuitenkaan ainakaan vielä ennen vuotta 2017 saanut. Hetzneriltä LEB-kategoriaan mahtuvia virtuaalipalvelimia saanee todennäköisesti heti kun he saavat ensimmäisen palvelinkeskuksensa tulille. Hetzneristä on mainittava vielä se, että he ovat ostaneet kapasiteettiä ns. riittävästi. &lt;a href=&quot;http://www.zdnet.com/article/finlands-baltic-undersea-cable-gets-a-10m-to-help-boost-datacentre-connections/&quot;&gt;12&lt;/a&gt; Tälläisen virtuaalipalvelimen kanssa voi olla mahdollista esimerkiksi alentaa keskieurooppaan suuntautuville yhteyksille aiheutuvaa latenssia jopa yli 10ms verran nykyisiin pääsääntöisesti ruotsin kautta kulkeviin yhteyksiin verrattuna!&lt;/p&gt;
+
+&lt;h4 id=&quot;lowendbox--lowendtalk-&quot;&gt;LowEndBox &amp;amp; LowEndTalk |&lt;/h4&gt;
+
+&lt;p&gt;LowEndBox -sivu on tarkoitettu erittäin halpojen virtuaaliapalvelimien löytämiseen. Sivu listaakin sivuillaan https://lowendbox.com/about/ ehtoja, joita tarjouksien pitää täyttää. Useimmiten sivuilta löytyy kuitenkin huomattavasti halvempiakin palvelimia. Alle dollarilla kuukaudessa voi löytää luotettavia palveluntarjoajia, joilta saa jaetun CPU-ytimen ja jopa 512MB muistia! Näistä omasta mielestäni ehdottomasti parhain on tällä hetkellä Time4VPS:n kahden vuoden (24€) sopimus , jolla saa n. eurolla kuukaudessa 512MB -muistilla varustetun OpenVZ:n perustuvan virtuaalipalvelimen.&lt;/p&gt;
+
+&lt;p&gt;Tällä hetkellä hyviä tarjouksia löytyy parhaiten LowEndTalk, eli LowEndBox-sivuston foorumin puolelta. Parempia tarjouksiakin kuin Time4VPS on saatavilla, joskin palveluntarjojien luotettavuus ei välttämättä ole Time4VPS tai Openvz.io -tasoa. Tämän takia halvimpien palveluntarjoajien kanssa toimiessa, suosittelen maksamaan palvelimista kuukausiperustaisesti, tai maksimissaan&lt;/p&gt;
+
+&lt;p&gt;Muutama mainittava tarjous 2017 Syyskuulta:&lt;/p&gt;
+
+&lt;p&gt;https://www.lowendtalk.com/discussion/124916/gullo-s-hosting-2-year-vps-hosting-is-back#latest
+2 $ / vuosi maksava virtuaalipalvelin 128MB-muistilla varustettuna. Palvelimet ovat NAT:n takana, joten palvelujen saattamiseksi näkyviin julkiseen internetiin voi joutua tekemään hieman enemmän konfigurointia. Sopii hyvin esimerkiksi sellaisiin tarkoituksiin, joissa suurinosa yhteyksistä muodostetaan palvelimen suunnalta, kuten esimerkiksi uptime-seurantaan tai irc-shellin pitoon. Näin pieniin hintaluokkiin mennessä on mainittava myös, että usein rajoitteena näissä toimii IPv4-osoitteiden “hinnat”. Yleinen lisä-ip-osoitteiden hinta virtuaalipalvelimille on 0.5-2€/kk/ip. Täten on tavallista että virtuaalipalvelin, jolla on oma julkinen IPv4-osoite maksaa vähintään 10€/vuosi. Kannattaa siis olla varuillaan halvemmalla palveluja tarjoavien palveluntarjoajien kanssa, sillä joko palveluja ylläpidetään 
+a. liikevaihdon kasvattamiseksi, 
+b. ilmaisella sähköllä, 
+c. ilmaisilla ip-osoitteilla, tai,
+d. palveluntarjoaja yrittää kahmita mahdollisimman paljon rahaa asiakkailta kadotakseen yht’äkkiä…&lt;/p&gt;
+
+&lt;p&gt;https://www.lowendtalk.com/discussion/105291/let-storage-i-m-back#latest
+n. 50€/2v tai n. 100€/3v maksava 1TB-tilalla varustettu “varastointivirtuaaliapalvelin”. Tälläiselle palvelimelle, tai parille, jos haluaa huomioida varmuuskopiot voisi pystyttää esimerkiksi oman Nextcloud-palvelimen. Näin ei tarvitsisi luottaa isoihin toimijoihin. Pelkällä varastointikoolla mitattuna hinta on hyvin kilpailukykyinen Googlen ja Microsoftin pilvipalveluiden hinnoittelun kanssa. Tämä siis Googlen 1TB tilan maksaessa 100€/1v ja Microsoftin O365:n 1TB tilan maksaessa 70€/1v. Kumpaankin palveluun kuuluu luonnollisesti erinomaiset sähköpostipalvelut, dokumenttienkäsittely ja jako-ominaisuudet. Microsoftin palveluun sisältyy toki myös Office-paketin viimeisimmät työpöytäsovellukset. Omille linux-palvelimille on toki tarjolla monia avoimen lähdekoodin vaihtoehtoja, mutta niiden konfigurointikin toki vaatii oman aikansa.&lt;/p&gt;
+
+&lt;p&gt;https://www.lowendtalk.com/discussion/124610/hostens-2-40ghz-768mb-15gb-1tb-from-0-99-eur-mo-instant-setup#latest
+OpenVZ:hen perustuvalla vuoden sopimuksella reilut 12€/1v maksava 768MB muistia varustettu virtuaalipalvelin. Vaikka palveluntarjoaja vaikuttaa luotettevalta viitaten 13 vuoden kokemukseen, ovat archive.org ja whois -hakujen tekeminen suositeltavaa. Näin ainakin joitakin faktoja pystyy tarkastamaan. Tällä palveluntarjoajalla ovat käytössä myöskin tavalliset pyörivät levyt. Samaan hintaan löytyy todennäköisesti myös täysin SSD-levyihin nojaavia virtuaaliapalvelimia.&lt;/p&gt;
+
+&lt;h4 id=&quot;serverbear-ja-korvaaja-serverscope-&quot;&gt;ServerBear ja korvaaja ServerScope |&lt;/h4&gt;
+
+&lt;p&gt;Eri LEB-palvelimien vertailuun on muutaman vuoden ajan ollut erilaisia suorituskykytesteihin perustuvia vertailusivustoja. Näistä tunnetuin oli ServerBear, joka kuitenkin lopetti toimintansa oikeasti 2014, mutta virallisesti vasta viimevuonna. &lt;a href=&quot;https://twitter.com/ServerBear/status/765034545703813121&quot;&gt;8&lt;/a&gt; ServerBearin tilalle näyttää tällä hetkellä tulleen ainakin ServerScope &lt;a href=&quot;https://www.lowendtalk.com/discussion/85392/building-a-serverbear-alternative/p1&quot;&gt;9&lt;/a&gt;. ServerScope testaa ServerBearin tapaan avoimeen lähdekoodiin perustuvalla skriptillä palvelimien eri ominaisuuksia verkon nopeudesta massamuistin I/O (operaatioita sekunnissa) nopeuteen. &lt;a href=&quot;https://github.com/serverscope/serverscope-benchmark&quot;&gt;10&lt;/a&gt; Muistutan että jos haluat ajaa mitä tahansa ServerScopen kaltaisia skriptejä omalla (virtuaali)palvelimellasi, suosittelen että teet sen heti kun olet ostanut ja asentanut palvelimen. Skripti käyttää luonnollisesti pääkäyttäjän oikeuksia, ja täten sillä on pääsy kaikkeen mitä palvelimellasi on. Tietoturvan säilyttämiseksi kannattaa virtuaalipalvelimen asennus suorittaa tyhjästä heti skirptin suorittamisen jälkeen uudelleen.&lt;/p&gt;
+
+&lt;p&gt;Kuva https://i.imgur.com/NEj56T4.png
+&lt;img src=&quot;/www/img/serverscope.png&quot; alt=&quot;ServerScope Syyskuu 2017&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ServerScope:n etusivu ja top10 hinta-laatusuhteen omaavat virtuaalipalvelimet. Kärjessä mainitsemisen arvoisia tarjoajia ainakin BuyVM &lt;a href=&quot;https://lowendbox.com/?s=buyvm&amp;amp;searchsubmit=Find&quot;&gt;11&lt;/a&gt; Time4VPS tarjoamat palvelimet ovat tähän asti halvimmat alle 700km etäisyydellä (Helsinki) suomesta löytyvät palvelimet. Kyseessä on usein myös yksi halvimmista Eurooppalaisista palveluntarjoajista hinta-laatusuhteella mitattuna. Vielä lähempänä OpenVZ.io tarjoaa Tukholmasta halpoja virtuaalipalvelimia “Extreme” -luokassaan. Extreme -luokka OpenVZ.io:lla tarkoittaa virtuaalipalvelintarjontaa sellaisista sijanneista, joissa palveluntarjoajalla on mahdollisesti paikallisesti vain yksi tai muutama fyysinen palvelin.&lt;/p&gt;
+
+&lt;h4 id=&quot;eri-virtualisointitavat-&quot;&gt;Eri virtualisointitavat |&lt;/h4&gt;
+
+&lt;p&gt;Eri palveluntarjoajat käyttävät erilaisia tapoja virtualisoidakseen asiakaspalvelimia. Suosituimpia näistä ovat ehkä KVM, Xen ja OpenVZ. Lisäksi palveluntarjoajat käyttävät näiden virtualisointiteknologioiden lisäksi erilaisia hallintapaneeliratkaisuja. Näistä käytetyimpiä LEB-palveluntarjoajilla ovat SolusVM ja Virtualizor sekä WHCMS:n erilaiset lisäosat. WHCMS on ehdottomasti laajin käytössä oleva CRM, jota eri palveluntarjoajat käyttävät asiakkaiden ‘rajapintana’. WHCMS hoitaa yleensä siis laskutuksen, sähköpostituksen, ticket-pohjaisen viestityksen ja kaiken muun palvelujen myynnin automatisointiin tarvittavan työn.&lt;/p&gt;
+
+&lt;p&gt;Valitessasi omaa virtualisointialustaa pystyy yleensä nopeasti päättämään mitä alustaa kannattaa käyttää. LEB-palvelimien hinnan takia on mielestäni myös järkevää käyttää useampaa palvelinta eri tarkoituksiin.&lt;/p&gt;
+
+&lt;p&gt;Omaa kerneliä tarvittaessa kannattaa halvimman vaihtoehdon etsiminen aloittaa palveluntarjoajista jotka käyttävät KVM ja Xen-pohjaisia ratkaisuja, koska ne ovat ylivoimaisesti halvimpia tapoja palveluntarjoajille toteuttaa ympäristöjä, joissa asiakas voi käyttää kokonaan käyttöjärjestelmän kernelistä erillään olevia virtuaalipalvelmia. Muita tälläisiä ratkaisuja tarjoavat mm. Proxmox VE, Vmware, ja Hyper-V (Windows).&lt;/p&gt;
+
+&lt;p&gt;Yleensä suurimpaan osaan palveluita, joita linux-palvelimella voi pyörittää riittää jokin ohjelmapohjainen tai osittain-ohjelmapohjainen virtualisointiteknologia, kuten OpenVZ tai LXC. Ylivoimaisesti suosituin näistä lienee puhtaassa LEB-virtualisoinnissa OpenVZ. OpenVZ:lla pärjäät todennäköisesti niin kauan kun sinun ei tarvitse tehdä muutoksia mihinkään, mikä vaatii uutta moduulia lisättäväksi kerneliin. Tälläisiä muutoksia ovat esimerkiksi monet verkkoihin liittyvät putkitukset, kuten 6to4 reitittimet, VPN:t jne. Kaikki OpenVZ-palveluntarjoajat joita olen tähän mennessä käyttänyt ovat kuitenkin tarjonneet tärkeimpiä moduleita, kuten OpenVPN:n käyttöön vaadittavan tun/tap -modulin. Myös libfuse-kernelmoduli, joka vaaditaan verkon yli toimivien tiedostojärjestelmien käyttöön, on saatavilla useimmilta OpenVZ palveluntarjoajilta.&lt;/p&gt;
+
+&lt;p&gt;Lisää eri virtualisointitavoista, niiden eduista ja hyödyistä lisää täältä:&lt;/p&gt;
+
+&lt;p&gt;https://veesp.com/en/blog/virtualization-technologies-comparison&lt;/p&gt;
+
+&lt;h4 id=&quot;virtuaalipalvelintarjoajien-top3-&quot;&gt;virtuaalipalvelintarjoajien TOP3 |&lt;/h4&gt;
+
+&lt;p&gt;Omaa tiukan budjetin virtuaalipalvelintarjoajaa hakiessa lähtisin liikkeelle näistä palveluntarjoajista:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Openvz.io, Nimensä mukaisesti OpenVZ, jolloin käytössä isäntäkoneen kernel&lt;/li&gt;
+  &lt;li&gt;Time4vps, Ehdottomasti ykkönen jos tarvitaan oma kernel&lt;/li&gt;
+  &lt;li&gt;Scaleway, tarjonnassa luotettavia virtuaalipalvelimia, mutta palveluntarjoajan ehdoton hienous on “virtuaalipalvelimen hinnoin” tuotetut dedikoidut palvelimet. Palveluntarjoaja on tietääkseni yksi ainoita pienempiä tarjoajia isojen tarjoajien kuten Googlen ja Amazonin ulkopuolella, jotka ovat kehittäneet täysin omia palvelinkehikoita ja niihin sopivia suurtiheystietokonekortteja: https://www.youtube.com/watch?v=XFhgSKNJP2s&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;vagrant-&quot;&gt;Vagrant |&lt;/h3&gt;
+
+&lt;p&gt;Käytin tässä Tero Karvisen esimerkkiä &lt;a href=&quot;http://terokarvinen.com/2017/virtual-machine-in-two-minutes-install-vagrant-and-virtualbox-on-ubuntu-16-04-3-live-usb&quot;&gt;4&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Install VirtualBox and Vagrant&lt;/p&gt;
+
+  &lt;p&gt;$ sudo apt-get update
+$ sudo apt-get -y install virtualbox vagrant
+Create a New Virtual Machine &amp;amp; Connect&lt;/p&gt;
+
+  &lt;p&gt;$ vagrant init bento/ubuntu-16.04
+$ vagrant up
+$ vagrant ssh&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ensin asensin Vagrantin komennolla &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get -y install virtualbox vagrant&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Tämän jälkeen komennolla &lt;code class=&quot;highlighter-rouge&quot;&gt;vagrant init bento/ubuntu-16.04&lt;/code&gt; saimme ladattua Vagrantin “levykuvan”, josta virtualisoitu Ubuntun asennus käynnistetään.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/www/img/Vagrant-A.gif&quot; alt=&quot;Vagrant-A / Lataus&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Lopuksi käynnistetään Vagrant ja yhdistetään siihen SSH:lla. &lt;code class=&quot;highlighter-rouge&quot;&gt;vagrant up&lt;/code&gt; ja &lt;code class=&quot;highlighter-rouge&quot;&gt;vagrant ssh&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/www/img/Vagrant-B.gif&quot; alt=&quot;Vagrant-B / Käynnistys&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;x-oma-domain&quot;&gt;X) Oma domain&lt;/h1&gt;
+
+&lt;h4 id=&quot;cloudflare-&quot;&gt;Cloudflare |&lt;/h4&gt;
+
+&lt;p&gt;Käytän nimipalvelintarjoajani Cloudflarea, jolla on globaalisti toteutettu nimipalvelin-järjestelmä. Cloudflaren ilmaisella tunnuksella saa käyttöön käsittääkseni loputtomasti nimipalvelin palveluita eri domaineille. Viimeisimmän domainin rekisteröin Domainhotelli Oy:n kautta, sillä jostain syystä Ficoran palveluntarjoajien verkkotunnuspalveluun tekemäni tunnukset olivat poistettu taas käytöstä. Domainhotellista domainin hankkiminen on yhtä triviaalia kuin kaikista muistakin domainin -hankintapalveluista. Sieltä saa .fi -domainin kuitenkin nettohintaan 9€/vuosi. Domainhotellillta saa käyttöön myös oman DNS-nimipalvelun, joka vaaditaan, että Cloudflaren nimipalvelimia voi alkaa käyttämään. Tässäkin välissä voidaan tosin käyttää omalle virtuaalipalvelimelle asennettavaa nimipalvelinta, ja laittaa nimipalvelinasetukset osoittamaan Domainhotellin konfigurointipaneelista oman (bind) palvelimen dns-osoitteisiin.&lt;/p&gt;
+
+&lt;p&gt;En ole täysin varma “aktivoituiko” Domainhotellista hankkimani domaini viimeksi käyttämällä pelkkiä Cloudflaren DNS-palvelimia, vai auttoiko siihen se että konfiguroin ensin Domainhotellin DNS-palvelimet domainille. Suoraan Ficoralta domaineja hankittaessa vaaditaan jokin nimipalvelin ennen kun domain “aktivoituu”. Aktivoituminen vaaditaan domainin lisäämiseksi Cloudflarelle.&lt;/p&gt;
+
+&lt;p&gt;https://i.imgur.com/oDXr0CZ.png
+&lt;img src=&quot;/www/img/domainhotelli.png&quot; alt=&quot;Domainhotelli DNS-asetukset&quot; /&gt;
+kuva hallintapaneelista
+&lt;img src=&quot;/www/img/cloudflare-a-tietue.gif&quot; alt=&quot;Cloudflaren asetukset&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;s-käyttäjän-public_html--hakemisto-domainin-pääsivulle&quot;&gt;S) Käyttäjän public_html -hakemisto domainin pääsivulle&lt;/h1&gt;
+
+&lt;p&gt;Yksinkertaisimmin saamme yhden käyttäjän public_html -hakemiston näkymään rekisteröimämme domainin -etusivulla muokkaamalla kyseiselle käyttäjälle luotua virtual hostia, tässä tapauksessa /etc/apache2/sites-available/rkantos.conf lisäämällä ensimmäisen rivin &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;VirtualHost *:80&amp;gt;&lt;/code&gt;jälkeen &lt;code class=&quot;highlighter-rouge&quot;&gt;ServerName rekisteröimämmedomain.fi&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Tällöin konfiguraatiotiedoston alun tulisi näyttää tältä:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;VirtualHost *:80&amp;gt;
+        ServerName rekisteröimämmedomain.fi
+
+        ServerAdmin webmaster@localhost
+        DocumentRoot /home/rkantos/public_html/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;y-murtautumisyritykset-ssh-lokeilla&quot;&gt;Y) Murtautumisyritykset SSH-lokeilla&lt;/h1&gt;
+
+&lt;p&gt;Omilla virtuaaliapalvelimillani olen estänyt ylimääräiset ssh-kirjautumis tai murtautumisyritykset Fail2ban:lla. Fail2ban estää ip-osoitteet määrätyksi aikaa liian monen yrityskerran jälkeen. Vähän ajan kuluttua Fail2ban käyttöönoton jälkeen murtautumisyritykset vähenivät selvästi vaikka kaikki aikaisemmin estetyt ip-osoitteet voivat omalla konfiguraatiolla yrittää kirjautumista muutamien minuuttien päästä uudelleen.&lt;/p&gt;
+
+&lt;p&gt;Olin kuitenkin juuri ottanut toimintaan toisen SSH-palvelimen samalla virtuaalipalvelimella, mutta eri portissa. Tämäkin osa palvelimesta saa näköjään oman osansa kirjautumisyrityksistä. Yhdistävänä tekijänä vaikuttaa olevan käyttäjätunnus “admin” tai “ftp”/”ftpuser”&lt;/p&gt;
+
+&lt;p&gt;Jokaisessa lokiviestissä toistuu sama ssh-daemonin (sshd) raportoima viesti epäonnistuneesta kirjautumisyrityksestä joko väärällä käyttäjätunnuksella tai salasanalla.&lt;/p&gt;
+
+&lt;p&gt;Ensimmäisessä viestissä sshd kertoo että konfiguroinnin mukaisen autentikointimetodin kautta (PAM), ei löydy käyttäjää ftpuser. Kirjautumisyritys tulee IP-osoitteesta 50.62.56.171 ja asiakasportista 27657. Ensimmäisen salasanayrityskerran jälkeen käyttäjä, tai todennäköisemmin botti, yrittää salasanaa samalle käyttäjälle vielä kolmeen kertaan. Tämän jälkeen ssh-daemon konfiguroinnin mukaisesti tiputtaa yhteyden.
+Luonnollisesti IP-osoite löytyy AbuseIPDB -sivustolta: https://www.abuseipdb.com/check/50.62.56.171&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Sep 20 18:36:20 d sshd[22046]: Invalid user ftpuser from 50.62.56.171 port 27657
+Sep 20 18:36:20 d sshd[22046]: input_userauth_request: invalid user ftpuser [preauth]
+Sep 20 18:36:20 d sshd[22046]: pam_unix(sshd:auth): check pass; user unknown
+Sep 20 18:36:20 d sshd[22046]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=50.62.56.171
+Sep 20 18:36:22 d sshd[22046]: Failed password for invalid user ftpuser from 50.62.56.171 port 27657 ssh2
+Sep 20 18:36:23 d sshd[22046]: pam_unix(sshd:auth): check pass; user unknown
+Sep 20 18:36:24 d sshd[22046]: Failed password for invalid user ftpuser from 50.62.56.171 port 27657 ssh2
+Sep 20 18:36:24 d sshd[22046]: pam_unix(sshd:auth): check pass; user unknown
+Sep 20 18:36:26 d sshd[22046]: Failed password for invalid user ftpuser from 50.62.56.171 port 27657 ssh2
+Sep 20 18:36:26 d sshd[22046]: Connection closed by 50.62.56.171 port 27657 [preauth]
+Sep 20 18:36:26 d sshd[22046]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=50.62.56.171
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Tämä kirjautumisyritys on muuten samanlainen edellisen kanssa, paitsi että IP-osoite on eri. Tälläkin kertaa sama IP-osoite on raportoitu AbuseIPDB -sivustolla jo useampaan otteeseen: https://www.abuseipdb.com/check/58.242.83.19
+Koska toisen palvelimen SSH-konfiguroinnissa oli vielä merkintä &lt;code class=&quot;highlighter-rouge&quot;&gt;PermitRootLogin prohibit-password&lt;/code&gt; - oli täten root -käyttäjätunnus käytettävissä, mutta vain ilman salasanaa. &lt;a href=&quot;https://askubuntu.com/questions/449364/what-does-without-password-mean-in-sshd-config-file&quot;&gt;14&lt;/a&gt; Käytännössä “prohibit-password” tarkoittaa ei suinkaan sitä että root-tunnukselle pystyy kirjautumaan ilman salasanaa, vaan sitä, että salasanalla tunnukselle kirjautumiseen vaaditaan ssh-avain (privatekey). Tässä kohtaa en täysin ymärrä miksi PAM ylipäätään ensimmäisen kirjautumisyrityksen jälkeen tekee lokimerkintöjä, sillä ssh-daemonin ei pitäisi hyväksyä root-tunnukselle mitään muita kirjautumistapoja kuin ssh-avain.&lt;/p&gt;
+
+&lt;p&gt;Tässä lokimerkinnässä näkyy myös nähtävästi PAM:n raportoima 5 kirjautumisyrityksen raja, jolloin ssh-yhteys tiputetaan. &lt;code class=&quot;highlighter-rouge&quot;&gt;PAM 5 more authentication failures;&lt;/code&gt;
+Vaikkakin PAM on käytössä, mutta root-käyttäjän salasanakirjautuminen ei, näyttää SSH-daemonin PAM-moduuli silti liittyvän jotenkin SSH-daemonin oletuskonfiguroinnista johtuvaan liiallaisten kirjautumisyrityskertojen estoon.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Sep 21 21:13:10 d sshd[5969]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.242.83.19  user=root
+Sep 21 21:13:11 d sshd[5969]: Failed password for root from 58.242.83.19 port 62393 ssh2
+Sep 21 21:13:14 d sshd[5969]: Failed password for root from 58.242.83.19 port 62393 ssh2
+Sep 21 21:13:18 d sshd[5969]: Failed password for root from 58.242.83.19 port 62393 ssh2
+Sep 21 21:13:21 d sshd[5969]: Failed password for root from 58.242.83.19 port 62393 ssh2
+Sep 21 21:13:24 d sshd[5969]: Failed password for root from 58.242.83.19 port 62393 ssh2
+Sep 21 21:13:27 d sshd[5969]: Failed password for root from 58.242.83.19 port 62393 ssh2
+Sep 21 21:13:27 d sshd[5969]: error: maximum authentication attempts exceeded for root from 58.242.83.19 port 62393 ssh2 [preauth]
+Sep 21 21:13:27 d sshd[5969]: Disconnecting: Too many authentication failures [preauth]
+Sep 21 21:13:27 d sshd[5969]: PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=58.242.83.19  user=root
+Sep 21 21:13:27 d sshd[5969]: PAM service(sshd) ignoring max retries; 6 &amp;gt; 3
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Viimeinen merkintä on jälleen lähes identtinen ensimmäisen kanssa. IP löytyy jälleen AbuseIPDB:stä: https://www.abuseipdb.com/check/64.50.176.226 Käyttäjätunnusta ei taaskaan ole olemassa palvelimellani, mutta todennäköinen botti yrittää silti kirjautua salasanan avulla siihen 5 kertaa.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Sep 21 21:02:36 d sshd[23742]: Invalid user admin from 64.50.176.226 port 33974
+Sep 21 21:02:36 d sshd[23742]: input_userauth_request: invalid user admin [preauth]
+Sep 21 21:02:36 d sshd[23742]: pam_unix(sshd:auth): check pass; user unknown
+Sep 21 21:02:36 d sshd[23742]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=64.50.176.226
+Sep 21 21:02:38 d sshd[23742]: Failed password for invalid user admin from 64.50.176.226 port 33974 ssh2
+Sep 21 21:02:38 d sshd[23742]: pam_unix(sshd:auth): check pass; user unknown
+Sep 21 21:02:40 d sshd[23742]: Failed password for invalid user admin from 64.50.176.226 port 33974 ssh2
+Sep 21 21:02:40 d sshd[23742]: pam_unix(sshd:auth): check pass; user unknown
+Sep 21 21:02:42 d sshd[23742]: Failed password for invalid user admin from 64.50.176.226 port 33974 ssh2
+Sep 21 21:02:42 d sshd[23742]: Connection closed by 64.50.176.226 port 33974 [preauth]
+Sep 21 21:02:42 d sshd[23742]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=64.50.176.226
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;lähteet-&quot;&gt;Lähteet |&lt;/h3&gt;
+
+&lt;p&gt;[1: https://www.cinia.fi/palvelut/kansainvaliset-yhteyspalvelut/c-lion1-merikaapeli.html
+[2: https://yle.fi/uutiset/3-6915349
+[3: http://www.tivi.fi/Kaikki_uutiset/2015-03-11/Yle-Google-laajentaa-rajusti-Haminassa-tilat-moninkertaisiksi-3217212.html
+[4: http://terokarvinen.com/2017/virtual-machine-in-two-minutes-install-vagrant-and-virtualbox-on-ubuntu-16-04-3-live-usb
+[5: https://yle.fi/uutiset/3-7550739
+[6: http://www.is.fi/taloussanomat/art-2000001898010.html
+[7: https://www.telia.fi/yrityksille/tuotteet/tietoliikenne/telia-data-center/datakeskus-pitajanmakeen
+[8: https://twitter.com/ServerBear/status/765034545703813121
+[9: https://www.lowendtalk.com/discussion/85392/building-a-serverbear-alternative/p1
+[10: https://github.com/serverscope/serverscope-benchmark
+[11: https://lowendbox.com/?s=buyvm&amp;amp;searchsubmit=Find
+[12: http://www.zdnet.com/article/finlands-baltic-undersea-cable-gets-a-10m-to-help-boost-datacentre-connections/
+[13: https://www.rakennuslehti.fi/2017/09/paakaupunkiseudulle-suunnitellaan-uutta-datakeskusta/
+[14: https://askubuntu.com/questions/449364/what-does-without-password-mean-in-sshd-config-file&lt;/p&gt;</content><author><name></name></author><category term="linux" /><category term="haaga-helia" /><category term="koulu" /><category term="infra" /><category term="such" /><category term="wow" /><category term="test" /><category term="tags" /><summary type="html">H4 Virtuaalipalvelimet (VPS) &amp;amp; Wordpress</summary></entry><entry><title type="html">Linux palvelimet ICT4TN021 2017 H3</title><link href="http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3.html" rel="alternate" type="text/html" title="Linux palvelimet ICT4TN021 2017 H3" /><published>2017-09-11T00:00:00+00:00</published><updated>2017-09-11T00:00:00+00:00</updated><id>http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3</id><content type="html" xml:base="http://0.0.0.0:8080/2017/09/11/Linux-Palvelimet-H3.html">&lt;h1 class=&quot;no_toc&quot; id=&quot;sisältö-&quot;&gt;Sisältö |&lt;/h1&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#tehtävänanto-&quot; id=&quot;markdown-toc-tehtävänanto-&quot;&gt;Tehtävänanto |&lt;/a&gt;&lt;/li&gt;
