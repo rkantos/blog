@@ -55,7 +55,7 @@ $ Hello Worlds!!
 
 #### Ruby | [3]
 
-Ruby on perinteisiin ohjelmointikieliin, kuten c:hen ja Assemblyyn verrattuna suhteellisen uusi ohjelmointikieli. Ruby nousi suurempaan suosioon vasta 10v ensimmäisen julkaistun version jälkeen vuonna 2005. Silloin julkaistiin internet-kehitysympäristö Ruby on Rails. [6]
+Ruby on perinteisiin ohjelmointikieliin, kuten c:hen ja Assemblyyn verrattuna suhteellisen uusi ohjelmointikieli. Ruby nousi suurempaan suosioon vasta 10v ensimmäisen julkaistun version jälkeen vuonna 2005. Silloin julkaistiin web-kehitysympäristö Ruby on Rails. [6]
 
 ```
 sudo apt-get update
@@ -104,6 +104,8 @@ Koska Nodejs perustuu Javascriptiin voimme tehdä Hello World -ohjelman hyvin yk
 Tiedoston sisällöksi tarvitsemme vain `console.log('Hello World!!');`
 
 Suoritus tapahtuu Ubuntussa komennolla `nodejs helloworld.js`
+
+-- muokattu 9.10.2017 klo 1010GMT Silloin julkaistiin internet-kehitysympäristö Ruby on Rails. -> Silloin julkaistiin web-kehitysympäristö Ruby on Rails. --
 
 ### Lähteet |
 
