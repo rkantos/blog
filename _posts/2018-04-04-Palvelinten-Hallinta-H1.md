@@ -12,19 +12,19 @@ tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
 
 Tehtävänanto on osa Tero Karvisen Haaga-Heliassa suoritettavaa Palvelinten hallinta-kurssia. http://terokarvinen.com/2018/aikataulu-%E2%80%93-palvelinten-hallinta-ict4tn022-4-ti-5-ke-5-loppukevat-2018-5p
 
-> 	a) Lue virallisesta Salt Getting Started Guide -kirjasta luvut Understanding SaltStack (noin 8 alasivua) ja SaltStack Fundamentals (6 alasivua, ei tarvitse asentaa demoympäristöä) ja SaltStack Configuration Management: Functions (1 alasivu). (Tätä lukutehtävää ei tarvitse raportoida).
+>a) Lue virallisesta Salt Getting Started Guide -kirjasta luvut Understanding SaltStack (noin 8 alasivua) ja SaltStack Fundamentals (6 alasivua, ei tarvitse asentaa demoympäristöä) ja SaltStack Configuration Management: Functions (1 alasivu). (Tätä lukutehtävää ei tarvitse raportoida).
 > 
-> 	b) Silmäile Laineen 2017 varastossa olevia salt -asetuksia. (Tätä lukutehtävää ei tarvitse raportoida).
-> 	
-> 	c) Asenna Salt Master ja Slave pull-arkkitehtuurilla (eli master on server). Voit laittaa herran ja orjan myös samalle koneelle. Kokeile suorittamalla salt:illa komentoja etänä.
-> 	
-> 	d) Kokeile jotain Laineen esimerkistä lainattua tilaa tai tee jostain tilasta oma muunnelma. Muista testata lopputuloksen toimivuus. Huomaa, että varastossa on myös keskeneräisiä esimerkkejä, kuten Battlenet-asennus Windowsille.
-> 	
-> 	e) Kerää laitetietoja koneilta saltin grains-mekanismilla.
-> 	
-> 	f) Oikeaa elämää. Säädä Saltilla jotain pientä, mutta oikeaa esimerkiksi omalta koneeltasi tai omalta virtuaalipalvelimelta. (Kannattaa kokeilla Saltia oikeassa elämässä, mutta jos se ei onnistu, rakenna jotain oikeaa konettasi vastaava virtuaaliympäristö ja tee asetus siinä).
-> 	
-> 	g) Vapaaehtoinen: asenna ja konfiugroi jokin palvelin Saltilla. (package-file-server)
+>b) Silmäile Laineen 2017 varastossa olevia salt -asetuksia. (Tätä lukutehtävää ei tarvitse raportoida).
+>	
+>c) Asenna Salt Master ja Slave pull-arkkitehtuurilla (eli master on server). Voit laittaa herran ja orjan myös samalle koneelle. Kokeile suorittamalla salt:illa komentoja etänä.
+>
+>d) Kokeile jotain Laineen esimerkistä lainattua tilaa tai tee jostain tilasta oma muunnelma. Muista testata lopputuloksen toimivuus. Huomaa, että varastossa on myös keskeneräisiä esimerkkejä, kuten Battlenet-asennus Windowsille.
+>
+>e) Kerää laitetietoja koneilta saltin grains-mekanismilla.
+>
+>f) Oikeaa elämää. Säädä Saltilla jotain pientä, mutta oikeaa esimerkiksi omalta koneeltasi tai omalta virtuaalipalvelimelta. (Kannattaa kokeilla Saltia oikeassa elämässä, mutta jos se ei onnistu, rakenna jotain oikeaa konettasi vastaava virtuaaliympäristö ja tee asetus siinä).
+>
+>g) Vapaaehtoinen: asenna ja konfiugroi jokin palvelin Saltilla. (package-file-server)
 
 # C) Palvelinten hallintatyökalun eli Salt Stackin asennus
 
