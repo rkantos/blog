@@ -1,5 +1,7 @@
-# H1 Palvelinten Hallinta
-========================
+---
+title: Palvelinten Hallinta ICT4TN022-4 2018 H1
+tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
+---
 
 # Sisältö |
 {:.no_toc}
@@ -240,9 +242,6 @@ Rivi `;; SERVER: 1.1.1.1#53(1.1.1.1)` kertoo että DNS-palvelimena todellakin to
 [10]: https://github.com/systemd/systemd/blob/master/README
 [11]: https://fossies.org/linux/salt/salt/grains/core.py
 [12]: https://github.com/saltstack/salt/blob/17ad2c42786490cdde829f5656f909469d527384/salt/grains/core.py
-[13]: 
-[14]: 
-[15]: 
 
 [1: http://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux
 
