@@ -245,17 +245,31 @@ Rivi `;; SERVER: 1.1.1.1#53(1.1.1.1)` kertoo että DNS-palvelimena todellakin to
 [15]: 
 
 [1: http://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux
+
 [2: https://docs.saltstack.com/en/latest/topics/tutorials/firewall.html#iptables
+
 [3: https://github.com/joonaleppalahti/CCM/tree/master/salt
+
 [4: https://repo.saltstack.com/#debian
+
 [5:  https://docs.saltstack.com/en/latest/ref/modules/all/salt.modules.grains.html
+
 [6: https://docs.saltstack.com/en/latest/topics/grains/
+
 [7: https://1.1.1.1/
+
 [8: https://www.apnic.net/about-apnic/
+
 [9: https://openvz.org/Download/kernel
+
 [10: https://github.com/systemd/systemd/blob/master/README
+
 [11: https://fossies.org/linux/salt/salt/grains/core.py
+
 [12: https://github.com/saltstack/salt/blob/17ad2c42786490cdde829f5656f909469d527384/salt/grains/core.py
+
 [13: 
+
 [14: 
+
 [15: 
