@@ -1,8 +1,3 @@
-# H2 Palvelinten Hallinta v3
-========================
-
-#### Publish below
-
 ---
 title: Palvelinten Hallinta ICT4TN022-4 2018 H2
 tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
