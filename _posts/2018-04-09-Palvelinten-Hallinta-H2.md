@@ -1,8 +1,3 @@
-# H2 Palvelinten Hallinta v4
-========================
-
-#### Publish below
-
 ---
 title: Palvelinten Hallinta ICT4TN022-4 2018 H2
 tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
@@ -205,7 +200,7 @@ apache2:
 ```
 
 
-Koko Salt-tilan sisällöksi tulee siis: 
+Koko Salt-tilan `/srv/salt/apache/php.sls` sisällöksi tulee siis: 
 
 ```
 php:
@@ -386,6 +381,7 @@ Hello World, Hello Hypertext Preprocessor. What's 3+3?
 ?>
 ```
 
+Salt -tila `/srv/salt/apache/skelpublic.sls`:
 ```
 /etc/skel/public_html:
   file.recurse:
