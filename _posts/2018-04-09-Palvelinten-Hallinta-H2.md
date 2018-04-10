@@ -1,3 +1,8 @@
+# H2 Palvelinten Hallinta v4
+========================
+
+#### Publish below
+
 ---
 title: Palvelinten Hallinta ICT4TN022-4 2018 H2
 tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
@@ -509,9 +514,10 @@ nginx:
   pkg.installed
 ```
 
-Suoritettaessa koko nginx.init -tila ensimmäisen kerran saadaan virheilmoitus. Seuraavalla suorituskerralla virheilmoitusta ei kuitenkaan tule ja Salt raportoi Nginx:n asentuneen onnistuneesti.
+Kuitenkin Suoritettaessa koko nginx.init -tila ensimmäisen kerran saadaan virheilmoitus. 
 
-![dpkg](https://i.imgur.com/7VLkjbY.png)
+![dpkg](https://i.imgur.com/4ySoT9s.png)
+
 
 ```
 ----------
@@ -556,6 +562,7 @@ Suoritettaessa koko nginx.init -tila ensimmäisen kerran saadaan virheilmoitus. 
 ```
 
 
+Seuraavalla suorituskerralla virheilmoitusta ei kuitenkaan tule ja Salt raportoi Nginx:n asentuneen onnistuneesti.
 
 
 `/srv/salt/top.sls` tiedoston sisältö:
@@ -576,7 +583,7 @@ Testataan lopuksi koko konfiguraatio. Poistetaan kaikki paketit ja konfiguraatio
 
 Huolimatta Salt:n virheilmoituksesta, kaikki toimii toisella suorituskerralla kuten pitää.
 
-![sudo salt '*' state.highstate]()
+![sudo salt '*' state.highstate](https://i.imgur.com/7VLkjbY.png)
 
 http://stest.4e.fi:8080/ toimii nyt:
 
