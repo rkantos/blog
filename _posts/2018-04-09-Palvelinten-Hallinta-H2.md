@@ -356,7 +356,7 @@ Testataan lopuksi `apache.vhost` -tila poistamalla apache ja sen konfigurointiti
 ![sudo salt 's101' state.highstate](https://i.imgur.com/jQkneYE.png)
 
 Toimiva s101.4e.fi: 
-![s101.4e.fi test](https://i.imgur.com/rsEAVw2.png)
+![s101.4e.fi test](https://i.imgur.com/yg0KFTt.png)
 
 
 
