@@ -290,19 +290,14 @@ Tila näyttää toimivan ensiyrittämällä [5]:
 [3]: https://stackoverflow.com/questions/33616695/how-do-i-append-to-each-item-in-a-list-of-strings
 [4]: https://villetouronen.wordpress.com/2018/04/08/palvelin-hallinta-viikko-2-harjoitus-2-kayttajien-ja-heidan-kotisivujen-lisaaminen-kayttaen-saltia/
 [5]: https://www.tecmint.com/sysstat-commands-to-monitor-linux/
-[6]: 
-[7]: 
-[8]: 
-[9]: 
-[10]: 
-[11]: 
-[12]: 
-[13]: 
-[14]: 
-[15]: 
+
 
 [1: http://terokarvinen.com/2018/make-a-million-of-those-jinja-templating-salt-states
+
 [2: https://stackoverflow.com/questions/30056622/how-to-iterate-over-a-list-of-list-in-jinja
+
 [3: https://stackoverflow.com/questions/33616695/how-do-i-append-to-each-item-in-a-list-of-strings
+
 [4: https://villetouronen.wordpress.com/2018/04/08/palvelin-hallinta-viikko-2-harjoitus-2-kayttajien-ja-heidan-kotisivujen-lisaaminen-kayttaen-saltia/
+
 [5: https://www.tecmint.com/sysstat-commands-to-monitor-linux/
