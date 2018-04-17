@@ -1,5 +1,3 @@
-#### Publish below
-
 ---
 title: Palvelinten Hallinta ICT4TN022-4 2018 H3
 tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
