@@ -75,7 +75,7 @@ Heti Jinja-muottien kokeilemisen jälkeen halusin saada tehtyä muutoksia sls-ti
 Loin siis uuden `/srv/salt/apache/vhost-jinja.sls` -tilatiedoston:
 
 ```
-{% set aliases = [['s103.4e.fi', 's104.4e.fi', 's105.4e.fi']] %}
+{%set aliases = [['s103.4e.fi', 's104.4e.fi', 's105.4e.fi']] %}
 
 
 /home/testi/logs/:
