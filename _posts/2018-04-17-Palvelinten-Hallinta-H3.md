@@ -70,7 +70,7 @@ Tällä tiedostolla voidaan luoda useampi tiedosto, jossa on sisällä muuttuja 
 
 #### Lisätila Apachen vhost useammalla Aliaksella jinjan avulla | [2] [3]
 
-Heti Jinja-muottien kokeilemisen jälkeen halusin saada tehtyä muutoksia sls-tilojen avulla, joissa yhteen kohtaan tiedostoa tulisi useampi lisätty tieto. Tässä esimerkissä halusin lisätä Apachen vhostille useampia `ServerAlias` -määrittelyjä.
+#Heti Jinja-muottien kokeilemisen jälkeen halusin saada tehtyä muutoksia sls-tilojen avulla, joissa yhteen kohtaan tiedostoa tulisi useampi lisätty tieto. Tässä esimerkissä halusin lisätä Apachen vhostille useampia `ServerAlias` -määrittelyjä.
 
 Loin siis uuden `/srv/salt/apache/vhost-jinja.sls` -tilatiedoston:
 
