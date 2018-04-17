@@ -1,3 +1,5 @@
+#### Publish below
+
 ---
 title: Palvelinten Hallinta ICT4TN022-4 2018 H3
 tags: ["linux","haaga-helia","koulu","infra","such","wow","test","tags"]
@@ -70,12 +72,13 @@ Tällä tiedostolla voidaan luoda useampi tiedosto, jossa on sisällä muuttuja 
 
 #### Lisätila Apachen vhost useammalla Aliaksella jinjan avulla | [2] [3]
 
-#Heti Jinja-muottien kokeilemisen jälkeen halusin saada tehtyä muutoksia sls-tilojen avulla, joissa yhteen kohtaan tiedostoa tulisi useampi lisätty tieto. Tässä esimerkissä halusin lisätä Apachen vhostille useampia `ServerAlias` -määrittelyjä.
+Heti Jinja-muottien kokeilemisen jälkeen halusin saada tehtyä muutoksia sls-tilojen avulla, joissa yhteen kohtaan tiedostoa tulisi useampi lisätty tieto. Tässä esimerkissä halusin lisätä Apachen vhostille useampia `ServerAlias` -määrittelyjä.
 
 Loin siis uuden `/srv/salt/apache/vhost-jinja.sls` -tilatiedoston:
 
 ```
-{%set aliases = [['s103.4e.fi', 's104.4e.fi', 's105.4e.fi']] %}
+{% raw %}
+{{% set aliases = [['s103.4e.fi', 's104.4e.fi', 's105.4e.fi'] %}
 
 
 /home/testi/logs/:
@@ -117,6 +120,7 @@ apacherestart:
    - name: apache2
    - watch:
      - file: /etc/apache2/sites-enabled/s101.4e.fi.conf
+{% endraw %}
 ```
 
 Komennon `sudo salt 's101' state.apply apache.vhost-jinja` suorittamisen jälkeen:
