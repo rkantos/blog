@@ -249,6 +249,8 @@ B2
 
 
 [1: http://terokarvinen.com/2018/simple-secrets-in-salt-pillars
+
 [2: http://terokarvinen.com/2018/make-a-million-of-those-jinja-templating-salt-states
+
 [3: https://docs.saltstack.com/en/latest/ref/states/all/salt.states.file.html
 
