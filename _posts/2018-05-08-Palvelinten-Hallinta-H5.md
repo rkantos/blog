@@ -75,7 +75,7 @@ packages:
 
 #### SSH-yhteyksien salliminen maakohtaisesti |
 
-Luodaan tämän tehtävän yhteydessä uusi Salt-tila pohjautuen erinomaiseen esimerkkiin [2]
+Luodaan tämän tehtävän yhteydessä uusi Salt-tila pohjautuen erinomaiseen esimerkkiin. [2] Toteutuksesta saa olla eri mieltä ja turvallisuusnäkökulmasta lisäys on vähäinen mille tahansa palvelimelle. On muitakin keinoja estää epäasiallisia kirjautumisyrityksiä SSH-palvelimelle. Käytännössä tämä vähentää ainakin SSH-palvelimelle hyökkäyksiä yrittävät sellaisiin, jotka sitä yrittävät tosissaan.
 
 Salt-tilaa varten tarvitsemme kahden paketin asennuksen ja kolmen konfigurointitiedoston luomisen.
 
@@ -85,7 +85,7 @@ Luodaan oma kansio Salt-tilaa varten localsalt Git-varastoon.
 $ mkdir ssh-geoip && cd ssh-geoip
 ```
 
-Pääasiallinen konfigurointitiedosto `/usr/local/bin/sshfilter.sh` näyttää tältä:
+Pääasiallinen skriptitiedosto `/usr/local/bin/sshfilter.sh` näyttää tältä:
 
 ```
 #!/bin/bash
@@ -114,7 +114,7 @@ fi
 Tallennetaan konfigurointitiedosto Salt Git-varastoon tiedostoon `srv/salt/ssh-geoip/sshfilter.sh`
 
 
-Koska kahden konfigurointitiedoston muutokset ovat hyvin yksinkertaisia, voimme käyttää Saltin `file.prepend` -toimintoa, joka tarkistaa tiedoston sisällön ja lisää rivin tiedoston alkuun vain jos sitä ei löydy ennestään. [3] hosts.deny ja hosts.allow -tiedostoihin lisättävien rivien sijainti on tärkeä, sillä se määrittää missä järjestyksessä sääntöjä noudatetaan. Tässä tapauksessa halutaan sääntöjen olevan ensimmäisenä "suodattamassa".
+Koska kahden konfigurointitiedoston muutokset ovat hyvin yksinkertaisia, voidaan käyttää Saltin `file.prepend` -toimintoa, joka tarkistaa tiedoston sisällön ja lisää rivin tiedoston alkuun vain jos sitä ei löydy ennestään. [3] hosts.deny ja hosts.allow -tiedostoihin lisättävien rivien sijainti on tärkeä, sillä se määrittää missä järjestyksessä sääntöjä noudatetaan. Tässä tapauksessa halutaan sääntöjen olevan ensimmäisenä "suodattamassa".
 
 ```
 /etc/hosts.deny:
@@ -130,7 +130,7 @@ Koska kahden konfigurointitiedoston muutokset ovat hyvin yksinkertaisia, voimme 
 
 ```
 
-Kootaan koko Salt -tila `srv/salt/ssh-geoip/init.sls` -tiedostoon. Koska ssh-geoip -konfiguraatio ei luota mihinkään palveluun, ei tässä ole tarvetta`watch.file` -kohdalle. Käytössä on siis vain ns. package-file -rakenne.
+Kootaan koko Salt -tila `srv/salt/ssh-geoip/init.sls` -tiedostoon. Koska ssh-geoip -konfiguraatio ei luota mihinkään demoniin, ei tässä ole tarvetta varsinaista tarvetta`watch.file` -kohdalle. Käytössä on siis vain ns. package-file -rakenne. Muistetaan lisätä sshfilter -skriptille suoritusoikeus käyttämällä `mode: 755` -valintaa.
 
 ```
 #vaaditut paketit
@@ -145,6 +145,7 @@ programs:
 /usr/local/bin/sshfilter.sh:
    file.managed
      - source: salt://ssh-geoip/sshfilter.sh
+     - mode: 755
 
 #hosts.deny
 /etc/hosts.deny:
@@ -208,6 +209,25 @@ Testataan Salt-tilan suorittaminen suorittamalla `high.sh` Bash-skripti.
 ![high.sh Bash-skriptin suoritus](https://i.imgur.com/zmgUcDU.png)
 ![high.sh Bash-skriptin suoritus](https://i.imgur.com/gQDIHfT.png)
 
+Testataan sshfilter.sh -skriptin toiminta:
+
+```
+~/localsalt$ /usr/local/bin/sshfilter.sh 1.1.1.1
+~/localsalt$ tail -F -n 1 /var/log/syslog
+May  8 09:36:28 X220 k: DENY sshd connection from 1.1.1.1 (AU)
+
+```
+
+Lopuksi testataan vielä itse SSH-yhteyttä toisesta maasta. Palvelimeni s101.4e.fi sijaitsee tällä hetkellä Ruotsissa, kokeillaan sieltä yhteyttä:
+
+```
+$ ssh robin@test.4e.fi
+ssh_exchange_identification: read: Connection reset by peer
+```
+
+SSH-yhteys estetään oikein, koska Ruotsia ei ole sallitty skriptin konfiguroinnissa.
+
+
 Lisätään varmuuden vuoksi Gittiin vielä viimeinen tila, jos jotain muutoksia on vielä tullut testaamisen jälkeen:
 
 `git add . && git commit -m "valmis & testattu Salt-git -tila"`
@@ -219,13 +239,13 @@ Lisätään varmuuden vuoksi Gittiin vielä viimeinen tila, jos jotain muutoksia
 [2]: https://www.axllent.org/docs/view/ssh-geoip/
 [3]:  https://docs.saltstack.com/en/latest/ref/states/all/salt.states.file.html#salt.states.file.prepend
 [4]: https://docs.saltstack.com/en/latest/ref/output/all/salt.output.highstate.html
-[5]: 
-[6]: 
-[7]: 
 
 
 [1 : http://terokarvinen.com/2012/git-from-offline-to-network
+
 [2 : https://www.axllent.org/docs/view/ssh-geoip/
+
 [3 :  https://docs.saltstack.com/en/latest/ref/states/all/salt.states.file.html#salt.states.file.prepend
+
 [4 : https://docs.saltstack.com/en/latest/ref/output/all/salt.output.highstate.html
 
